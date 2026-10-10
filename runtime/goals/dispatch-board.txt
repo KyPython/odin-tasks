@@ -1,0 +1,1 @@
+As a software engineer, diagnose a synthetic Python test that fails intermittently because the code under test reads the system clock and local timezone, refactor the function to accept an injected clock, rewrite the test to use fixed timestamps including a midnight and DST boundary, and verify the test passes deterministically across repeated runs and different TZ settings.

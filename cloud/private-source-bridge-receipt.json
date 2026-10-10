@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "owner": 6550231,
+  "source": "cloud/private-source-bridge.js",
+  "audit": {
+    "execution": {
+      "id": "d187f1c53d10425faad2bb39f5eba75e",
+      "status": "success",
+      "startedAt": "2026-10-08T03:45:59.069Z",
+      "duration": 18053,
+      "operations": 23,
+      "credits": 34
+    },
+    "modules": [
+      {
+        "id": 1,
+        "name": "notion: makeApiCall",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:45:59.737Z"
+      },
+      {
+        "id": 2,
+        "name": "code: ExecuteCode",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:01.697Z"
+      },
+      {
+        "id": 3,
+        "name": "builtin: BasicFeeder",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:01.699Z"
+      },
+      {
+        "id": 4,
+        "name": "github: makeRestApiCall",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:10.208Z"
+      },
+      {
+        "id": 5,
+        "name": "code: ExecuteCode",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:11.302Z"
+      },
+      {
+        "id": 13,
+        "name": "github: makeRestApiCall",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:11.559Z"
+      },
+      {
+        "id": 14,
+        "name": "github: makeRestApiCall",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:11.754Z"
+      },
+      {
+        "id": 15,
+        "name": "code: ExecuteCode",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:12.710Z"
+      },
+      {
+        "id": 16,
+        "name": "github: makeRestApiCall",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:12.899Z"
+      },
+      {
+        "id": 17,
+        "name": "code: ExecuteCode",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:14.040Z"
+      },
+      {
+        "id": 18,
+        "name": "github: makeRestApiCall",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:14.275Z"
+      },
+      {
+        "id": 19,
+        "name": "code: ExecuteCode",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:15.507Z"
+      },
+      {
+        "id": 20,
+        "name": "code: ExecuteCode",
+        "invocations": 2,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:46:17.108Z"
+      }
+    ]
+  },
+  "privateSourceSummaries": [
+    {
+      "schemaVersion": 1,
+      "row_id": "3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d",
+      "source_repo": "https://github.com/KyPython/python-exception-propagation",
+      "commit": "ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2",
+      "tree_sha": "2454875c7cd57245e7af0decc5bc532f55e1374b",
+      "goal_sha256": "a519473d08c3e12ec135b069285a123814414356e2bef0bc27c4a37d8792d717",
+      "inventory_sha256": "de73f9b28a343726f2730636cf7029cd9d2b84d545f5b72b3d551e1c46b586df",
+      "file_count": 9,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob_sha": "4eb282c0d5682f725edc8d108088020cc29e067e",
+          "size": 60,
+          "sha256": "63987be261227423f4096b1ef55cc78114fe84e410a11417edd93ff21958cdd3"
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "blob_sha": "c3880807e64ccb34ad5d6c30cc1929bbb29129a1",
+          "size": 1556,
+          "sha256": "959666066be4ef8a5991481828f35a7c63c31b556e763388dc1671c526a0ada9"
+        },
+        {
+          "path": "pyproject.toml",
+          "mode": "100644",
+          "blob_sha": "d2263ab57a87bd844860ad164b1b7cd5ec7f9bc5",
+          "size": 326,
+          "sha256": "4bbd74ea6844c71b2434d8387790b8050f6e7ee734acc4458c4cfc5e7020ffb1"
+        },
+        {
+          "path": "requirements-dev.txt",
+          "mode": "100644",
+          "blob_sha": "2c78728ca5d7130bbea4a887dfc9b59b6f6a8d9c",
+          "size": 14,
+          "sha256": "a0e201ecda2bc871726ea3bb5db9cfe6b2109f60d8da88eecf910b790794b03d"
+        },
+        {
+          "path": "src/batch_command/__init__.py",
+          "mode": "100644",
+          "blob_sha": "d93b32f67a677cb65fb7e401a142bf1e5aea86a4",
+          "size": 147,
+          "sha256": "78f8c5637e73547714ce6229b045f76c7cf24c145edd1286ea4cb466f390478d"
+        },
+        {
+          "path": "src/batch_command/command.py",
+          "mode": "100644",
+          "blob_sha": "bcdec8367ceff494de7a5ff4f2ff82678ea42727",
+          "size": 1899,
+          "sha256": "4671fbf0d1f2c0b0611c0a34c0e48182f6d62dabf78500cc214f40f6bb5fed26"
+        },
+        {
+          "path": "src/batch_command/errors.py",
+          "mode": "100644",
+          "blob_sha": "ee893aecfa00022c86294dcbde6aeb6c53fea5a0",
+          "size": 609,
+          "sha256": "ff677bf93bb2c4c4ec042bae18574d8472a28bcd948cc3bcbf648b0d68109031"
+        },
+        {
+          "path": "tests/conftest.py",
+          "mode": "100644",
+          "blob_sha": "ed5c4ac208a1839bbd48fdc83e4f215d98662fa7",
+          "size": 507,
+          "sha256": "16efe59e6f48e562165004b1d26002db9c8434d7deb07826e1cacc7d0f88e4f9"
+        },
+        {
+          "path": "tests/test_baseline.py",
+          "mode": "100644",
+          "blob_sha": "0cc335657520120a09f12e2cb6b0e133c5105996",
+          "size": 716,
+          "sha256": "cc477bf3a966139b7018440464c3427816155bb872b9a7071ea97592975566bc"
+        }
+      ],
+      "verified": true,
+      "found": false,
+      "audit_only": true,
+      "private_bytes_exported_publicly": false,
+      "sourceInputsModified": false,
+      "recordingWorkspaceModified": false,
+      "recorderExecuted": false,
+      "registrationOrApprovalClaim": false
+    },
+    {
+      "schemaVersion": 1,
+      "row_id": "3f38621e-0a7a-81ac-95c5-dc0a9aaa211a",
+      "source_repo": "https://github.com/KyPython/oauth-callback-state",
+      "commit": "c65f9343be723ea36289db541b8f373883cbfe8a",
+      "tree_sha": "78d233081b6462d29f4bd7a5f6b7e9f48b0ffd19",
+      "goal_sha256": "53aa8de22a4d56b96b893bd778b17f0d629b57b4a43de0d34883ada57016ff24",
+      "inventory_sha256": "16088db76f8b880f682b289d474ff88b88f724b57160dfae0fadbce6fbee46a7",
+      "file_count": 5,
+      "files": [
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "blob_sha": "79e210750eb2dbf723f0f66556daf39a34d9040f",
+          "size": 1935,
+          "sha256": "c4f556cc338ea1f5a41a40a920738116415ef6b659b3552b80933b6615d93a20"
+        },
+        {
+          "path": "callback.py",
+          "mode": "100644",
+          "blob_sha": "3403e0929143de1cfa74cce6e73397d6ce444bdb",
+          "size": 1105,
+          "sha256": "ea8f6a1f54627a37200d0bb846f15a26a33e24eceab26fb33a7c592a9688a83b"
+        },
+        {
+          "path": "fixtures.py",
+          "mode": "100644",
+          "blob_sha": "3d5213d03905fcbb819546377eac679ffca4d68f",
+          "size": 1941,
+          "sha256": "23f4a051df53cbdb97c08afe31264a8312b5636267a4f923428704f31cf45749"
+        },
+        {
+          "path": "run_fixtures.py",
+          "mode": "100644",
+          "blob_sha": "d0e6aa13019ee2e16543abfb429856b49be17ce6",
+          "size": 766,
+          "sha256": "d58df83c52ddfa38bdbd9c8eed14f65bfe9dc23178d7e3cf7373a64f6f88e144"
+        },
+        {
+          "path": "tests/test_callback.py",
+          "mode": "100644",
+          "blob_sha": "c6b2fd516e253c3b0d071d822c6ebe425647ccda",
+          "size": 1070,
+          "sha256": "b62196f85102d8dbee85a5b2d440c1d73fc0f2f46fbbd6e7f14f2f89533ec7e4"
+        }
+      ],
+      "verified": true,
+      "found": false,
+      "audit_only": true,
+      "private_bytes_exported_publicly": false,
+      "sourceInputsModified": false,
+      "recordingWorkspaceModified": false,
+      "recorderExecuted": false,
+      "registrationOrApprovalClaim": false
+    }
+  ],
+  "production": {
+    "execution": {
+      "id": "dd6c972403b3446a884ac9ce735bbecc",
+      "status": "success",
+      "startedAt": "2026-10-08T03:54:05.375Z",
+      "duration": 6980,
+      "operations": 3,
+      "credits": 4
+    },
+    "modules": [
+      {
+        "id": 1,
+        "name": "notion: makeApiCall",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:54:05.979Z"
+      },
+      {
+        "id": 2,
+        "name": "code: ExecuteCode",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:54:12.342Z"
+      },
+      {
+        "id": 3,
+        "name": "builtin: BasicFeeder",
+        "invocations": 1,
+        "errors": 0,
+        "lastFinishedAt": "2026-10-08T03:54:12.344Z"
+      }
+    ]
+  },
+  "productionSelectorOutput": [
+    {
+      "direction": "output",
+      "cycle": 1,
+      "operation": 1,
+      "error": false,
+      "data": [
+        "{\"logs\":{\"stdout\":[],\"stderr\":[]},\"executionTimeMs\":419,\"result\":{\"rows\":[],\"count\":0}}"
+      ]
+    }
+  ],
+  "allOwnerStatuses": [
+    {
+      "scenarioId": 6550231,
+      "status": "active",
+      "lastEdit": "2026-10-08T03:52:35.265Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:09:00.474Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "scenarioId": 6547847,
+      "status": "active",
+      "lastEdit": "2026-10-07T23:40:26.619Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:40:28.632Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 3600
+      }
+    },
+    {
+      "scenarioId": 6550857,
+      "status": "active",
+      "lastEdit": "2026-10-08T03:16:40.576Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:07:36.374Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "scenarioId": 6548371,
+      "status": "active",
+      "lastEdit": "2026-10-07T23:57:07.870Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:08:21.174Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "scenarioId": 6550627,
+      "status": "active",
+      "lastEdit": "2026-10-08T03:07:08.525Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T07:15:00.000Z",
+      "scheduling": {
+        "time": "03:15",
+        "type": "daily"
+      }
+    },
+    {
+      "scenarioId": 6551447,
+      "status": "active",
+      "lastEdit": "2026-10-08T03:07:10.774Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:04:48.253Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "scenarioId": 6551517,
+      "status": "active",
+      "lastEdit": "2026-10-08T03:02:03.138Z",
+      "incompleteExecutions": 0,
+      "nextScheduledExecution": "2026-10-08T04:09:31.514Z",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    }
+  ],
+  "priorPrivateWorkerAccessFailuresAreHistorical": true,
+  "registrationOrApprovalClaim": false,
+  "recorderExecuted": false,
+  "sourceInputsModified": false,
+  "humanAttemptsModified": false,
+  "capturedAt": "2026-10-08T03:56:14.333601+00:00",
+  "sourceSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+  "modulePath": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    6,
+    10,
+    21,
+    11,
+    9,
+    22,
+    12,
+    8
+  ],
+  "actualVerifiedFiles": 14,
+  "sourceInputsAndGoalsMatchExistingManifest": true,
+  "installedSourceBytesAndModesMatch": true,
+  "promotionBoundary": "Verified private retrieval and guarded native machine-provenance persistence only. Existing Codex registration/route/walkthrough/learning review plus GHA artifact owner still require a complete actual reviewed payload; source review READY alone does not establish a finalized cloud world or human admission."
+}

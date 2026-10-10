@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "verifiedAt": "2026-10-08T02:02:06.318791+00:00",
+  "neutral": "dispatch-board",
+  "taskId": "ODIN-7008E3C523BF49AAA591427B4F762EDB",
+  "notionPageId": "3f08621e-0a7a-8132-89fd-e5cad87aba40",
+  "sourceRepo": "https://github.com/KyPython/flaky-clock-injection",
+  "sourceCommit": "e5652bcb044cd24d2a7d1c2f8bb93b885cea2069",
+  "goalSha256": "d416388e21c90e58bc75316bf7864589fb34850d3184bbb06e12b0a378d8000d",
+  "approvedGoal": "As a software engineer, diagnose a synthetic Python test that fails intermittently because the code under test reads the system clock and local timezone, refactor the function to accept an injected clock, rewrite the test to use fixed timestamps including a midnight and DST boundary, and verify the test passes deterministically across repeated runs and different TZ settings.",
+  "sourceInventoryBefore": {
+    "README.md": {
+      "sha256": "491eca65de8e0b526765429f7fc18b436ceac7492a34a9a3ada3640bb1da1512",
+      "mode": 420,
+      "size": 492
+    },
+    "docs/behavior.md": {
+      "sha256": "d7fa6a732672772b7e46999f20795cd7a1ce515384da6bf6fb62aaee6d1fffeb",
+      "mode": 420,
+      "size": 334
+    },
+    "scripts/show_timezone_variation.py": {
+      "sha256": "a5ab5e11170d0a951d20d1d2a6a3d3e89f3c0785e249a2bf70900bb4d861f572",
+      "mode": 420,
+      "size": 1083
+    },
+    "src/dispatch_board/__init__.py": {
+      "sha256": "ef6325e46fa758f2a3cc6533bf76b89aae9b332b68efeea438d2cc9d99ac4d6f",
+      "mode": 420,
+      "size": 119
+    },
+    "src/dispatch_board/labels.py": {
+      "sha256": "a054b935dde5d4f550e945f5159370de227fb13b97f7b31bf60cc158cc5ea2b2",
+      "mode": 420,
+      "size": 540
+    },
+    "tests/test_labels.py": {
+      "sha256": "afa855840d3e05f5b59950d631095c35d676ff18824684d6336c86152d902a87",
+      "mode": 420,
+      "size": 674
+    }
+  },
+  "sourceInventoryAfter": {
+    "README.md": {
+      "sha256": "491eca65de8e0b526765429f7fc18b436ceac7492a34a9a3ada3640bb1da1512",
+      "mode": 420,
+      "size": 492
+    },
+    "docs/behavior.md": {
+      "sha256": "d7fa6a732672772b7e46999f20795cd7a1ce515384da6bf6fb62aaee6d1fffeb",
+      "mode": 420,
+      "size": 334
+    },
+    "scripts/show_timezone_variation.py": {
+      "sha256": "a5ab5e11170d0a951d20d1d2a6a3d3e89f3c0785e249a2bf70900bb4d861f572",
+      "mode": 420,
+      "size": 1083
+    },
+    "src/dispatch_board/__init__.py": {
+      "sha256": "ef6325e46fa758f2a3cc6533bf76b89aae9b332b68efeea438d2cc9d99ac4d6f",
+      "mode": 420,
+      "size": 119
+    },
+    "src/dispatch_board/labels.py": {
+      "sha256": "a054b935dde5d4f550e945f5159370de227fb13b97f7b31bf60cc158cc5ea2b2",
+      "mode": 420,
+      "size": 540
+    },
+    "tests/test_labels.py": {
+      "sha256": "afa855840d3e05f5b59950d631095c35d676ff18824684d6336c86152d902a87",
+      "mode": 420,
+      "size": 674
+    }
+  },
+  "referenceSourceInventory": {
+    "README.md": {
+      "sha256": "491eca65de8e0b526765429f7fc18b436ceac7492a34a9a3ada3640bb1da1512",
+      "mode": 420,
+      "size": 492
+    },
+    "docs/behavior.md": {
+      "sha256": "d7fa6a732672772b7e46999f20795cd7a1ce515384da6bf6fb62aaee6d1fffeb",
+      "mode": 420,
+      "size": 334
+    },
+    "scripts/show_timezone_variation.py": {
+      "sha256": "a5ab5e11170d0a951d20d1d2a6a3d3e89f3c0785e249a2bf70900bb4d861f572",
+      "mode": 420,
+      "size": 1083
+    },
+    "src/dispatch_board/__init__.py": {
+      "sha256": "ef6325e46fa758f2a3cc6533bf76b89aae9b332b68efeea438d2cc9d99ac4d6f",
+      "mode": 420,
+      "size": 119
+    },
+    "src/dispatch_board/labels.py": {
+      "sha256": "93bc8370269b6e79ce9da997c5d66dff55b2cf167a6b12e90e26b8113b311b12",
+      "mode": 420,
+      "size": 731
+    },
+    "tests/test_labels.py": {
+      "sha256": "faf48881bfc93f217c0c03b41fdf271f92386f3a26811c5cd5336de276558d11",
+      "mode": 420,
+      "size": 3203
+    }
+  },
+  "patchSha256": {
+    "tests.patch": "edc9907e8a37bc3f4b95ac90bbf949cb2a750fddc448e1dde8cd919ea88bcad1",
+    "repair.patch": "a49d90fc332875712795ff718d383ba65ccc2f847896f45ac62e41c534fdf0f6",
+    "solution.patch": "e299757e996c7c38f0d68aae65b8ecad2106962db2e7863e3cefce141f9a4539"
+  },
+  "solutionPatchSha256": "e299757e996c7c38f0d68aae65b8ecad2106962db2e7863e3cefce141f9a4539",
+  "plannedChangedFiles": {
+    "src/dispatch_board/labels.py": {
+      "sha256": "93bc8370269b6e79ce9da997c5d66dff55b2cf167a6b12e90e26b8113b311b12",
+      "mode": 420,
+      "size": 731
+    },
+    "tests/test_labels.py": {
+      "sha256": "faf48881bfc93f217c0c03b41fdf271f92386f3a26811c5cd5336de276558d11",
+      "mode": 420,
+      "size": 3203
+    }
+  },
+  "runtimeMetadataSha256": {
+    "TaskWorkRegistry.py": "66c73e5af3204bf0f58392dcb959c3ec9af3f928b3ddb11a305be6aa452a1da4",
+    "task-registry.json": "f550b5bb06db61bc96b1f285b897b0d9b295cf62b006573aebc64beb5bd2b4e6",
+    "runtime-manifest.json": "1ae11510ed69fd0888e7a892e058ce5565544477b50002a1a91b5317e6821e9c",
+    "goals/dispatch-board.txt": "d416388e21c90e58bc75316bf7864589fb34850d3184bbb06e12b0a378d8000d",
+    "cloud-proof.json": "6215efa6080f33a7ef299e3f65c10ff14cceb73b3bbef72c74b9703f15f1f201"
+  },
+  "toolVersions": {
+    "python": "Python 3.12.7",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "cloudSeed": {
+    "sourceCommit": "2ca52ca769cffff9b7c42a2800a71388e8a2aebc",
+    "runId": "37714100112"
+  },
+  "checks": [
+    {
+      "label": "public-python-version",
+      "command": [
+        "/usr/local/bin/python3",
+        "--version"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:04.938448+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "Python 3.12.7\n",
+      "stderr": ""
+    },
+    {
+      "label": "starter-test-utc",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:04.952414+00:00",
+      "environmentOverrides": {
+        "TZ": "UTC"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_label_uses_dispatch_location_date (test_labels.DispatchLabelTests.test_label_uses_dispatch_location_date) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+    },
+    {
+      "label": "starter-two-timezone-observation",
+      "command": [
+        "/usr/local/bin/python3",
+        "scripts/show_timezone_variation.py"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.037564+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "\nTimezone outcomes:\n  Pacific/Kiritimati: pass\n  Etc/GMT+12: fail\nThe same starter test produced different outcomes by timezone.\n",
+      "stderr": "test_label_uses_dispatch_location_date (test_labels.DispatchLabelTests.test_label_uses_dispatch_location_date) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\ntest_label_uses_dispatch_location_date (test_labels.DispatchLabelTests.test_label_uses_dispatch_location_date) ... FAIL\n\n======================================================================\nFAIL: test_label_uses_dispatch_location_date (test_labels.DispatchLabelTests.test_label_uses_dispatch_location_date)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in test_label_uses_dispatch_location_date\n    self.assertEqual(\nAssertionError: 'ROUTE-17 | 2026-10-07' != 'ROUTE-17 | 2026-10-08'\n- ROUTE-17 | 2026-10-07\n?                     ^\n+ ROUTE-17 | 2026-10-08\n?                     ^\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "label": "combined-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/solution.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.221666+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "tests-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/tests.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.243193+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "apply-tests-patch",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/tests.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.262708+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "strengthened-tests-fail-before-repair",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.284350+00:00",
+      "environmentOverrides": {
+        "TZ": "UTC"
+      },
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ERROR\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... FAIL\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... \n  test_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) (instant='2026-11-01T05:59:59+00:00') ... ERROR\n  test_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) (instant='2026-11-01T06:00:00+00:00') ... ERROR\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... \n  test_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) (instant='2026-01-01T04:59:59+00:00') ... ERROR\n  test_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) (instant='2026-01-01T05:00:00+00:00') ... ERROR\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ERROR\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ERROR\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ERROR\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... \n  test_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) (instant='2026-03-08T06:59:59+00:00') ... ERROR\n  test_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) (instant='2026-03-08T07:00:00+00:00') ... ERROR\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ERROR\n\n======================================================================\nERROR: test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 68, in test_clock_is_read_once\n    dispatch_label(\"ROUTE-17\", \"UTC\", clock=fixed_clock),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) (instant='2026-11-01T05:59:59+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 58, in test_fall_dst_transition\n    self.assert_label_at(instant, \"America/New_York\", \"2026-11-01\")\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) (instant='2026-11-01T06:00:00+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 58, in test_fall_dst_transition\n    self.assert_label_at(instant, \"America/New_York\", \"2026-11-01\")\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) (instant='2026-01-01T04:59:59+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 43, in test_location_midnight_before_and_after\n    self.assert_label_at(instant, \"America/New_York\", expected)\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) (instant='2026-01-01T05:00:00+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 43, in test_location_midnight_before_and_after\n    self.assert_label_at(instant, \"America/New_York\", expected)\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 75, in test_naive_clock_is_rejected\n    dispatch_label(\"ROUTE-17\", \"UTC\", clock=lambda: datetime(2026, 1, 1))\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 34, in test_normal_fixed_instant\n    self.assert_label_at(\"2026-10-05T12:30:00+00:00\", \"UTC\", \"2026-10-05\")\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 46, in test_positive_offset_changes_calendar_date\n    self.assert_label_at(\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) (instant='2026-03-08T06:59:59+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 53, in test_spring_dst_transition\n    self.assert_label_at(instant, \"America/New_York\", \"2026-03-08\")\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) (instant='2026-03-08T07:00:00+00:00')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 53, in test_spring_dst_transition\n    self.assert_label_at(instant, \"America/New_York\", \"2026-03-08\")\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 19, in assert_label_at\n    dispatch_label(\"ROUTE-17\", location_timezone, clock=lambda: instant),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nERROR: test_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 80, in test_unknown_location_timezone_is_rejected\n    dispatch_label(\"ROUTE-17\", \"TaskWork/Not_A_Zone\", clock=lambda: instant)\nTypeError: dispatch_label() got an unexpected keyword argument 'clock'\n\n======================================================================\nFAIL: test_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board/tests/test_labels.py\", line 27, in test_default_clock_uses_location_date\n    self.assertEqual(\nAssertionError: 'ROUTE-17 | 2026-01-01' != 'ROUTE-17 | 2025-12-31'\n- ROUTE-17 | 2026-01-01\n?               ^ -  ^\n+ ROUTE-17 | 2025-12-31\n?               ^  + ^\n\n\n----------------------------------------------------------------------\nRan 9 tests in 0.003s\n\nFAILED (failures=1, errors=11)\n"
+    },
+    {
+      "label": "repair-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/repair.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.395335+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "apply-repair-patch",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/repair.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.412979+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "repaired-test-utc",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.433091+00:00",
+      "environmentOverrides": {
+        "TZ": "UTC"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.015s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Pacific-Kiritimati-1",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.596711+00:00",
+      "environmentOverrides": {
+        "TZ": "Pacific/Kiritimati"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Pacific-Kiritimati-2",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.726369+00:00",
+      "environmentOverrides": {
+        "TZ": "Pacific/Kiritimati"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Pacific-Kiritimati-3",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.804647+00:00",
+      "environmentOverrides": {
+        "TZ": "Pacific/Kiritimati"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Etc-GMT+12-1",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.879926+00:00",
+      "environmentOverrides": {
+        "TZ": "Etc/GMT+12"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Etc-GMT+12-2",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:05.957812+00:00",
+      "environmentOverrides": {
+        "TZ": "Etc/GMT+12"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "label": "repaired-repeat-Etc-GMT+12-3",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:06.030006+00:00",
+      "environmentOverrides": {
+        "TZ": "Etc/GMT+12"
+      },
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "label": "repaired-two-timezone-helper",
+      "command": [
+        "/usr/local/bin/python3",
+        "scripts/show_timezone_variation.py"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:06.099025+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "\nTimezone outcomes:\n  Pacific/Kiritimati: pass\n  Etc/GMT+12: pass\nThe outcomes matched at this instant; inspect the displayed dates.\n",
+      "stderr": "test_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\ntest_clock_is_read_once (test_labels.DispatchLabelTests.test_clock_is_read_once) ... ok\ntest_default_clock_uses_location_date (test_labels.DispatchLabelTests.test_default_clock_uses_location_date) ... ok\ntest_fall_dst_transition (test_labels.DispatchLabelTests.test_fall_dst_transition) ... ok\ntest_location_midnight_before_and_after (test_labels.DispatchLabelTests.test_location_midnight_before_and_after) ... ok\ntest_naive_clock_is_rejected (test_labels.DispatchLabelTests.test_naive_clock_is_rejected) ... ok\ntest_normal_fixed_instant (test_labels.DispatchLabelTests.test_normal_fixed_instant) ... ok\ntest_positive_offset_changes_calendar_date (test_labels.DispatchLabelTests.test_positive_offset_changes_calendar_date) ... ok\ntest_spring_dst_transition (test_labels.DispatchLabelTests.test_spring_dst_transition) ... ok\ntest_unknown_location_timezone_is_rejected (test_labels.DispatchLabelTests.test_unknown_location_timezone_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "label": "fixed-boundary-outputs",
+      "command": [
+        "/usr/local/bin/python3",
+        "-c",
+        "import sys; sys.path.insert(0, 'src'); from datetime import datetime; from dispatch_board import dispatch_label; cases=[('2026-01-01T04:59:59+00:00','America/New_York'),('2026-01-01T05:00:00+00:00','America/New_York'),('2026-03-08T06:59:59+00:00','America/New_York'),('2026-03-08T07:00:00+00:00','America/New_York')]; [print(text+' => '+dispatch_label('ROUTE-17',zone,clock=lambda: datetime.fromisoformat(text))) for text,zone in cases]"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/dispatch-board",
+      "startedAt": "2026-10-08T02:02:06.264274+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "2026-01-01T04:59:59+00:00 => ROUTE-17 | 2025-12-31\n2026-01-01T05:00:00+00:00 => ROUTE-17 | 2026-01-01\n2026-03-08T06:59:59+00:00 => ROUTE-17 | 2026-03-08\n2026-03-08T07:00:00+00:00 => ROUTE-17 | 2026-03-08\n",
+      "stderr": ""
+    },
+    {
+      "label": "apply-combined-patch-independently",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/dispatch-board/solution.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-dispatch-board-reference-48nlwn5n/combined",
+      "startedAt": "2026-10-08T02:02:06.294272+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "sourceInputsUnchanged": true,
+  "runtimeMetadataUnchanged": true,
+  "sourceRepositoriesWritten": false,
+  "recordingWorkspaceModified": false,
+  "recorderExecuted": false,
+  "setupVerified": false,
+  "recordingReady": false,
+  "disposableReferencePatchApplied": true,
+  "aiAuthoredBeforeRecording": true,
+  "externalSolutionWalkthroughAcceptanceVerified": false,
+  "limitations": [
+    "These are disposable off-screen worked-reference results, not an actual Recorder attempt.",
+    "The manual does not explicitly establish eligibility of a fully AI-authored solution walkthrough.",
+    "Clock DST tests assert the calendar-date output; they do not validate an API for displaying hours or offsets."
+  ]
+}

@@ -1,0 +1,113 @@
+--- a/tests/test_calculator.py
++++ b/tests/test_calculator.py
+@@ -9,28 +9,51 @@
+     quote = calculate_quote(Decimal("12.50"), 3, Decimal("0.08"))
+ 
+     assert isinstance(quote, Quote)
+-    assert quote.subtotal == Decimal("37.50")
+-    assert quote.discount == Decimal("0.00")
+-    assert quote.total == quote.subtotal - quote.discount + quote.tax
++    assert quote == Quote(
++        subtotal=Decimal("37.50"),
++        discount=Decimal("0.00"),
++        tax=Decimal("3.00"),
++        total=Decimal("40.50"),
++    )
+ 
+ 
+-def test_volume_order_receives_discount() -> None:
+-    quote = calculate_quote(Decimal("8.00"), 10, Decimal("0.05"))
+-
+-    assert quote.discount > Decimal("0")
+-    assert quote.total < quote.subtotal + quote.tax
++@pytest.mark.parametrize(
++    ("quantity", "expected"),
++    [
++        (9, Quote(Decimal("72.00"), Decimal("0.00"), Decimal("3.60"), Decimal("75.60"))),
++        (10, Quote(Decimal("80.00"), Decimal("8.00"), Decimal("3.60"), Decimal("75.60"))),
++    ],
++    ids=["below-threshold", "at-threshold"],
++)
++def test_volume_order_receives_discount(quantity: int, expected: Quote) -> None:
++    assert calculate_quote(Decimal("8.00"), quantity, Decimal("0.05")) == expected
+ 
+ 
+ def test_tax_is_included_in_total() -> None:
+     quote = calculate_quote(Decimal("20.00"), 12, Decimal("0.075"))
+ 
+-    assert quote.tax > Decimal("0")
+-    assert quote.total == quote.subtotal - quote.discount + quote.tax
++    assert quote == Quote(
++        subtotal=Decimal("240.00"),
++        discount=Decimal("24.00"),
++        tax=Decimal("16.20"),
++        total=Decimal("232.20"),
++    )
+ 
+ 
+-def test_amounts_have_cent_precision() -> None:
+-    quote = calculate_quote(Decimal("1.005"), 1, Decimal("0.0825"))
++@pytest.mark.parametrize(
++    ("unit_price", "tax_rate", "expected"),
++    [
++        (Decimal("1.005"), Decimal("0.0825"),
++         Quote(Decimal("1.01"), Decimal("0.00"), Decimal("0.08"), Decimal("1.09"))),
++        (Decimal("0.10"), Decimal("0.05"),
++         Quote(Decimal("0.10"), Decimal("0.00"), Decimal("0.01"), Decimal("0.11"))),
++    ],
++    ids=["subtotal-half-up", "tax-half-up"],
++)
++def test_amounts_have_cent_precision(unit_price: Decimal, tax_rate: Decimal, expected: Quote) -> None:
++    quote = calculate_quote(unit_price, 1, tax_rate)
+ 
++    assert quote == expected
+     for amount in (quote.subtotal, quote.discount, quote.tax, quote.total):
+         assert amount.as_tuple().exponent == -2
+ 
+@@ -42,10 +65,32 @@
+         (Decimal("1.00"), 0, Decimal("0.05")),
+         (Decimal("1.00"), 1, Decimal("1.01")),
+         (Decimal("1.00"), 1, Decimal("-0.01")),
++        (Decimal("1.00"), True, Decimal("0.05")),
++        (Decimal("1.00"), False, Decimal("0.05")),
++        (Decimal("1.00"), 1.5, Decimal("0.05")),
++        (Decimal("1.00"), -1, Decimal("0.05")),
+     ],
++    ids=["negative-price", "zero-quantity", "tax-above-one", "negative-tax",
++         "true-quantity", "false-quantity", "fractional-quantity", "negative-quantity"],
+ )
+-def test_invalid_inputs_are_rejected(
+-    unit_price: Decimal, quantity: int, tax_rate: Decimal
+-) -> None:
++def test_invalid_inputs_are_rejected(unit_price: Decimal, quantity: int, tax_rate: Decimal) -> None:
+     with pytest.raises(ValueError):
+         calculate_quote(unit_price, quantity, tax_rate)
++
++
++@pytest.mark.parametrize(
++    ("tax_rate", "expected"),
++    [
++        (Decimal("0"), Quote(Decimal("10.00"), Decimal("1.00"), Decimal("0.00"), Decimal("9.00"))),
++        (Decimal("1"), Quote(Decimal("10.00"), Decimal("1.00"), Decimal("9.00"), Decimal("18.00"))),
++    ],
++    ids=["zero-rate", "one-rate"],
++)
++def test_tax_rate_endpoints_are_allowed(tax_rate: Decimal, expected: Quote) -> None:
++    assert calculate_quote(Decimal("1.00"), 10, tax_rate) == expected
++
++
++def test_zero_price_is_allowed() -> None:
++    quote = calculate_quote(Decimal("0.00"), 10, Decimal("0.05"))
++
++    assert quote == Quote(Decimal("0.00"), Decimal("0.00"), Decimal("0.00"), Decimal("0.00"))
+--- a/src/quote_calculator/calculator.py
++++ b/src/quote_calculator/calculator.py
+@@ -39,7 +39,7 @@
+         if quantity >= _VOLUME_THRESHOLD
+         else Decimal("0")
+     )
+-    tax = subtotal * tax_rate
++    tax = (subtotal - discount) * tax_rate
+ 
+     return Quote(
+         subtotal=_money(subtotal),

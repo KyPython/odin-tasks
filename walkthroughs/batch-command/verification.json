@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "task": "batch-command",
+  "referenceKind": "AI-prepared guided Bootcamp repair and test walkthrough",
+  "startedAt": "2026-10-08T01:55:26.293273+00:00",
+  "checks": [
+    {
+      "name": "Create disposable venv",
+      "command": [
+        "/usr/local/bin/python3",
+        "-I",
+        "-m",
+        "venv",
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv"
+      ],
+      "cwd": null,
+      "startedAt": "2026-10-08T01:55:26.345397+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:28.362484+00:00"
+    },
+    {
+      "name": "Install pinned pytest offline",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-I",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-cache-dir",
+        "--find-links",
+        "/Users/Shared/TaskWorkRuntime/wheels",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:28.362618+00:00",
+      "exitCode": 0,
+      "stdout": "Looking in links: /Users/Shared/TaskWorkRuntime/wheels\nProcessing /Users/Shared/TaskWorkRuntime/wheels/pytest-8.3.5-py3-none-any.whl (from -r requirements-dev.txt (line 1))\nProcessing /Users/Shared/TaskWorkRuntime/wheels/iniconfig-2.3.1-py3-none-any.whl (from pytest==8.3.5->-r requirements-dev.txt (line 1))\nProcessing /Users/Shared/TaskWorkRuntime/wheels/packaging-26.3-py3-none-any.whl (from pytest==8.3.5->-r requirements-dev.txt (line 1))\nProcessing /Users/Shared/TaskWorkRuntime/wheels/pluggy-1.6.0-py3-none-any.whl (from pytest==8.3.5->-r requirements-dev.txt (line 1))\nInstalling collected packages: pluggy, packaging, iniconfig, pytest\nSuccessfully installed iniconfig-2.3.1 packaging-26.3 pluggy-1.6.0 pytest-8.3.5\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:28.874842+00:00"
+    },
+    {
+      "name": "Verify pytest pin",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-I",
+        "-c",
+        "import pytest; print(pytest.__version__)"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:28.874887+00:00",
+      "exitCode": 0,
+      "stdout": "8.3.5\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:28.972940+00:00"
+    },
+    {
+      "name": "Unchanged ordinary suite",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:28.973245+00:00",
+      "exitCode": 0,
+      "stdout": "..                                                                       [100%]\n2 passed in 0.03s\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:29.854724+00:00"
+    },
+    {
+      "name": "tests.patch check",
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/tests.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:29.855621+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:29.879685+00:00"
+    },
+    {
+      "name": "tests.patch apply",
+      "command": [
+        "git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/tests.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:29.879734+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:29.908383+00:00"
+    },
+    {
+      "name": "Strengthened suite before repair",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:29.908580+00:00",
+      "exitCode": 1,
+      "stdout": "..FFFFFFFFFF..F...F                                                      [100%]\n=================================== FAILURES ===================================\n_______ test_failed_item_is_reported_once_and_never_processed[unmatched] _______\n\nmode = 'unmatched'\n\n    @pytest.mark.parametrize(\"mode\", [\"unmatched\", \"sibling\"])\n    def test_failed_item_is_reported_once_and_never_processed(mode):\n>       assert run_batch((ItemSpec(\"failed\", mode),)) == BatchReport(\n            (), (\"failed\",),\n            (\"open:failed\", \"execute:failed\", \"cleanup:failed\", \"failed:failed\"),\n        )\nE       AssertionError: assert BatchReport(p...ssed:failed')) == BatchReport(p...iled:failed'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('failed',) != ()...\nE         \nE         ...Full output truncated (7 lines hidden), use '-vv' to show\n\ntests/test_contract.py:12: AssertionError\n________ test_failed_item_is_reported_once_and_never_processed[sibling] ________\n\nmode = 'sibling'\n\n    @pytest.mark.parametrize(\"mode\", [\"unmatched\", \"sibling\"])\n    def test_failed_item_is_reported_once_and_never_processed(mode):\n>       assert run_batch((ItemSpec(\"failed\", mode),)) == BatchReport(\n            (), (\"failed\",),\n            (\"open:failed\", \"execute:failed\", \"cleanup:failed\", \"failed:failed\"),\n        )\nE       AssertionError: assert BatchReport(p...ssed:failed')) == BatchReport(p...iled:failed'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('failed',) != ()...\nE         \nE         ...Full output truncated (7 lines hidden), use '-vv' to show\n\ntests/test_contract.py:12: AssertionError\n_____________________ test_original_deterministic_fixture ______________________\n\ndeterministic_failure_set = (ItemSpec(name='alpha', mode='ok'), ItemSpec(name='bravo', mode='unmatched'), ItemSpec(name='charlie', mode='sibling'))\n\n    def test_original_deterministic_fixture(deterministic_failure_set):\n>       assert run_batch(deterministic_failure_set) == BatchReport(\n            (\"alpha\",), (\"bravo\", \"charlie\"),\n            (\n                \"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\",\n                \"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\",\n                \"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\",\n            ),\n        )\nE       AssertionError: assert BatchReport(p...sed:charlie')) == BatchReport(p...led:charlie'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('alpha', 'bravo', 'charlie') != ('alpha',)...\nE         \nE         ...Full output truncated (8 lines hidden), use '-vv' to show\n\ntests/test_contract.py:19: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order0] __________\n\norder = ('alpha', 'bravo', 'charlie')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...sed:charlie')) == BatchReport(p...led:charlie'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('alpha', 'bravo', 'charlie') != ('alpha',)...\nE         \nE         ...Full output truncated (8 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order1] __________\n\norder = ('alpha', 'charlie', 'bravo')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...essed:bravo')) == BatchReport(p...ailed:bravo'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('alpha', 'charlie', 'bravo') != ('alpha',)...\nE         \nE         ...Full output truncated (8 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order2] __________\n\norder = ('bravo', 'alpha', 'charlie')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...sed:charlie')) == BatchReport(p...led:charlie'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('bravo', 'alpha', 'charlie') != ('alpha',)...\nE         \nE         ...Full output truncated (9 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order3] __________\n\norder = ('bravo', 'charlie', 'alpha')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...essed:alpha')) == BatchReport(p...essed:alpha'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('bravo', 'charlie', 'alpha') != ('alpha',)...\nE         \nE         ...Full output truncated (9 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order4] __________\n\norder = ('charlie', 'alpha', 'bravo')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...essed:bravo')) == BatchReport(p...ailed:bravo'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('charlie', 'alpha', 'bravo') != ('alpha',)...\nE         \nE         ...Full output truncated (9 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n_________ test_failure_semantics_do_not_depend_on_input_order[order5] __________\n\norder = ('charlie', 'bravo', 'alpha')\n\n    @pytest.mark.parametrize(\"order\", list(permutations((\"alpha\", \"bravo\", \"charlie\"))))\n    def test_failure_semantics_do_not_depend_on_input_order(order):\n        items = {\n            \"alpha\": ItemSpec(\"alpha\", \"ok\"),\n            \"bravo\": ItemSpec(\"bravo\", \"unmatched\"),\n            \"charlie\": ItemSpec(\"charlie\", \"sibling\"),\n        }\n        expected_events = {\n            \"alpha\": (\"open:alpha\", \"execute:alpha\", \"cleanup:alpha\", \"processed:alpha\"),\n            \"bravo\": (\"open:bravo\", \"execute:bravo\", \"cleanup:bravo\", \"failed:bravo\"),\n            \"charlie\": (\"open:charlie\", \"execute:charlie\", \"cleanup:charlie\", \"failed:charlie\"),\n        }\n>       assert run_batch(tuple(items[name] for name in order)) == BatchReport(\n            (\"alpha\",), tuple(name for name in order if name != \"alpha\"),\n            tuple(event for name in order for event in expected_events[name]),\n        )\nE       AssertionError: assert BatchReport(p...essed:alpha')) == BatchReport(p...essed:alpha'))\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Differing attributes:\nE         ['processed', 'events']\nE         \nE         Drill down into differing attribute processed:\nE           processed: ('charlie', 'bravo', 'alpha') != ('alpha',)...\nE         \nE         ...Full output truncated (9 lines hidden), use '-vv' to show\n\ntests/test_contract.py:41: AssertionError\n__________ test_other_child_exception_fails_item_and_batch_continues ___________\n\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1054afc20>\n\n    def test_other_child_exception_fails_item_and_batch_continues(monkeypatch):\n        original = command._child_operation\n    \n        def child(item, events):\n            if item.name == \"unexpected\":\n                events.append(\"execute:unexpected\")\n                raise RuntimeError(\"synthetic child failure\")\n            original(item, events)\n    \n        monkeypatch.setattr(command, \"_child_operation\", child)\n>       assert run_batch((ItemSpec(\"unexpected\", \"ok\"), ItemSpec(\"next\", \"handled\"))) == BatchReport(\n            (\"next\",), (\"unexpected\",),\n            (\n                \"open:unexpected\", \"execute:unexpected\", \"cleanup:unexpected\", \"failed:unexpected\",\n                \"open:next\", \"execute:next\", \"handled:next\", \"cleanup:next\", \"processed:next\",\n            ),\n        )\n\ntests/test_contract.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsrc/batch_command/command.py:62: in run_batch\n    _process_item(item, events)\nsrc/batch_command/command.py:44: in _process_item\n    _child_operation(item, events)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nitem = ItemSpec(name='unexpected', mode='ok')\nevents = ['open:unexpected', 'execute:unexpected', 'cleanup:unexpected', 'processed:unexpected']\n\n    def child(item, events):\n        if item.name == \"unexpected\":\n            events.append(\"execute:unexpected\")\n>           raise RuntimeError(\"synthetic child failure\")\nE           RuntimeError: synthetic child failure\n\ntests/test_contract.py:53: RuntimeError\n_ test_wrapped_exception_keeps_cause_cleans_up_and_skips_after_call[RuntimeError] _\n\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1055c30b0>\nerror_type = <class 'RuntimeError'>\n\n    @pytest.mark.parametrize(\"error_type\", [UnmatchedChildError, SiblingItemError, RuntimeError])\n    def test_wrapped_exception_keeps_cause_cleans_up_and_skips_after_call(monkeypatch, error_type):\n        failure = error_type(\"synthetic child failure\")\n        events = []\n    \n        def child(item, observed):\n            observed.append(\"execute:item\")\n            raise failure\n    \n        monkeypatch.setattr(command, \"_child_operation\", child)\n        with pytest.raises(ItemProcessingError) as raised:\n>           command._process_item(ItemSpec(\"item\", \"ok\"), events)\n\ntests/test_contract.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsrc/batch_command/command.py:44: in _process_item\n    _child_operation(item, events)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nitem = ItemSpec(name='item', mode='ok')\nobserved = ['open:item', 'execute:item', 'cleanup:item']\n\n    def child(item, observed):\n        observed.append(\"execute:item\")\n>       raise failure\nE       RuntimeError: synthetic child failure\n\ntests/test_contract.py:73: RuntimeError\n__________________ test_repeated_mixed_reports_are_identical ___________________\n\n    def test_repeated_mixed_reports_are_identical():\n        items = (ItemSpec(\"a\", \"unmatched\"), ItemSpec(\"b\", \"handled\"), ItemSpec(\"c\", \"sibling\"))\n        expected = BatchReport(\n            (\"b\",), (\"a\", \"c\"),\n            (\n                \"open:a\", \"execute:a\", \"cleanup:a\", \"failed:a\",\n                \"open:b\", \"execute:b\", \"handled:b\", \"cleanup:b\", \"processed:b\",\n                \"open:c\", \"execute:c\", \"cleanup:c\", \"failed:c\",\n            ),\n        )\n>       assert [run_batch(items) for _ in range(3)] == [expected, expected, expected]\nE       AssertionError: assert [BatchReport(...rocessed:c'))] == [BatchReport(... 'failed:c'))]\nE         \nE         At index 0 diff: BatchReport(processed=('a', 'b', 'c'), failures=('a', 'c'), events=('open:a', 'execute:a', 'cleanup:a', 'failed:a', 'processed:a', 'open:b', 'execute:b', 'handled:b', 'cleanup:b', 'processed:b', 'open:c', 'execute:c', 'cleanup:c', 'failed:c', 'processed:c')) != BatchReport(processed=('b',), failures=('a', 'c'), events=('open:a', 'execute:a', 'cleanup:a', 'failed:a', 'open:b', 'execute:b', 'handled:b', 'cleanup:b', 'processed:b', 'open:c', 'execute:c', 'cleanup:c', 'failed:c'))\nE         Use -v to get more diff\n\ntests/test_contract.py:114: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_contract.py::test_failed_item_is_reported_once_and_never_processed[unmatched]\nFAILED tests/test_contract.py::test_failed_item_is_reported_once_and_never_processed[sibling]\nFAILED tests/test_contract.py::test_original_deterministic_fixture - Assertio...\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order0]\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order1]\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order2]\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order3]\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order4]\nFAILED tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order5]\nFAILED tests/test_contract.py::test_other_child_exception_fails_item_and_batch_continues\nFAILED tests/test_contract.py::test_wrapped_exception_keeps_cause_cleans_up_and_skips_after_call[RuntimeError]\nFAILED tests/test_contract.py::test_repeated_mixed_reports_are_identical - As...\n12 failed, 7 passed in 0.19s\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:30.470183+00:00"
+    },
+    {
+      "name": "repair.patch check",
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/repair.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:30.470918+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:30.492230+00:00"
+    },
+    {
+      "name": "repair.patch apply",
+      "command": [
+        "git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/repair.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:30.492269+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:30.508780+00:00"
+    },
+    {
+      "name": "Same strengthened suite after repair run 1",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:30.508981+00:00",
+      "exitCode": 0,
+      "stdout": "...................                                                      [100%]\n19 passed in 0.02s\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:30.664825+00:00"
+    },
+    {
+      "name": "Same strengthened suite after repair run 2",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:30.665103+00:00",
+      "exitCode": 0,
+      "stdout": "...................                                                      [100%]\n19 passed in 0.02s\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.048192+00:00"
+    },
+    {
+      "name": "Same strengthened suite after repair run 3",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:31.048366+00:00",
+      "exitCode": 0,
+      "stdout": "...................                                                      [100%]\n19 passed in 0.04s\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.261192+00:00"
+    },
+    {
+      "name": "Deterministic mixed report",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-c",
+        "from batch_command import ItemSpec, run_batch; print(run_batch((ItemSpec('alpha', 'ok'), ItemSpec('bravo', 'unmatched'), ItemSpec('charlie', 'sibling'))))"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:31.261265+00:00",
+      "exitCode": 0,
+      "stdout": "BatchReport(processed=('alpha',), failures=('bravo', 'charlie'), events=('open:alpha', 'execute:alpha', 'cleanup:alpha', 'processed:alpha', 'open:bravo', 'execute:bravo', 'cleanup:bravo', 'failed:bravo', 'open:charlie', 'execute:charlie', 'cleanup:charlie', 'failed:charlie'))\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.330247+00:00"
+    },
+    {
+      "name": "Repeat deterministic mixed report",
+      "command": [
+        "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command/.venv/bin/python",
+        "-c",
+        "from batch_command import ItemSpec, run_batch; print(run_batch((ItemSpec('alpha', 'ok'), ItemSpec('bravo', 'unmatched'), ItemSpec('charlie', 'sibling'))))"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/batch-command",
+      "startedAt": "2026-10-08T01:55:31.330468+00:00",
+      "exitCode": 0,
+      "stdout": "BatchReport(processed=('alpha',), failures=('bravo', 'charlie'), events=('open:alpha', 'execute:alpha', 'cleanup:alpha', 'processed:alpha', 'open:bravo', 'execute:bravo', 'cleanup:bravo', 'failed:bravo', 'open:charlie', 'execute:charlie', 'cleanup:charlie', 'failed:charlie'))\n",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.391345+00:00"
+    },
+    {
+      "name": "solution.patch check",
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/solution.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/combined-patch-check",
+      "startedAt": "2026-10-08T01:55:31.397957+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.418171+00:00"
+    },
+    {
+      "name": "solution.patch apply",
+      "command": [
+        "git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/batch-command/solution.patch"
+      ],
+      "cwd": "/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/batch-reference-f85imjre/combined-patch-check",
+      "startedAt": "2026-10-08T01:55:31.418208+00:00",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "finishedAt": "2026-10-08T01:55:31.449364+00:00"
+    }
+  ],
+  "sourceCommit": "ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2",
+  "goalSha256": "a519473d08c3e12ec135b069285a123814414356e2bef0bc27c4a37d8792d717",
+  "sourceInputsUnchanged": true,
+  "recorderExecuted": false,
+  "recordingWorkspaceModified": false,
+  "practiceClassification": "guided rehearsal; no unaided mastery, Odin approval or paid eligibility claimed",
+  "taskId": "BOOTCAMP-3F38621E0A7A81498DD1C3E0EF4BFF3D",
+  "sourceRepo": "https://github.com/KyPython/python-exception-propagation",
+  "exactCandidateGoal": "As a Python engineer, repair a synthetic batch command whose nested exception handling incorrectly treats a failed item as successfully processed, then verify the corrected propagation, cleanup, and reporting behavior with deterministic tests.",
+  "sourceFiles": 9,
+  "sourceFileInventory": {
+    ".gitignore": {
+      "sha256": "63987be261227423f4096b1ef55cc78114fe84e410a11417edd93ff21958cdd3",
+      "mode": 420
+    },
+    "README.md": {
+      "sha256": "959666066be4ef8a5991481828f35a7c63c31b556e763388dc1671c526a0ada9",
+      "mode": 420
+    },
+    "pyproject.toml": {
+      "sha256": "4bbd74ea6844c71b2434d8387790b8050f6e7ee734acc4458c4cfc5e7020ffb1",
+      "mode": 420
+    },
+    "requirements-dev.txt": {
+      "sha256": "a0e201ecda2bc871726ea3bb5db9cfe6b2109f60d8da88eecf910b790794b03d",
+      "mode": 420
+    },
+    "src/batch_command/__init__.py": {
+      "sha256": "78f8c5637e73547714ce6229b045f76c7cf24c145edd1286ea4cb466f390478d",
+      "mode": 420
+    },
+    "src/batch_command/command.py": {
+      "sha256": "4671fbf0d1f2c0b0611c0a34c0e48182f6d62dabf78500cc214f40f6bb5fed26",
+      "mode": 420
+    },
+    "src/batch_command/errors.py": {
+      "sha256": "ff677bf93bb2c4c4ec042bae18574d8472a28bcd948cc3bcbf648b0d68109031",
+      "mode": 420
+    },
+    "tests/conftest.py": {
+      "sha256": "16efe59e6f48e562165004b1d26002db9c8434d7deb07826e1cacc7d0f88e4f9",
+      "mode": 420
+    },
+    "tests/test_baseline.py": {
+      "sha256": "cc477bf3a966139b7018440464c3427816155bb872b9a7071ea97592975566bc",
+      "mode": 420
+    }
+  },
+  "pythonVersion": "3.12.7",
+  "pythonExecutable": "/usr/local/bin/python3",
+  "patchSha256": {
+    "tests.patch": "f158c1cc889def9f32876d9730c3b6972d5d734c44d2604079564410ed72a353",
+    "repair.patch": "f1bd11c59560454e194b0e7f9574793f1b18c6b566b5f95eee19d5aa30fcea65",
+    "solution.patch": "beee7241ea0af5c5e84268e50ea3d6df3ae567b833bc27630a6b42ab492b4a24"
+  },
+  "weakSuiteGreen": true,
+  "strengthenedSuiteRed": true,
+  "strengthenedFailureIds": [
+    "tests/test_contract.py::test_failed_item_is_reported_once_and_never_processed[sibling]",
+    "tests/test_contract.py::test_failed_item_is_reported_once_and_never_processed[unmatched]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order0]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order1]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order2]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order3]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order4]",
+    "tests/test_contract.py::test_failure_semantics_do_not_depend_on_input_order[order5]",
+    "tests/test_contract.py::test_original_deterministic_fixture",
+    "tests/test_contract.py::test_other_child_exception_fails_item_and_batch_continues",
+    "tests/test_contract.py::test_repeated_mixed_reports_are_identical",
+    "tests/test_contract.py::test_wrapped_exception_keeps_cause_cleans_up_and_skips_after_call[RuntimeError]"
+  ],
+  "sameStrengthenedTestsAfterRepair": true,
+  "strengthenedSuiteGreen": true,
+  "strengthenedTestsSha256": "6ae4a9977a93a5fe8bf287153e14b1d4ee444b3d86fc219328bb6207e61b6a3d",
+  "repairedProductionSha256": "645846b89b965c24f6cadf8cbaf7976cf79c8f0cbade5648184b3a0aba95b0fb",
+  "repeatedSuiteRuns": 3,
+  "repeatedReportBytesIdentical": true,
+  "combinedPatchMatchesStagedRepair": true,
+  "disposableCopiesRemoved": true,
+  "afterCallPropagationVerified": true,
+  "cleanupExactlyOnceVerified": true,
+  "ordinaryAndHandledPathsPreserved": true,
+  "processControlSignalsPreserved": true,
+  "status": "PASS",
+  "offlineWheelCacheUnchanged": true,
+  "solutionPatchSha256": "beee7241ea0af5c5e84268e50ea3d6df3ae567b833bc27630a6b42ab492b4a24",
+  "finishedAt": "2026-10-08T01:55:31.599378+00:00"
+}

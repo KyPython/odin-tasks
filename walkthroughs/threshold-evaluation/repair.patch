@@ -1,0 +1,22 @@
+--- a/src/threshold_lab/evaluation.py
++++ b/src/threshold_lab/evaluation.py
+@@ -37,8 +37,8 @@
+     rows = tuple(observations)
+     true_positive = sum(row.actual and row.score >= threshold for row in rows)
+     true_negative = sum(not row.actual and row.score < threshold for row in rows)
+-    false_positive = sum(row.actual and row.score < threshold for row in rows)
+-    false_negative = sum(not row.actual and row.score >= threshold for row in rows)
++    false_positive = sum(not row.actual and row.score >= threshold for row in rows)
++    false_negative = sum(row.actual and row.score < threshold for row in rows)
+     correct = true_positive + true_negative
+ 
+     return Evaluation(
+@@ -64,7 +64,7 @@
+         evaluate_threshold(rows, threshold, policy)
+         for threshold in sorted(policy.candidate_thresholds)
+     ]
+-    selected = max(evaluations, key=lambda item: (item.accuracy, -item.threshold))
++    selected = min(evaluations, key=lambda item: (item.total_cost, item.threshold))
+ 
+     return {
+         "costs": {

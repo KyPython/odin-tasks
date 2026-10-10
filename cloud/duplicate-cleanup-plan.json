@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "repository": "KyPython/ai-governance",
+  "status": "EXECUTED_VERIFIED",
+  "evidenceCapturedAt": "2026-10-07 23:35:49 UTC",
+  "instructions": [
+    "Fresh-read each issue before any closure; verify its exact row marker still matches this plan.",
+    "Close duplicates without deleting issues, comments, cloud task receipts or distinct artifacts.",
+    "Do not post another Codex comment on duplicates. Closing an issue alone does not prove an already running Codex task was cancelled.",
+    "Preserve canonical Cursor58 and Threshold86; recover actual assets before asserting either world is built.",
+    "Preserve original Odin task issue/approval/gate properties and all HOLD/Rejected pages.",
+    "This plan authorizes no destructive deletion or human review judgment."
+  ],
+  "counts": {
+    "matchingIssues": 126,
+    "openIssues": 116,
+    "closeCandidates": 114,
+    "preservedCanonicalIssues": 2
+  },
+  "groups": [
+    {
+      "rowId": "3f08621e-0a7a-81e3-b4ef-cfea472d9930",
+      "task": "Async Side-Effect Idempotency Hardening",
+      "stage": "Awaiting Odin approval",
+      "lane": null,
+      "fit": "PASS",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        115,
+        117,
+        133,
+        149,
+        163,
+        179,
+        195
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b",
+      "task": "CI Evaluation Contract Transfer Repair",
+      "stage": "Environment building",
+      "lane": null,
+      "fit": "PASS",
+      "existingBuildIssue": "https://github.com/KyPython/ai-governance/issues/46",
+      "canonical": null,
+      "closeNumbers": [
+        113,
+        114,
+        131,
+        147,
+        162,
+        178,
+        194
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-8141-8692-ed974ac073a0",
+      "task": "Local IaC Least-Privilege Guardrail Validation",
+      "stage": "Rejected",
+      "lane": null,
+      "fit": "REJECT",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        110,
+        111,
+        129,
+        145,
+        161,
+        177,
+        193
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-818f-8a72-f73e8d4e4da0",
+      "task": "Monorepo Build-Graph Regression Repair",
+      "stage": "Environment building",
+      "lane": null,
+      "fit": "PASS",
+      "existingBuildIssue": "https://github.com/KyPython/ai-governance/issues/47",
+      "canonical": null,
+      "closeNumbers": [
+        108,
+        109,
+        128,
+        144,
+        160,
+        176,
+        192
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-81f5-b437-e25bc0e45e8d",
+      "task": "SSRF URL Allowlist Validator Bypass Fix",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        106,
+        107,
+        127,
+        143,
+        159,
+        175,
+        191
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-81ed-a36b-dd125c60221c",
+      "task": "Vacuous Test Suite Audit — Tests Pass While the Claim Is False",
+      "stage": "Environment building",
+      "lane": null,
+      "fit": "PASS",
+      "existingBuildIssue": "https://github.com/KyPython/ai-governance/issues/44",
+      "canonical": null,
+      "closeNumbers": [
+        104,
+        105,
+        126,
+        142,
+        158,
+        174,
+        190
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-81d3-a5c8-ec0957bf0655",
+      "task": "CLI README Drift Audit and Executable-Docs Check",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        102,
+        103,
+        125,
+        141,
+        157,
+        173,
+        189
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-817b-b25e-faa3bfc84919",
+      "task": "Post-Incident Review from Synthetic Service Logs (ITIL)",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        100,
+        101,
+        124,
+        140,
+        156,
+        172,
+        188
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-815e-bc8a-e59c7a517514",
+      "task": "Python CLI Configuration Precedence Bug Fix",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        98,
+        99,
+        123,
+        139,
+        155,
+        171,
+        187
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-815b-b21e-df440341ca13",
+      "task": "Token-Bucket Rate Limiter Burst Bug Fix",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        96,
+        97,
+        122,
+        138,
+        154,
+        170,
+        186
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-8155-9019-c1739de4151c",
+      "task": "Lambda Handler API Gateway Event-Shape Regression (Local Tests)",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        94,
+        95,
+        121,
+        137,
+        153,
+        169,
+        185
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-8132-89fd-e5cad87aba40",
+      "task": "Flaky Time-Dependent Test Stabilization via Clock Injection",
+      "stage": "Environment building",
+      "lane": null,
+      "fit": "PASS",
+      "existingBuildIssue": "https://github.com/KyPython/ai-governance/issues/43",
+      "canonical": null,
+      "closeNumbers": [
+        92,
+        93,
+        120,
+        136,
+        152,
+        168,
+        184
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-811a-a81d-c7a39ac80b91",
+      "task": "Exact-Match Grader Normalization False-Positive Repair",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        90,
+        91,
+        119,
+        135,
+        151,
+        167,
+        183
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f08621e-0a7a-810c-b2cd-f1b3baad13ef",
+      "task": "JavaScript Signup Form Validation Regex Repair",
+      "stage": "Candidate",
+      "lane": null,
+      "fit": "HOLD",
+      "existingBuildIssue": null,
+      "canonical": null,
+      "closeNumbers": [
+        88,
+        89,
+        118,
+        134,
+        150,
+        166,
+        182
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [],
+      "reason": "Wrong-lane Bootcamp handoff; preserve existing Odin approval/hold/reject state and authoritative original build."
+    },
+    {
+      "rowId": "3f28621e-0a7a-81bc-abb6-c65d74863966",
+      "task": "Cost-Sensitive Evaluation Threshold Repair",
+      "stage": "Candidate",
+      "lane": "Dual-candidate",
+      "fit": "PASS",
+      "existingBuildIssue": null,
+      "canonical": {
+        "number": 86,
+        "reason": "Earliest real Threshold build issue with a Codex receipt; no authoritative issue link exists yet."
+      },
+      "closeNumbers": [
+        87,
+        116,
+        132,
+        148,
+        165,
+        181
+      ],
+      "alreadyClosedNumbers": [],
+      "preserveNumbers": [
+        86
+      ],
+      "reason": "Duplicate Bootcamp build for the same exact task row."
+    },
+    {
+      "rowId": "3f28621e-0a7a-8141-8d6e-dfb9a5b43054",
+      "task": "Cursor-Pagination Aggregator Contract Repair",
+      "stage": "Candidate",
+      "lane": "Dual-candidate",
+      "fit": "PASS",
+      "existingBuildIssue": "https://github.com/KyPython/ai-governance/issues/58",
+      "canonical": {
+        "number": 58,
+        "reason": "Already referenced by the authoritative Notion row; complete source contract and a Codex receipt exist."
+      },
+      "closeNumbers": [
+        53,
+        54,
+        55,
+        84,
+        85,
+        112,
+        130,
+        146,
+        164,
+        180
+      ],
+      "alreadyClosedNumbers": [
+        56,
+        57,
+        60,
+        61,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "preserveNumbers": [
+        58
+      ],
+      "reason": "Duplicate Bootcamp build for the same exact task row."
+    }
+  ],
+  "execution": {
+    "verifiedAt": "2026-10-07T23:47:07.793598+00:00",
+    "closedCount": 114,
+    "receipts": "duplicate-cleanup-receipts.json",
+    "archive": "duplicate-cleanup-archive.json",
+    "index": "duplicate-reconciliation-index.md",
+    "protectedIssues": {
+      "43": "OPEN",
+      "44": "OPEN",
+      "46": "OPEN",
+      "47": "OPEN",
+      "58": "OPEN",
+      "86": "OPEN"
+    }
+  }
+}

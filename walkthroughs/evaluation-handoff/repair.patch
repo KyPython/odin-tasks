@@ -1,0 +1,11 @@
+--- a/grader/intake.py
++++ b/grader/intake.py
+@@ -52,4 +52,8 @@
+     if actual_digest != expected_digest:
+         raise IntakeError("artifact digest mismatch")
+ 
++    clearance = payload.get("clearance")
++    if not isinstance(clearance, str) or clearance != "approved":
++        raise IntakeError("clearance must be approved")
++
+     return AcceptedSubmission(submission_id=submission_id, artifact=artifact)

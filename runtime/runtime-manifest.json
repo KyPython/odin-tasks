@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "python": "/usr/local/bin/python3",
+  "node": "/opt/homebrew/bin/node",
+  "corepack": "/opt/homebrew/bin/corepack",
+  "pnpmVersion": "9.15.4",
+  "projects": [
+    {
+      "neutral": "dispatch-board",
+      "originalName": "flaky-clock-injection",
+      "commit": "e5652bcb044cd24d2a7d1c2f8bb93b885cea2069",
+      "sourceRepo": "https://github.com/KyPython/flaky-clock-injection",
+      "files": {
+        "README.md": {
+          "sha256": "491eca65de8e0b526765429f7fc18b436ceac7492a34a9a3ada3640bb1da1512",
+          "mode": 420
+        },
+        "docs/behavior.md": {
+          "sha256": "d7fa6a732672772b7e46999f20795cd7a1ce515384da6bf6fb62aaee6d1fffeb",
+          "mode": 420
+        },
+        "scripts/show_timezone_variation.py": {
+          "sha256": "a5ab5e11170d0a951d20d1d2a6a3d3e89f3c0785e249a2bf70900bb4d861f572",
+          "mode": 420
+        },
+        "src/dispatch_board/__init__.py": {
+          "sha256": "ef6325e46fa758f2a3cc6533bf76b89aae9b332b68efeea438d2cc9d99ac4d6f",
+          "mode": 420
+        },
+        "src/dispatch_board/labels.py": {
+          "sha256": "a054b935dde5d4f550e945f5159370de227fb13b97f7b31bf60cc158cc5ea2b2",
+          "mode": 420
+        },
+        "tests/test_labels.py": {
+          "sha256": "afa855840d3e05f5b59950d631095c35d676ff18824684d6336c86152d902a87",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "evaluation-handoff",
+      "originalName": "ci-evaluation-contract",
+      "commit": "ca532d92ec3db02224061b3ceef105b2bc113b27",
+      "sourceRepo": "https://github.com/KyPython/ci-evaluation-contract",
+      "files": {
+        "README.md": {
+          "sha256": "2a5188f421ce031172f9782b307f070602eb82785d52ac99bed01f78e9ddde2f",
+          "mode": 420
+        },
+        "docs/evaluation-contract.md": {
+          "sha256": "4d577ce58db3baaf9e45c7ced7d283ea524cc38e6b3fa737e73782fea1c7a90c",
+          "mode": 420
+        },
+        "fixtures/valid/artifact.txt": {
+          "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+          "mode": 420
+        },
+        "fixtures/valid/manifest.json": {
+          "sha256": "5abecd133ca3c8f7553d17af93bb13408b4400078b8282e354819530da2a6635",
+          "mode": 420
+        },
+        "grader/__init__.py": {
+          "sha256": "81ad7f10c67d92f962323afbb0a9233e185942f9b5dbfbc5b18b7f40ef0dd6c7",
+          "mode": 420
+        },
+        "grader/intake.py": {
+          "sha256": "f70e486c3b51d9f75481aaacf220415261d3a52652c07e2cdb258d98a6bce348",
+          "mode": 420
+        },
+        "grader/pipeline.py": {
+          "sha256": "07246871b6192b4b1fe5fe6eef55ce0c4db5506a275eba1853c29f87d1683594",
+          "mode": 420
+        },
+        "grader/scoring.py": {
+          "sha256": "13b5314538d1a8bc83d1330fed9c71ae2b80b6dd21a1119a169147c3dee83cb9",
+          "mode": 420
+        },
+        "scripts/verify.sh": {
+          "sha256": "e397ce2d922b3f92f163317fe7e6f918b7a5d5236de72a66fa5e1db8b89e7639",
+          "mode": 420
+        },
+        "tests/test_pipeline.py": {
+          "sha256": "bbe55490fc57b69c5eeeda112c9ac45e2caebf6a7954562da21a261045bb6757",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "quote-calculator",
+      "originalName": "vacuous-test-suite-audit",
+      "commit": "c5986e93719cfd4b08a57104576c04a78d1f16ee",
+      "sourceRepo": "https://github.com/KyPython/vacuous-test-suite-audit",
+      "files": {
+        "README.md": {
+          "sha256": "c1138914af7e00e7f77c13d12c443f6a233b66c56c93b360190f3ddab4edd0e7",
+          "mode": 420
+        },
+        "docs/behavior.md": {
+          "sha256": "de535c2487245f6f75b73969e91b54fe2de19715788d4cf712119bc74ab59b7a",
+          "mode": 420
+        },
+        "pyproject.toml": {
+          "sha256": "85af69d4a2bdc9a0676ea55a298e0555e1e7f6dba9861a442b81210a6fe37c1a",
+          "mode": 420
+        },
+        "requirements-dev.txt": {
+          "sha256": "cd93dd0d571237cf712327c7795162c1998d240f09bcd43172e3b5105b013056",
+          "mode": 420
+        },
+        "src/quote_calculator/__init__.py": {
+          "sha256": "a4d5520f499b11f6ec637654ecbe6f68b1fe49cc48e1b9ce5da9ccef52e7a406",
+          "mode": 420
+        },
+        "src/quote_calculator/calculator.py": {
+          "sha256": "fad3480b6557ab92bd9ec158f7c59c8f6cbf9cbc7476e2a255a227dd98c95b0b",
+          "mode": 420
+        },
+        "tests/test_calculator.py": {
+          "sha256": "ab68d694665304b9aded732d410b0b59904b5754a4037955a41f280050fdd4fc",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "harbor-workspace",
+      "originalName": "monorepo-build-graph",
+      "commit": "2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38",
+      "sourceRepo": "https://github.com/KyPython/monorepo-build-graph",
+      "files": {
+        ".gitignore": {
+          "sha256": "e44a92260a2cdb4baf50df25f60b613eb58af7255a3d981cf36428bfa66ee2a8",
+          "mode": 420
+        },
+        "README.md": {
+          "sha256": "d9abdaab4f60dbe025226971fc6be08c3d4ab9162d52b809f8c7ef3a31da976c",
+          "mode": 420
+        },
+        "apps/dispatch-service/package.json": {
+          "sha256": "626a4e3aab92382f7d62aed83578f41234afe8ab4223c26cd6ff3bb489aa4559",
+          "mode": 420
+        },
+        "apps/dispatch-service/scripts/build.mjs": {
+          "sha256": "295c361b2756dca1bf5afbf620a338136e11bfe62a0056d2d66b7c0a55fe70f3",
+          "mode": 420
+        },
+        "container/Dockerfile": {
+          "sha256": "77f04cea79b6d35570ab0a5219fb231f6e23e77b3e91d790eb9a6de630f5e5a9",
+          "mode": 420
+        },
+        "package.json": {
+          "sha256": "be01446c67f4474508db49df464d42f82d057ef8f94aaee8ad314e17a7f85875",
+          "mode": 420
+        },
+        "packages/route-core/package.json": {
+          "sha256": "66ae5d8eafb684708ff92f3e868c0f6ee9d73c9174313eea767f25e14ae7b91b",
+          "mode": 420
+        },
+        "packages/route-core/scripts/build.mjs": {
+          "sha256": "ab824ec40f8526d62d80046d0552ba6d203fdf697ff572cbf9e9edc49d9febb2",
+          "mode": 420
+        },
+        "packages/route-core/src/routes.json": {
+          "sha256": "d9596b303ea3ff5ece038297621c6e50aa14c695a4fc4d905e382fab230e43de",
+          "mode": 420
+        },
+        "packages/status-check/package.json": {
+          "sha256": "a6c4f56df2f5fb469a5e100b7007a1b79d399f4fe0e0628ab1f31a3fa673d2f5",
+          "mode": 420
+        },
+        "packages/status-check/src/check.mjs": {
+          "sha256": "7bf2af4d7319be4504149f89ccb38a54f150ffb9353271270c42c25dea677241",
+          "mode": 420
+        },
+        "pnpm-lock.yaml": {
+          "sha256": "53efd2c03415cdfab5b518d3cf80222b09d218f63ecad59da1135b56b3bc58b5",
+          "mode": 420
+        },
+        "pnpm-workspace.yaml": {
+          "sha256": "253208fa7c1b64372c219b9e19cef15ed70ca93b66a4d5c4c4d2297a5aff8880",
+          "mode": 420
+        },
+        "scripts/check-container-target.mjs": {
+          "sha256": "e15950e783fb086ef03d0ce1fb632b7445799bfb1770802502f61bb96745b480",
+          "mode": 420
+        },
+        "scripts/clean.mjs": {
+          "sha256": "10625f8d933de7207f185e517c1df4c1ba509c1a8e3cc80217464e2ec3a6d2a6",
+          "mode": 420
+        },
+        "turbo.json": {
+          "sha256": "307fd543856cbb1ea7c6f1bfd457782fb6c76f77dc64fbab5cea85668650f9cb",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "cursor-pagination-aggregator",
+      "originalName": "cursor-pagination-aggregator",
+      "sourceRepo": "https://github.com/KyPython/cursor-pagination-aggregator",
+      "commit": "9c829c6ec7f85cf382f97e286bf8acce20a96fe7",
+      "files": {
+        "README.md": {
+          "sha256": "bd558ff9c5658a9dd7e3b69754f3d929a34a4a0e38c73abe8ad4aac49b5ce3c1",
+          "mode": 420
+        },
+        "fixtures/duplicate-records.json": {
+          "sha256": "a33d0626c8dfae5e7bf5910468adb0e295123b111e6ec61bb755b67a554c1137",
+          "mode": 420
+        },
+        "fixtures/empty-page.json": {
+          "sha256": "b7bd2a04853004b28b1daa32f9bd93de9dd984e3ee5b2380e52f02043c63cadd",
+          "mode": 420
+        },
+        "fixtures/ordinary.json": {
+          "sha256": "6be529ecd392c761e9b36ee0625a58a62a6463a769201c10af5e702c29b45ebb",
+          "mode": 420
+        },
+        "fixtures/repeated-cursor.json": {
+          "sha256": "6f869c2e5228393899a7ee06743a7e38901dbc72e08bfc103ec2463caf8c3bab",
+          "mode": 420
+        },
+        "pyproject.toml": {
+          "sha256": "574db5d33850aacdcd31e24211eabe991efdf48bf2f51c1832a7d28d3dac297c",
+          "mode": 420
+        },
+        "src/cursor_client/__init__.py": {
+          "sha256": "0225d8348a7565da76cd69dbff0393487adc06c3d4c6d48cfe6dc454882fb1a8",
+          "mode": 420
+        },
+        "src/cursor_client/aggregator.py": {
+          "sha256": "cb773668517f877e36b434e0daafe53a37b4b128fffe83069d45d825d1be8c27",
+          "mode": 420
+        },
+        "src/cursor_client/cli.py": {
+          "sha256": "b54766fe23d165a1c06f3ab0d97ec4f6860a0919ae843502cf30676e76ff5eca",
+          "mode": 420
+        },
+        "src/cursor_client/fixture_transport.py": {
+          "sha256": "c67142fd91b7cfa95076deb906b448deb8b6641f67e621f5526a5cef5151c36b",
+          "mode": 420
+        },
+        "tests/test_aggregator.py": {
+          "sha256": "97f9ed5c55fb08808e23b1523ab8faddab2c2b6ef8e4f0b1c7f3430e12ac4bcd",
+          "mode": 420
+        },
+        "tests/test_fixture_transport.py": {
+          "sha256": "59a8b81801bad193dae1e3df6eab91cbaf494eb515e2c3523d3c35ba653bda37",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "threshold-evaluation",
+      "originalName": "threshold-evaluation",
+      "sourceRepo": "https://github.com/KyPython/threshold-evaluation",
+      "commit": "aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5",
+      "files": {
+        ".gitignore": {
+          "sha256": "20b4c52d78e1fe127a0ed057fd4d80fbef18879d9cbba9b58437e8af14e02619",
+          "mode": 420
+        },
+        "README.md": {
+          "sha256": "0d4600d7742fa5bf7c467115ff2faa7d95adfbe800d54f7f5b8d4d749a0203b5",
+          "mode": 420
+        },
+        "fixtures/observations.json": {
+          "sha256": "d157a4b829b408b746a3ca0a2803cda2f672fae9f313b560ae9feb5b17617252",
+          "mode": 420
+        },
+        "fixtures/policy.json": {
+          "sha256": "3852cd56f3e49fafd4f26407ea332371fd830a211623ed7534578735d6b3fa3a",
+          "mode": 420
+        },
+        "pyproject.toml": {
+          "sha256": "6ded4678ce83b9f611a415c2b88f9480ea340ee418944978f88ff5b9322f0958",
+          "mode": 420
+        },
+        "src/threshold_lab/__init__.py": {
+          "sha256": "55493b83308ec4ee677d4fd9af6dcb3bef86a3088155f7b90abe35967feb325d",
+          "mode": 420
+        },
+        "src/threshold_lab/cli.py": {
+          "sha256": "c75ededc1ab44b3a0a9846de66eb44b851dfbba0683d8ff971ea8435878158ea",
+          "mode": 420
+        },
+        "src/threshold_lab/evaluation.py": {
+          "sha256": "db9cde3a18613274900505267869b14bf9d12c5a5627c499977e18e09a6da677",
+          "mode": 420
+        },
+        "src/threshold_lab/io.py": {
+          "sha256": "72bb2ca5e7080106790dc0e6a6ba38e6827f57490a043de96499f14d6d29c04b",
+          "mode": 420
+        },
+        "tests/test_evaluation.py": {
+          "sha256": "1d23cda2b889d6cb432a5e57e9d26df2e3982f5730e1b38037758f718d5aabbe",
+          "mode": 420
+        },
+        "tests/test_io.py": {
+          "sha256": "b61ab92bffc2f6fbbabee4763e229f35ac35500eecafa0a27c34967f4cca69dc",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "batch-command",
+      "originalName": "python-exception-propagation",
+      "sourceRepo": "https://github.com/KyPython/python-exception-propagation",
+      "commit": "ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2",
+      "files": {
+        ".gitignore": {
+          "sha256": "63987be261227423f4096b1ef55cc78114fe84e410a11417edd93ff21958cdd3",
+          "mode": 420
+        },
+        "README.md": {
+          "sha256": "959666066be4ef8a5991481828f35a7c63c31b556e763388dc1671c526a0ada9",
+          "mode": 420
+        },
+        "pyproject.toml": {
+          "sha256": "4bbd74ea6844c71b2434d8387790b8050f6e7ee734acc4458c4cfc5e7020ffb1",
+          "mode": 420
+        },
+        "requirements-dev.txt": {
+          "sha256": "a0e201ecda2bc871726ea3bb5db9cfe6b2109f60d8da88eecf910b790794b03d",
+          "mode": 420
+        },
+        "src/batch_command/__init__.py": {
+          "sha256": "78f8c5637e73547714ce6229b045f76c7cf24c145edd1286ea4cb466f390478d",
+          "mode": 420
+        },
+        "src/batch_command/command.py": {
+          "sha256": "4671fbf0d1f2c0b0611c0a34c0e48182f6d62dabf78500cc214f40f6bb5fed26",
+          "mode": 420
+        },
+        "src/batch_command/errors.py": {
+          "sha256": "ff677bf93bb2c4c4ec042bae18574d8472a28bcd948cc3bcbf648b0d68109031",
+          "mode": 420
+        },
+        "tests/conftest.py": {
+          "sha256": "16efe59e6f48e562165004b1d26002db9c8434d7deb07826e1cacc7d0f88e4f9",
+          "mode": 420
+        },
+        "tests/test_baseline.py": {
+          "sha256": "cc477bf3a966139b7018440464c3427816155bb872b9a7071ea97592975566bc",
+          "mode": 420
+        }
+      }
+    },
+    {
+      "neutral": "callback-state",
+      "originalName": "oauth-callback-state",
+      "sourceRepo": "https://github.com/KyPython/oauth-callback-state",
+      "commit": "c65f9343be723ea36289db541b8f373883cbfe8a",
+      "files": {
+        "README.md": {
+          "sha256": "c4f556cc338ea1f5a41a40a920738116415ef6b659b3552b80933b6615d93a20",
+          "mode": 420
+        },
+        "callback.py": {
+          "sha256": "ea8f6a1f54627a37200d0bb846f15a26a33e24eceab26fb33a7c592a9688a83b",
+          "mode": 420
+        },
+        "fixtures.py": {
+          "sha256": "23f4a051df53cbdb97c08afe31264a8312b5636267a4f923428704f31cf45749",
+          "mode": 420
+        },
+        "run_fixtures.py": {
+          "sha256": "d58df83c52ddfa38bdbd9c8eed14f65bfe9dc23178d7e3cf7373a64f6f88e144",
+          "mode": 420
+        },
+        "tests/test_callback.py": {
+          "sha256": "b62196f85102d8dbee85a5b2d440c1d73fc0f2f46fbbd6e7f14f2f89533ec7e4",
+          "mode": 420
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1890 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-08T06:23:45.585978+00:00",
+  "snapshotPath": "cloud/make-processes.json",
+  "snapshotSha256": "e0a0b8c165f6c6184f08d6c4b6dfbe8d10ed6c8641008bb2dd842afc003d76c5",
+  "sourceBindings": [
+    {
+      "scenarioId": 6550857,
+      "moduleId": 7,
+      "source": "cloud/bootcamp-builder.js",
+      "sourcePrefixSha256": "57ccbf4a135013cb329d4e0ec700185dc12eb4ee4645830dbebfabc746ee8f31",
+      "rawFileSha256": "63fa55a9dff072dd5af9aa52e2084d364de3a3f1a508f2e7e19e17ab6195b87a",
+      "deployedCodeSha256": "b9dc3613c11876bd9e9f7912348548ae8985d2c78353e7f86c1b1dc0d8dc8c4b",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550857,
+      "moduleId": 3,
+      "source": "cloud/bootcamp-builder.js",
+      "sourcePrefixSha256": "57ccbf4a135013cb329d4e0ec700185dc12eb4ee4645830dbebfabc746ee8f31",
+      "rawFileSha256": "63fa55a9dff072dd5af9aa52e2084d364de3a3f1a508f2e7e19e17ab6195b87a",
+      "deployedCodeSha256": "aa18810da44be7212468ae83a63055f7f133b5982022ede66b025a28d9bd5733",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550857,
+      "moduleId": 9,
+      "source": "cloud/bootcamp-builder.js",
+      "sourcePrefixSha256": "57ccbf4a135013cb329d4e0ec700185dc12eb4ee4645830dbebfabc746ee8f31",
+      "rawFileSha256": "63fa55a9dff072dd5af9aa52e2084d364de3a3f1a508f2e7e19e17ab6195b87a",
+      "deployedCodeSha256": "422ee31360bb4220a86997e31a72708102f08b4dbde28a48668f79eafa5bc803",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550857,
+      "moduleId": 11,
+      "source": "cloud/bootcamp-builder.js",
+      "sourcePrefixSha256": "57ccbf4a135013cb329d4e0ec700185dc12eb4ee4645830dbebfabc746ee8f31",
+      "rawFileSha256": "63fa55a9dff072dd5af9aa52e2084d364de3a3f1a508f2e7e19e17ab6195b87a",
+      "deployedCodeSha256": "ca9cfe537ff80c2696e8a11e4f19a6e913371f67a9568931c1f5601c81c97021",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6547847,
+      "moduleId": 2,
+      "source": "cloud/kiro-handoff.js",
+      "sourcePrefixSha256": "2b0608a8b183eb422e30e3dcbbc740b4d7b2178ef1a4c6fcdf930f737614b797",
+      "rawFileSha256": "8cb36bcee0e94d23c081ab4cd39cbe094c28894737ab9dcb1268c0db62383666",
+      "deployedCodeSha256": "df7946ff521ff298d27b049afc1d4583a466d219dc8c99acce9694a4e7316127",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6547847,
+      "moduleId": 5,
+      "source": "cloud/kiro-handoff.js",
+      "sourcePrefixSha256": "2b0608a8b183eb422e30e3dcbbc740b4d7b2178ef1a4c6fcdf930f737614b797",
+      "rawFileSha256": "8cb36bcee0e94d23c081ab4cd39cbe094c28894737ab9dcb1268c0db62383666",
+      "deployedCodeSha256": "4da450e17b33c9044ad325b5916affee4ee5a9ac60fd71327327e1206ef859bc",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 2,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "7f70fe08fc8509e08e27e2967b4c7ef18aaeb0bd8b03478a87b27d94213a1d81",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 11,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "9bfdfa25c98cfccff62f80bcf3ec18036344ec567c1993591c77b780520e25c6",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 12,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "2e5c0a504c218ae05ada6031be2fa0348e81902a595767febdd9c8c00cc91f10",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6548371,
+      "moduleId": 2,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "2e968673f07ed72da169d04173253e7733cc2ef65b50abbd2c6d623fe48a48b4",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6548371,
+      "moduleId": 13,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "40039185924bdaf9ceb821c38f12df53696e006d46343bb5b5af8590029e3ae5",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6548371,
+      "moduleId": 14,
+      "source": "cloud/operator-pack.js",
+      "sourcePrefixSha256": "6348c88ebe315af383fc02001fa3f9ab6e331072bbd637b2ef195cadb1de0fe4",
+      "rawFileSha256": "67ae47dde0985f3c7896a37cd78b112f5fa3b547137155f1ead0777b43b49ea3",
+      "deployedCodeSha256": "c08c23f3eccf772232db0f4ce94aa4f038bc9b10e79e372e8e067bd052213a1a",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550627,
+      "moduleId": 5,
+      "source": "cloud/idea-miner.js",
+      "sourcePrefixSha256": "cb52cc2291d00650011e5145dd02ce9ee7668e506f4358de47107571ef2f3901",
+      "rawFileSha256": "c61659573b0c6acf4089fb4f7750121760edd88202ed2fdf4ce7515f907ae92f",
+      "deployedCodeSha256": "cb52cc2291d00650011e5145dd02ce9ee7668e506f4358de47107571ef2f3901",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6548371,
+      "moduleId": 7,
+      "source": "cloud/pr-evidence.js",
+      "sourcePrefixSha256": "aec323261d61e98bdc2707f8541a5da261b38b6a9349059fc1a3c9549d176874",
+      "rawFileSha256": "664c0fb32bd74d125ae155c618d980aa6d3a15022809c77ac9ecd18f27805597",
+      "deployedCodeSha256": "aec323261d61e98bdc2707f8541a5da261b38b6a9349059fc1a3c9549d176874",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550627,
+      "moduleId": 11,
+      "source": "cloud/capability-router.js",
+      "sourcePrefixSha256": "69502afef05d360e0fb50b6e67ca605a44afedea0c82f9de32d555d1bdaf17e0",
+      "rawFileSha256": "015303b7ff370e88583fcd25d28f67404b810829927803c1c3f85b1f7fbc69d0",
+      "deployedCodeSha256": "853568ad6b97c78e6332fa669cdd21de12a06fb6940d42289c89605d7bfb56e0",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 5,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "9d8db6b9a22468d743be9e6c36bdb7f6436a86488a070a73046a5a281d80d9fe",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 15,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "992c05966a9a8174e103bb19ccaf4534a661fa344d6ccbd9abaacfb4d82379f6",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 17,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "578ebd768d3e961146d5166a9570481bc1307230e832714a7641c89aa2fc2068",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 19,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "477d22617538e46acfee732d5ff61026f0504492b6cbfc0af301e5ae183aa941",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 20,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "b97885d71708ac0213f859299b149691e43b921f98cc6f26c5baf77ee52324e3",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 11,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "9bfdfa25c98cfccff62f80bcf3ec18036344ec567c1993591c77b780520e25c6",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550231,
+      "moduleId": 12,
+      "source": "cloud/private-source-bridge.js",
+      "sourcePrefixSha256": "c967fe3175f81935d2b7e07ae3b7089e4cd174de5e6317e5c1f35d286c6f7cb8",
+      "rawFileSha256": "68463d8a9910a0530e53e0c7ac549f2530fce7aa1b303a156f4a6b949eb9f6d7",
+      "deployedCodeSha256": "2e5c0a504c218ae05ada6031be2fa0348e81902a595767febdd9c8c00cc91f10",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550857,
+      "moduleId": 3,
+      "source": "cloud/kiro-proof.js",
+      "sourcePrefixSha256": "b4d73fcd3060bbf552000ec227221a73293cd10fd947b690fce4336e54c75dca",
+      "rawFileSha256": "75b78ceaa470d016575e3d0e755bf82ff26cd34b123ac1f8c209449487234ccb",
+      "deployedCodeSha256": "aa18810da44be7212468ae83a63055f7f133b5982022ede66b025a28d9bd5733",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    },
+    {
+      "scenarioId": 6550857,
+      "moduleId": 19,
+      "source": "cloud/kiro-proof.js",
+      "sourcePrefixSha256": "b4d73fcd3060bbf552000ec227221a73293cd10fd947b690fce4336e54c75dca",
+      "rawFileSha256": "75b78ceaa470d016575e3d0e755bf82ff26cd34b123ac1f8c209449487234ccb",
+      "deployedCodeSha256": "707afa2fb3b2bbc7ee6a9b7c2316beab0ad21eaee1b81e9d8b548bd150cab1a0",
+      "matches": true,
+      "comparison": "Exact source prefix or exact embedded source prefix; no code edits or truncation"
+    }
+  ],
+  "sourceComparisonPolicy": "Exact shared source prefixes; operator/Kiro omit only module.exports. Builder3 embeds exact bootcamp-builder and kiro-proof prefixes, builder19 starts with exact kiro-proof. Manifest adapters include the exact private bridge prefix after operator prefix where needed. No public byte manifest fallback is deployed. Every source binding verifies raw-file, deployed-code and prefix digests.",
+  "limits": {
+    "notionQuery": 100,
+    "githubIssueInventory": 300,
+    "githubCommentInventory": 100,
+    "notionPageBlocks": 100,
+    "manifestEvidenceCharacters": 50000,
+    "prEvidenceCharacters": 42000,
+    "prChangedFileInventory": 100,
+    "behavior": "Task Factory and managed-page reads with has_more hold; a full third issue page or full comment/file page holds. These workflows do not provide unbounded pagination.",
+    "privateSourceBridge": {
+      "files": 50,
+      "entries": 500,
+      "bytes": 48000,
+      "evidenceCharacters": 50000,
+      "binarySymlinkSubmoduleAndSecretMaterial": "HOLD",
+      "nativePageFreshness": "GET before content and again before properties; exact Goal/lane/eligibility/pins guard"
+    },
+    "kiroEvidence": {
+      "privateReceiptBytes": 1000000,
+      "privateCaptureBytes": 1000000,
+      "specDocumentCharacters": 50000,
+      "mergedSpecDirectory": 100,
+      "behavior": "Canonical main PR actually merged by KyPython; authenticated private receipt/capture fixed paths at full immutable commit; Git blob, byte size, UTF-8, receipt/capture SHA-256 and all three merged document hashes verified before issue creation. Missing proof stays HOLD."
+    }
+  },
+  "executions": {
+    "6547847": [
+      {
+        "id": "dc81e3abca684e68915395eb24977093",
+        "status": "success",
+        "startedAt": "2026-10-08T06:22:59.931Z",
+        "duration": 1750,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 302261,
+        "invokedModules": [
+          1,
+          2,
+          3
+        ],
+        "errors": 0,
+        "invocations": [
+          {
+            "moduleId": 1,
+            "count": 1,
+            "errors": 0
+          },
+          {
+            "moduleId": 2,
+            "count": 1,
+            "errors": 0
+          },
+          {
+            "moduleId": 3,
+            "count": 1,
+            "errors": 0
+          }
+        ],
+        "actualIssueWrites": 0,
+        "actualNotionWrites": 0,
+        "actualComments": 0,
+        "actualBuilds": 0,
+        "evidence": "Authenticated execution_get and complete execution_inspect; only query, selector and feeder invoked. No packet-cycle inference."
+      },
+      {
+        "id": "8e732951abd14190aee8f49c4697ea7c",
+        "status": "success",
+        "startedAt": "2026-10-08T06:03:49.645Z",
+        "duration": 2071,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286660,
+        "invokedModules": [
+          1,
+          2,
+          3
+        ],
+        "errors": 0,
+        "actualIssueWrites": 0,
+        "actualNotionWrites": 0,
+        "actualComments": 0,
+        "actualBuilds": 0,
+        "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+      },
+      {
+        "id": "a7442e99b6dd4acca23c18389297945c",
+        "startedAt": "2026-10-08T02:40:31.465Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2094,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1311,
+        "isReplayable": true
+      },
+      {
+        "id": "600c63fbbd7a495c89c098775ad1e0d2",
+        "startedAt": "2026-10-08T01:40:30.460Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1739,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1311,
+        "isReplayable": true
+      },
+      {
+        "id": "434e433027c3408eab235b18276c5a02",
+        "startedAt": "2026-10-08T00:40:29.362Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1349,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1311,
+        "isReplayable": true
+      },
+      {
+        "id": "8dd085cdbd244c879136977c6a8d5c61",
+        "startedAt": "2026-10-07T23:40:29.926Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1659,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1310,
+        "isReplayable": true
+      },
+      {
+        "id": "6aba28d30cc94c0bbe2dd24a26fc5ef7",
+        "startedAt": "2026-10-07T18:57:59.867Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 4306,
+        "operations": 9,
+        "credits": 12,
+        "dataTransfer": 133550,
+        "isReplayable": true
+      },
+      {
+        "id": "feebe5d41b0c4fe1a79d213c9bfa568b",
+        "startedAt": "2026-10-07T18:57:51.106Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 4204,
+        "operations": 9,
+        "credits": 12,
+        "dataTransfer": 133668,
+        "isReplayable": true
+      }
+    ],
+    "6548371": [
+      {
+        "id": "6d937b801bf248148b7e2d61113a661e",
+        "startedAt": "2026-10-08T03:08:23.718Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2885,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286673,
+        "isReplayable": true
+      },
+      {
+        "id": "771f3ee256d948619e22e15c5412ca4c",
+        "startedAt": "2026-10-08T02:53:24.034Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2459,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "d17f98a5263040fd822073d890d67dc8",
+        "startedAt": "2026-10-08T02:38:23.706Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1851,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "4da8ce90a8424513a42106423b7584bb",
+        "startedAt": "2026-10-08T02:23:22.580Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1714,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "89296c11e4554ee988b151b989ce52a6",
+        "startedAt": "2026-10-08T02:08:22.478Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2094,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 278680,
+        "isReplayable": true
+      },
+      {
+        "id": "1967c21ef1894e5d8f6401fe0ea27594",
+        "startedAt": "2026-10-08T01:53:23.584Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2573,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 274778,
+        "isReplayable": true
+      },
+      {
+        "id": "2bd69eee90e34c9eb81489883958c99a",
+        "startedAt": "2026-10-08T01:38:23.457Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2265,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 274778,
+        "isReplayable": true
+      },
+      {
+        "id": "ae8fe615a77647efadddad0d9d5ff498",
+        "startedAt": "2026-10-08T01:23:23.143Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2155,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 266616,
+        "isReplayable": true
+      },
+      {
+        "id": "f83fca551ae94ec79fb6a78a8c7102f6",
+        "startedAt": "2026-10-08T01:08:22.584Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1821,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 266534,
+        "isReplayable": true
+      },
+      {
+        "id": "d443ac5f1a2c491abbdcce9a95f58126",
+        "startedAt": "2026-10-08T00:53:21.919Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2047,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 244874,
+        "isReplayable": true
+      },
+      {
+        "id": "7f415cf5290e42aab2f8e269aa0dbd9c",
+        "startedAt": "2026-10-08T00:38:22.904Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1842,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 237742,
+        "isReplayable": true
+      },
+      {
+        "id": "bb7f7e62eb8a442b8b4f44e3bcdbef8d",
+        "startedAt": "2026-10-08T00:23:22.087Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2022,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 236338,
+        "isReplayable": true
+      },
+      {
+        "id": "2fdc46c3bbc2449287997978529ed059",
+        "startedAt": "2026-10-08T00:08:22.265Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1804,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 235716,
+        "isReplayable": true
+      },
+      {
+        "id": "7cb27fd1b98c43ba8d71fe60727216e0",
+        "startedAt": "2026-10-07T23:58:11.345Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2046,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 207509,
+        "isReplayable": true
+      },
+      {
+        "id": "c6415c84b04d4c80b02ff1b6328d5ba9",
+        "startedAt": "2026-10-07T23:53:22.014Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1618,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 173912,
+        "isReplayable": true
+      },
+      {
+        "id": "50fe5cfefc8a445eb766dff4b5a49fa3",
+        "startedAt": "2026-10-07T23:38:23.822Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1798,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 151150,
+        "isReplayable": true
+      },
+      {
+        "id": "97e70e090d6d400bb43e548f773ba840",
+        "startedAt": "2026-10-07T23:25:09.395Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1634,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142525,
+        "isReplayable": true
+      },
+      {
+        "id": "1d78acd9eedb40f68e556b396cd0e1ab",
+        "startedAt": "2026-10-07T23:10:07.951Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2117,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142525,
+        "isReplayable": true
+      },
+      {
+        "id": "de78430f5e19404289813e4622a90690",
+        "startedAt": "2026-10-07T22:55:08.441Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1693,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142471,
+        "isReplayable": true
+      },
+      {
+        "id": "4c2324d5154a4ecda6a067cee95a0a20",
+        "startedAt": "2026-10-07T22:40:08.588Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1435,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142471,
+        "isReplayable": true
+      },
+      {
+        "id": "ae05e0fea2ab41c28beffd14bfa0ee7a",
+        "startedAt": "2026-10-07T22:25:09.192Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1833,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 112669,
+        "isReplayable": true
+      },
+      {
+        "id": "1769ba718fb047a89b2577ed5720418c",
+        "startedAt": "2026-10-07T22:10:08.399Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1421,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 112669,
+        "isReplayable": true
+      },
+      {
+        "id": "ad0292fbaa8746b9bd4d29c42ffe65b8",
+        "startedAt": "2026-10-07T21:55:09.296Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1927,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 117103,
+        "isReplayable": true
+      },
+      {
+        "id": "5b9b9c5d8ccc4d488492f59b04eac6e5",
+        "startedAt": "2026-10-07T21:40:09.524Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1332,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 123076,
+        "isReplayable": true
+      },
+      {
+        "id": "ff6c49027f80449da0104e3cbf02958c",
+        "startedAt": "2026-10-07T21:25:09.764Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1624,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 113484,
+        "isReplayable": true
+      }
+    ],
+    "6550231": [
+      {
+        "id": "61b38f01ea2b4145b5faccb62d7a5ee2",
+        "startedAt": "2026-10-08T03:08:20.707Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2843,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286673,
+        "isReplayable": true
+      },
+      {
+        "id": "c7e6a27b87d047e7a46988d16c157e55",
+        "startedAt": "2026-10-08T02:53:21.606Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2100,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "295a4f7010074eb3b8c9ef8723150af5",
+        "startedAt": "2026-10-08T02:38:21.032Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2366,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "9ed375621a8a4dbc94fd86875031f906",
+        "startedAt": "2026-10-08T02:23:22.257Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2754,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 286674,
+        "isReplayable": true
+      },
+      {
+        "id": "40d309a516044799b91ed01f885903af",
+        "startedAt": "2026-10-08T02:08:22.243Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1668,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 278679,
+        "isReplayable": true
+      },
+      {
+        "id": "f83c32bba3dd4159bdf1a9feb6e6f8d0",
+        "startedAt": "2026-10-08T01:53:21.037Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1713,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 274778,
+        "isReplayable": true
+      },
+      {
+        "id": "6348cea867214f49b721a57e9fa28a23",
+        "startedAt": "2026-10-08T01:38:20.650Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1777,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 274778,
+        "isReplayable": true
+      },
+      {
+        "id": "44bc16c9008e4c66b63247fe789e63a0",
+        "startedAt": "2026-10-08T01:23:22.801Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2129,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 266616,
+        "isReplayable": true
+      },
+      {
+        "id": "11101b99043a47168d7fb938b1578d87",
+        "startedAt": "2026-10-08T01:08:22.262Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1716,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 266534,
+        "isReplayable": true
+      },
+      {
+        "id": "621ef852da5a4e5798dee4d6ff6f77ee",
+        "startedAt": "2026-10-08T00:53:21.841Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1709,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 244874,
+        "isReplayable": true
+      },
+      {
+        "id": "60b6e4ead4fa44e7b5d25cc73c1898f3",
+        "startedAt": "2026-10-08T00:38:22.686Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 4751,
+        "operations": 7,
+        "credits": 10,
+        "dataTransfer": 258524,
+        "isReplayable": true
+      },
+      {
+        "id": "3a90d101c7b443c5b941a7dae9916490",
+        "startedAt": "2026-10-08T00:23:22.040Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 3720,
+        "operations": 7,
+        "credits": 10,
+        "dataTransfer": 257120,
+        "isReplayable": true
+      },
+      {
+        "id": "59688d07559f40b088ca1a300728870c",
+        "startedAt": "2026-10-08T00:08:21.276Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 5239,
+        "operations": 7,
+        "credits": 10,
+        "dataTransfer": 256497,
+        "isReplayable": true
+      },
+      {
+        "id": "7b5cb85ac174472691f164b21b183859",
+        "startedAt": "2026-10-08T00:07:31.047Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 3759,
+        "operations": 7,
+        "credits": 10,
+        "dataTransfer": 255992,
+        "isReplayable": true
+      },
+      {
+        "id": "9037a95ee2244c45a377441671bf2570",
+        "startedAt": "2026-10-07T23:58:07.504Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2440,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 207509,
+        "isReplayable": true
+      },
+      {
+        "id": "d5a4d15aa136438ab2e9c6dee8214b26",
+        "startedAt": "2026-10-07T23:53:21.845Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1738,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 173912,
+        "isReplayable": true
+      },
+      {
+        "id": "aeba946c59b34ad2b821bfade9c606e6",
+        "startedAt": "2026-10-07T23:38:21.329Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 4376,
+        "operations": 5,
+        "credits": 7,
+        "dataTransfer": 163470,
+        "isReplayable": true
+      },
+      {
+        "id": "6b53ab65b2824f9b9489846d1cdef57a",
+        "startedAt": "2026-10-07T23:23:44.702Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2743,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142510,
+        "isReplayable": true
+      },
+      {
+        "id": "c096f5d7d9a54eb69e77437478579fcb",
+        "startedAt": "2026-10-07T23:08:44.052Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 3339,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142511,
+        "isReplayable": true
+      },
+      {
+        "id": "a73735785d1c41d8a9cae6246bff25e5",
+        "startedAt": "2026-10-07T22:53:45.175Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1784,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142457,
+        "isReplayable": true
+      },
+      {
+        "id": "ed2d1f157e1a4b4cb0839bc34320b8b5",
+        "startedAt": "2026-10-07T22:38:44.241Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1651,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 142457,
+        "isReplayable": true
+      },
+      {
+        "id": "afe86924eef849dead2c55022868f38e",
+        "startedAt": "2026-10-07T22:23:45.427Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2108,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 112655,
+        "isReplayable": true
+      },
+      {
+        "id": "37b6ad5836004e4b819d0ab198cb8944",
+        "startedAt": "2026-10-07T22:08:43.778Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2036,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 112655,
+        "isReplayable": true
+      },
+      {
+        "id": "f1d629f84ceb42da871950c1225596d6",
+        "startedAt": "2026-10-07T21:59:11.940Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2894,
+        "operations": 5,
+        "credits": 7,
+        "dataTransfer": 147236,
+        "isReplayable": true
+      },
+      {
+        "id": "2561c168678b44fbb6207039df35133b",
+        "startedAt": "2026-10-07T21:55:24.214Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 97016,
+        "operations": 23,
+        "credits": 31,
+        "dataTransfer": 530330,
+        "isReplayable": true
+      },
+      {
+        "id": "dd6c972403b3446a884ac9ce735bbecc",
+        "status": "success",
+        "startedAt": "2026-10-08T03:54:05.375Z",
+        "duration": 6980,
+        "operations": 3,
+        "credits": 4,
+        "invokedModules": [
+          1,
+          2,
+          3
+        ],
+        "errors": 0,
+        "selectorResult": {
+          "rows": [],
+          "count": 0
+        },
+        "actualIssueWrites": 0,
+        "actualNotionWrites": 0,
+        "actualReviewCalls": 0
+      }
+    ],
+    "6550627": [
+      {
+        "id": "4aafe39d142d419da563bf47d8154b86",
+        "startedAt": "2026-10-08T00:01:21.620Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 25623,
+        "operations": 8,
+        "credits": 9,
+        "dataTransfer": 577751,
+        "isReplayable": true
+      },
+      {
+        "id": "80f27723d6eb4bcdbe08f667479c426e",
+        "startedAt": "2026-10-08T00:00:52.729Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 27806,
+        "operations": 6,
+        "credits": 7,
+        "dataTransfer": 530596,
+        "isReplayable": true
+      },
+      {
+        "id": "5be050f76d0f4e848199baee9cc04545",
+        "startedAt": "2026-10-07T22:31:29.453Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 25489,
+        "operations": 8,
+        "credits": 9,
+        "dataTransfer": 352946,
+        "isReplayable": true
+      }
+    ],
+    "6550857": [
+      {
+        "id": "48053f32d8c94bbfb48a8db802994023",
+        "status": "success",
+        "startedAt": "2026-10-08T06:03:52.974Z",
+        "duration": 1906,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288658,
+        "invokedModules": [
+          1,
+          7,
+          2
+        ],
+        "errors": 0,
+        "actualIssueWrites": 0,
+        "actualNotionWrites": 0,
+        "actualComments": 0,
+        "actualBuilds": 0,
+        "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+      },
+      {
+        "id": "0aee0fde02d94957af206e7efef79129",
+        "status": "success",
+        "startedAt": "2026-10-08T03:16:42.792Z",
+        "duration": 2320,
+        "operations": 3,
+        "credits": 4
+      },
+      {
+        "id": "ea3aa6c2f1c949a6b10be337f9d242e0",
+        "startedAt": "2026-10-08T03:08:31.578Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2000,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288658,
+        "isReplayable": true
+      },
+      {
+        "id": "39632dfc72414bae88fba27ab853138e",
+        "startedAt": "2026-10-08T03:07:37.195Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2082,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288658,
+        "isReplayable": true
+      },
+      {
+        "id": "c9b525697c2c43e28cdf8c24bf423d1b",
+        "startedAt": "2026-10-08T02:52:38.256Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2730,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288658,
+        "isReplayable": true
+      },
+      {
+        "id": "8703d6975f544ca7a67d38e9f5006fbf",
+        "startedAt": "2026-10-08T02:37:37.232Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1902,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288657,
+        "isReplayable": true
+      },
+      {
+        "id": "1bd1c26a2a2849f485075ae0a17c552b",
+        "startedAt": "2026-10-08T02:22:38.619Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1685,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 288657,
+        "isReplayable": true
+      },
+      {
+        "id": "43776e4720b14ad2b3216ed9d7813c4a",
+        "startedAt": "2026-10-08T02:07:38.494Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1934,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 280664,
+        "isReplayable": true
+      },
+      {
+        "id": "8f60f120c7a1477ca1cdd7c3e046aa86",
+        "startedAt": "2026-10-08T01:52:38.736Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2292,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 276762,
+        "isReplayable": true
+      },
+      {
+        "id": "6ba3216753a64cd198e3dbdd931bf0db",
+        "startedAt": "2026-10-08T01:37:38.712Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1839,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 276762,
+        "isReplayable": true
+      },
+      {
+        "id": "d6084debd6c04fb38e51877b53eba035",
+        "startedAt": "2026-10-08T01:22:38.471Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2555,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 268600,
+        "isReplayable": true
+      },
+      {
+        "id": "e8ffe5de5a134757b39eb1b31fe63223",
+        "startedAt": "2026-10-08T01:07:37.165Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2192,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 268517,
+        "isReplayable": true
+      },
+      {
+        "id": "b7861aa3c1e141fca463d1c652e5c6d9",
+        "startedAt": "2026-10-08T00:52:39.176Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1984,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 246858,
+        "isReplayable": true
+      },
+      {
+        "id": "c39a6b7abce24d1ea0a66c445df5b4be",
+        "startedAt": "2026-10-08T00:37:38.768Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2364,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 239726,
+        "isReplayable": true
+      },
+      {
+        "id": "51c3e1af58ce4337850015b53b7d2181",
+        "startedAt": "2026-10-08T00:22:38.220Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2314,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 238322,
+        "isReplayable": true
+      },
+      {
+        "id": "faba715fbb9a4776aacd6771572d0dc8",
+        "startedAt": "2026-10-08T00:07:38.390Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1757,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 237364,
+        "isReplayable": true
+      },
+      {
+        "id": "273dff3d682a4f7e8c63d83211774e62",
+        "startedAt": "2026-10-08T00:01:59.735Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 16154,
+        "operations": 23,
+        "credits": 30,
+        "dataTransfer": 2288265,
+        "isReplayable": true
+      },
+      {
+        "id": "509e3f8c771f4bc9a86637e60419222f",
+        "startedAt": "2026-10-07T23:59:49.612Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1905,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 209235,
+        "isReplayable": true
+      },
+      {
+        "id": "37b24f62f4f74852a309d4c9b31928cf",
+        "startedAt": "2026-10-07T23:52:38.582Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2037,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1336,
+        "isReplayable": true
+      },
+      {
+        "id": "63c31f17330d42c7a13587a6b731ddd9",
+        "startedAt": "2026-10-07T23:46:29.266Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 2127,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1337,
+        "isReplayable": true
+      },
+      {
+        "id": "0c3485a96458443ba15ca3f1862f163b",
+        "startedAt": "2026-10-07T23:39:02.447Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 1714,
+        "operations": 3,
+        "credits": 4,
+        "dataTransfer": 1337,
+        "isReplayable": true
+      },
+      {
+        "id": "0fb3e185b2144a46afbfca974a55cf1d",
+        "startedAt": "2026-10-07T23:38:37.590Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 7568,
+        "operations": 13,
+        "credits": 17,
+        "dataTransfer": 894238,
+        "isReplayable": true
+      },
+      {
+        "id": "e15b4222d5da47daaa8e8a9c3630d8c8",
+        "startedAt": "2026-10-07T23:37:37.389Z",
+        "status": "error",
+        "startedBy": "auto",
+        "duration": 7681,
+        "operations": 13,
+        "credits": 17,
+        "dataTransfer": 881973,
+        "errorMessage": "[400] Invalid request URL.",
+        "isReplayable": true
+      },
+      {
+        "id": "f1f134bd6f0e46a1b57a67674aea09de",
+        "startedAt": "2026-10-07T23:29:47.457Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 37306,
+        "operations": 66,
+        "credits": 82,
+        "dataTransfer": 598550,
+        "isReplayable": true
+      },
+      {
+        "id": "26fe39ea93d54cac9526d69ff390935e",
+        "startedAt": "2026-10-07T23:14:45.080Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 36304,
+        "operations": 66,
+        "credits": 82,
+        "dataTransfer": 598549,
+        "isReplayable": true
+      },
+      {
+        "id": "dbab48c6e97a4f3faaf1c7ff1a0b3230",
+        "startedAt": "2026-10-07T23:01:10.793Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 31556,
+        "operations": 66,
+        "credits": 82,
+        "dataTransfer": 598512,
+        "isReplayable": true
+      },
+      {
+        "id": "0151c5e2d40a4ff0923f1410f4ef777e",
+        "startedAt": "2026-10-07T23:00:44.271Z",
+        "status": "success",
+        "startedBy": "auto",
+        "duration": 32185,
+        "operations": 66,
+        "credits": 82,
+        "dataTransfer": 598518,
+        "isReplayable": true
+      }
+    ]
+  },
+  "latestInspectedExecutions": {
+    "6547847": {
+      "id": "dc81e3abca684e68915395eb24977093",
+      "status": "success",
+      "startedAt": "2026-10-08T06:22:59.931Z",
+      "duration": 1750,
+      "operations": 3,
+      "credits": 4,
+      "dataTransfer": 302261,
+      "invokedModules": [
+        1,
+        2,
+        3
+      ],
+      "errors": 0,
+      "invocations": [
+        {
+          "moduleId": 1,
+          "count": 1,
+          "errors": 0
+        },
+        {
+          "moduleId": 2,
+          "count": 1,
+          "errors": 0
+        },
+        {
+          "moduleId": 3,
+          "count": 1,
+          "errors": 0
+        }
+      ],
+      "actualIssueWrites": 0,
+      "actualNotionWrites": 0,
+      "actualComments": 0,
+      "actualBuilds": 0,
+      "evidence": "Authenticated execution_get and complete execution_inspect; only query, selector and feeder invoked. No packet-cycle inference."
+    },
+    "6548371": {
+      "id": "7cb27fd1b98c43ba8d71fe60727216e0",
+      "status": "success",
+      "startedAt": "2026-10-07T23:58:11.345Z",
+      "duration": 2046,
+      "operations": 3,
+      "credits": 4,
+      "invokedModules": [
+        1,
+        2,
+        3
+      ],
+      "errors": 0
+    },
+    "6550231": {
+      "id": "dd6c972403b3446a884ac9ce735bbecc",
+      "status": "success",
+      "startedAt": "2026-10-08T03:54:05.375Z",
+      "duration": 6980,
+      "operations": 3,
+      "credits": 4,
+      "invokedModules": [
+        1,
+        2,
+        3
+      ],
+      "errors": 0,
+      "selectorResult": {
+        "rows": [],
+        "count": 0
+      },
+      "actualIssueWrites": 0,
+      "actualNotionWrites": 0,
+      "actualReviewCalls": 0
+    },
+    "6550857": {
+      "id": "48053f32d8c94bbfb48a8db802994023",
+      "status": "success",
+      "startedAt": "2026-10-08T06:03:52.974Z",
+      "duration": 1906,
+      "operations": 3,
+      "credits": 4,
+      "dataTransfer": 288658,
+      "invokedModules": [
+        1,
+        7,
+        2
+      ],
+      "errors": 0,
+      "actualIssueWrites": 0,
+      "actualNotionWrites": 0,
+      "actualComments": 0,
+      "actualBuilds": 0,
+      "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+    }
+  },
+  "canonicalRecovery": {
+    "executionId": "0fb3e185b2144a46afbfca974a55cf1d",
+    "startedAt": "2026-10-07T23:38:37.590Z",
+    "historical": true,
+    "issue": {
+      "action": "recover",
+      "existing": true,
+      "issue_number": 86,
+      "issue_url": "https://github.com/KyPython/ai-governance/issues/86",
+      "issue_state": "open",
+      "marker": "ODIN_BOOTCAMP_ROW_ID:3f28621e-0a7a-81bc-abb6-c65d74863966",
+      "comment_allowed": true,
+      "method": "GET",
+      "url": "/repos/KyPython/ai-governance/issues/86",
+      "payload": ""
+    },
+    "comment": {
+      "method": "GET",
+      "url": "/repos/KyPython/ai-governance/issues/86",
+      "payload": "",
+      "writeback": {
+        "properties": {
+          "Build Issue": {
+            "url": "https://github.com/KyPython/ai-governance/issues/86"
+          },
+          "Bootcamp Status": {
+            "select": {
+              "name": "World building"
+            }
+          },
+          "Last Updated": {
+            "date": {
+              "start": "2026-10-07"
+            }
+          }
+        }
+      },
+      "action": "skip",
+      "issue_number": 86
+    }
+  },
+  "miner": {
+    "scenarioId": 6550627,
+    "validation": "configuration and offline contracts only",
+    "forcedRun": false,
+    "executionsObservedSince": "2026-10-07T23:30:00Z",
+    "observedExecutionCount": 1,
+    "preservedConcurrentChanges": "cloud/external-miner-snapshot.json",
+    "authorityVerifiedAgainst": "Native current certification roadmap and fetched database schema",
+    "objectiveEvidenceGuard": "Live guard preserved: unsupported Objective-level labels downgrade to Credential/domain-level unless an explicit CPRE, PCAP or objective ID is present; this label is mapping evidence, not learning credit.",
+    "latestObservedExecution": {
+      "id": "4aafe39d142d419da563bf47d8154b86",
+      "startedAt": "2026-10-08T00:01:21.620Z",
+      "status": "success",
+      "startedBy": "auto",
+      "duration": 25623,
+      "operations": 8,
+      "credits": 9,
+      "dataTransfer": 577751,
+      "isReplayable": true
+    },
+    "currentRevisionExecutionVerified": false,
+    "latestObservedExecutionPredatesCurrentEdit": true,
+    "capabilityAuthority": "cloud/capability-authority.json",
+    "actualCodeOutputPath": "result.ids_json / result.version / result.ids_csv",
+    "nextScheduledExecution": "2026-10-08T07:15:00.000Z",
+    "activePriorityCredential": "AWS Solutions Architect – Associate (SAA-C03)",
+    "priorityEvidence": "Fresh complete native certification SQL: sole Active now credential; genuine overlap only, no forced AWS tags",
+    "unsupportedCapabilityIdsRejected": true
+  },
+  "preservedConcurrentBuilderChanges": "cloud/external-builder-snapshot.json",
+  "duplicateCleanup": {
+    "plan": "cloud/duplicate-cleanup-plan.json",
+    "archive": "cloud/duplicate-cleanup-archive.json",
+    "receipt": "cloud/duplicate-cleanup-receipts.json",
+    "index": "cloud/duplicate-reconciliation-index.md",
+    "closedCount": 114,
+    "verifiedAt": "2026-10-07T23:47:07.793598+00:00",
+    "protectedIssues": [
+      43,
+      44,
+      46,
+      47,
+      58,
+      86
+    ],
+    "commentsPosted": 0
+  },
+  "recordingEvidence": "pending actual Recorder checks",
+  "factoryScope": "Seven existing preparation/mapping/transfer owners are active. Eight registered private starter sources and exact scripts are consumable today. Future worker publication, source review, registration, exact route review and artifact promotion remain required; active polling is not proof of a complete unattended factory or human recording/mastery/approval.",
+  "latestBuilderAdmission": {
+    "executionId": "273dff3d682a4f7e8c63d83211774e62",
+    "status": "success",
+    "newQueuedHandoffs": [
+      {
+        "issueNumber": 196,
+        "method": "POST",
+        "action": "comment",
+        "rowId": "3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d",
+        "writeback": {
+          "properties": {
+            "Build Issue": {
+              "url": "https://github.com/KyPython/ai-governance/issues/196"
+            },
+            "Bootcamp Status": {
+              "select": {
+                "name": "World building"
+              }
+            },
+            "Last Updated": {
+              "date": {
+                "start": "2026-10-08"
+              }
+            }
+          }
+        }
+      },
+      {
+        "issueNumber": 197,
+        "method": "POST",
+        "action": "comment",
+        "rowId": "3f38621e-0a7a-81ac-95c5-dc0a9aaa211a",
+        "writeback": {
+          "properties": {
+            "Build Issue": {
+              "url": "https://github.com/KyPython/ai-governance/issues/197"
+            },
+            "Bootcamp Status": {
+              "select": {
+                "name": "World building"
+              }
+            },
+            "Last Updated": {
+              "date": {
+                "start": "2026-10-08"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "sourceReviewStatus": "Historical initial queue handoff. Both worlds are now published, registered and included in the existing eight-source kit; worker completion comments still lack machine-readable manifest/real PR evidence. Recovery requests reuse actual pinned repos, no new world builds."
+  },
+  "refreshBoundary": {
+    "changedScenarios": [
+      6547847
+    ],
+    "changedModules": {
+      "6547847": [
+        2,
+        5
+      ]
+    },
+    "preservedCapturedScenarios": [
+      6550857,
+      6550231,
+      6548371,
+      6550627
+    ],
+    "newScenarios": 0,
+    "newStarterBuildsRequested": false,
+    "humanAttemptsChanged": false,
+    "finalKiroRevision": "2026-10-08T06:22:36.725Z",
+    "finalBuilderRevision": "2026-10-08T06:07:16.145Z"
+  },
+  "outputRecovery": {
+    "checkedAt": "2026-10-08T03:09:53.352Z",
+    "instructionsOnly": true,
+    "newIssues": 0,
+    "newSourceRepositories": 0,
+    "sourceChanges": false,
+    "pendingWorkerManifestAndRealPREvidence": true,
+    "requests": [
+      {
+        "issue": 196,
+        "commentUrl": "https://github.com/KyPython/ai-governance/issues/196#issuecomment-6051357315",
+        "sourceRepo": "https://github.com/KyPython/python-exception-propagation",
+        "commit": "ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2"
+      },
+      {
+        "issue": 197,
+        "commentUrl": "https://github.com/KyPython/ai-governance/issues/197#issuecomment-6051357673",
+        "sourceRepo": "https://github.com/KyPython/oauth-callback-state",
+        "commit": "c65f9343be723ea36289db541b8f373883cbfe8a"
+      }
+    ],
+    "guard": "Existing comments fully read before one stable row-ID recovery marker per issue; any unavailable publication must be reported as a blocker, never rebuilt or marked READY.",
+    "workerResponses": [
+      {
+        "issue": 196,
+        "commentUrl": "https://github.com/KyPython/ai-governance/issues/196#issuecomment-6051381477",
+        "status": "Blocked: unauthenticated worker cannot access existing private repo; no bytes/baseline/manifest/real PR; administrative sandbox record only",
+        "starterSourceModified": false
+      },
+      {
+        "issue": 197,
+        "commentUrl": "https://github.com/KyPython/ai-governance/issues/197#issuecomment-6051379283",
+        "status": "Blocked: unauthenticated worker cannot access existing private repo; no bytes/baseline/manifest/real PR; administrative sandbox record only",
+        "starterSourceModified": false
+      }
+    ],
+    "authenticatedReadback": "Both existing repositories verified private via current authorized gh API, and exact full source commit endpoints verified. One exact stable recovery marker per issue; four complete comments per issue, including honest worker blocker. No credentials copied.",
+    "canonicalQueuePrivate": false,
+    "privateByteManifestPosted": false,
+    "publicDestinationBoundary": "Authenticated gh API confirms KyPython/ai-governance private:false. Do not expose private source bytes. Private source manifest publication is blocked for this public evidence destination; existing private repos/artifacts remain verified and reusable.",
+    "privateRetrievalIntegration": {
+      "scenarioId": 6550231,
+      "existingGithubConnectionHealthy": true,
+      "currentGithubModule": 4,
+      "currentURL": "/repos/KyPython/ai-governance/issues/{{3.issue_number}}/comments",
+      "privateCommitTreeBlobFetchImplemented": false,
+      "registrationAndArtifactPromotionImplementedForNewWorkerOutputs": false,
+      "blocker": "Current owner reads public comments only; private pointers/hash inventory require authenticated bounded commit/tree/blob traversal plus full byte/mode verification and source registration before artifact promotion. No untested partial fetch or duplicate controller deployed."
+    },
+    "privateSourceRetrievalResolvedBy": {
+      "owner": 6550231,
+      "source": "cloud/private-source-bridge.js",
+      "receipt": "cloud/private-source-bridge-receipt.json",
+      "receiptSha256": "28747e01ea4c61275178d18ae7362b0c899381e8529dc047075eb76d0a85da2d",
+      "auditExecutionId": "d187f1c53d10425faad2bb39f5eba75e",
+      "normalMissingOnlyExecutionId": "dd6c972403b3446a884ac9ce735bbecc",
+      "actualVerifiedFiles": 14,
+      "normalSelectedCount": 0,
+      "normalNotionWrites": 0,
+      "normalReviewCalls": 0,
+      "publicPrivateByteParserActive": false,
+      "currentReadyRowsUntouched": true,
+      "freshGuardBeforeContentAndProperties": true,
+      "sourcePinsPersistOnlyEmptyOrExact": true,
+      "allSevenActive": true
+    }
+  },
+  "privateSourceBridge": {
+    "owner": 6550231,
+    "source": "cloud/private-source-bridge.js",
+    "receipt": "cloud/private-source-bridge-receipt.json",
+    "receiptSha256": "28747e01ea4c61275178d18ae7362b0c899381e8529dc047075eb76d0a85da2d",
+    "auditExecutionId": "d187f1c53d10425faad2bb39f5eba75e",
+    "normalMissingOnlyExecutionId": "dd6c972403b3446a884ac9ce735bbecc",
+    "actualVerifiedFiles": 14,
+    "normalSelectedCount": 0,
+    "normalNotionWrites": 0,
+    "normalReviewCalls": 0,
+    "publicPrivateByteParserActive": false,
+    "currentReadyRowsUntouched": true,
+    "freshGuardBeforeContentAndProperties": true,
+    "sourcePinsPersistOnlyEmptyOrExact": true,
+    "allSevenActive": true
+  },
+  "captureHistory": [
+    {
+      "capturedAt": "2026-10-08T03:56:14.333601+00:00",
+      "snapshotSha256": "e32621b4e1da40655d40dcc9dd4ce52d0710867bd9cc2092c1716d0a40ffb204",
+      "refreshBoundary": {
+        "changedScenarios": [
+          6550231,
+          6550627,
+          6550857,
+          6551447,
+          6551517
+        ],
+        "unchangedLiveRevisions": [
+          6547847,
+          6548371
+        ],
+        "companionSnapshot": "cloud/companion-processes.json",
+        "newStarterBuildsRequested": false,
+        "completedOutputRecoveryRequests": 2,
+        "humanAttemptsChanged": false,
+        "finalBuilderRevision": "2026-10-08T03:16:40.576Z"
+      },
+      "latestInspectedExecutions": {
+        "6547847": {
+          "id": "8e732951abd14190aee8f49c4697ea7c",
+          "status": "success",
+          "startedAt": "2026-10-08T06:03:49.645Z",
+          "duration": 2071,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 286660,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0,
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualComments": 0,
+          "actualBuilds": 0,
+          "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+        },
+        "6548371": {
+          "id": "7cb27fd1b98c43ba8d71fe60727216e0",
+          "status": "success",
+          "startedAt": "2026-10-07T23:58:11.345Z",
+          "duration": 2046,
+          "operations": 3,
+          "credits": 4,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0
+        },
+        "6550231": {
+          "id": "dd6c972403b3446a884ac9ce735bbecc",
+          "status": "success",
+          "startedAt": "2026-10-08T03:54:05.375Z",
+          "duration": 6980,
+          "operations": 3,
+          "credits": 4,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0,
+          "selectorResult": {
+            "rows": [],
+            "count": 0
+          },
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualReviewCalls": 0
+        },
+        "6550857": {
+          "id": "48053f32d8c94bbfb48a8db802994023",
+          "status": "success",
+          "startedAt": "2026-10-08T06:03:52.974Z",
+          "duration": 1906,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 288658,
+          "invokedModules": [
+            1,
+            7,
+            2
+          ],
+          "errors": 0,
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualComments": 0,
+          "actualBuilds": 0,
+          "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+        }
+      }
+    },
+    {
+      "capturedAt": "2026-10-08T06:11:32Z",
+      "snapshotSha256": "45280958521892b3f007c26a6f9921887310a75ec3ce3a6c9e3acfb93f33ca25",
+      "refreshBoundary": {
+        "changedScenarios": [
+          6550857,
+          6547847
+        ],
+        "unchangedLiveRevisions": [
+          6550231,
+          6548371,
+          6550627
+        ],
+        "companionSnapshot": "cloud/companion-processes.json",
+        "newScenarios": 0,
+        "newStarterBuildsRequested": false,
+        "humanAttemptsChanged": false,
+        "finalBuilderRevision": "2026-10-08T06:07:16.145Z",
+        "finalKiroRevision": "2026-10-08T06:03:48.039Z"
+      },
+      "latestInspectedExecutions": {
+        "6547847": {
+          "id": "8e732951abd14190aee8f49c4697ea7c",
+          "status": "success",
+          "startedAt": "2026-10-08T06:03:49.645Z",
+          "duration": 2071,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 286660,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0,
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualComments": 0,
+          "actualBuilds": 0,
+          "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+        },
+        "6548371": {
+          "id": "7cb27fd1b98c43ba8d71fe60727216e0",
+          "status": "success",
+          "startedAt": "2026-10-07T23:58:11.345Z",
+          "duration": 2046,
+          "operations": 3,
+          "credits": 4,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0
+        },
+        "6550231": {
+          "id": "dd6c972403b3446a884ac9ce735bbecc",
+          "status": "success",
+          "startedAt": "2026-10-08T03:54:05.375Z",
+          "duration": 6980,
+          "operations": 3,
+          "credits": 4,
+          "invokedModules": [
+            1,
+            2,
+            3
+          ],
+          "errors": 0,
+          "selectorResult": {
+            "rows": [],
+            "count": 0
+          },
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualReviewCalls": 0
+        },
+        "6550857": {
+          "id": "48053f32d8c94bbfb48a8db802994023",
+          "status": "success",
+          "startedAt": "2026-10-08T06:03:52.974Z",
+          "duration": 1906,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 288658,
+          "invokedModules": [
+            1,
+            7,
+            2
+          ],
+          "errors": 0,
+          "actualIssueWrites": 0,
+          "actualNotionWrites": 0,
+          "actualComments": 0,
+          "actualBuilds": 0,
+          "evidence": "Execution metadata and complete invoked-module inspection only; no feeder item or downstream write module executed. No packet-cycle inference."
+        }
+      }
+    }
+  ],
+  "kiroFirstAdmission": {
+    "specOwner": 6547847,
+    "buildOwner": 6550857,
+    "source": "cloud/kiro-proof.js",
+    "actualExecutionProofRequired": true,
+    "publisherTrust": "Actual authenticated captured Kiro CLI evidence is published by the existing private preparation owner. Normalized metadata alone cannot independently establish engine execution.",
+    "acceptedExecutionId": "UUID or full sess_UUID; never substitute cancelled cloud session for actual local session",
+    "goalHash": "SHA-256 of UTF-8 verbatim Goal plus exactly one final LF",
+    "specHeadAndHumanMerge": "Receipt specCommit binds PR head.sha; actual KyPython main merge_commit_sha independently pins the merged three documents.",
+    "originalPaidFieldsPreserved": true,
+    "recoveredWorldsAwaitingKiroAndHumanMerge": 10,
+    "newWorldsBuiltByObservedRuns": 0,
+    "fixtureEvidence": "Offline export-checker receipts/captures are synthetic tests, never actual Kiro PASS evidence.",
+    "finalVerifierVerification": {
+      "deployedLastEdit": "2026-10-08T06:07:16.145Z",
+      "sourceReadback": "Exact complete module_get for modules 3 and 19 after final deployment",
+      "sourceSha256": "75b78ceaa470d016575e3d0e755bf82ff26cd34b123ac1f8c209449487234ccb",
+      "executionBoundary": "Inspected no-op runs precede final verifier edit and never invoked either verifier. Verification of the final adapter uses synthetic offline fixtures only."
+    },
+    "existingBuildIssueGuard": {
+      "scenarioId": 6547847,
+      "modules": [
+        2,
+        5
+      ],
+      "lastEdit": "2026-10-08T06:22:36.725Z",
+      "behavior": "Both approved Odin and internal Bootcamp rows with an existing Build Issue are skipped. No duplicate spec handoff.",
+      "liveRunBoundary": "Final guarded source run dc81e3abca684e68915395eb24977093: SUCCESS, query/selector/feeder only, zero issue/comment/Notion writes; no packet-cycle inference."
+    }
+  },
+  "latestExecutionObservationAt": "2026-10-08T06:24:44.584887+00:00"
+}

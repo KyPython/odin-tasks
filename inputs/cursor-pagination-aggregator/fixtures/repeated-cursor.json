@@ -1,0 +1,18 @@
+{
+  "responses": [
+    {
+      "request_cursor": null,
+      "response": {
+        "records": [{"id": "rec-201", "label": "dune"}],
+        "next_cursor": "repeat"
+      }
+    },
+    {
+      "request_cursor": "repeat",
+      "response": {
+        "records": [{"id": "rec-202", "label": "ember"}],
+        "next_cursor": "repeat"
+      }
+    }
+  ]
+}

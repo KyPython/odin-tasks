@@ -1,0 +1,83 @@
+--- /dev/null
++++ b/fixtures/negative/artifact.txt
+@@ -0,0 +1,4 @@
++alpha
++
++beta
++gamma
+--- /dev/null
++++ b/fixtures/negative/manifest.json
+@@ -0,0 +1,6 @@
++{
++  "submission_id": "sample_negative_001",
++  "artifact": "artifact.txt",
++  "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
++  "clearance": "pending"
++}
+--- a/tests/test_pipeline.py
++++ b/tests/test_pipeline.py
+@@ -5,6 +5,7 @@
+ import tempfile
+ import unittest
+ from pathlib import Path
++from unittest.mock import patch
+ 
+ from grader.intake import IntakeError, accept_manifest
+ from grader.pipeline import run
+@@ -12,6 +13,7 @@
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ VALID_MANIFEST = ROOT / "fixtures" / "valid" / "manifest.json"
++NEGATIVE_MANIFEST = ROOT / "fixtures" / "negative" / "manifest.json"
+ 
+ 
+ class PipelineTests(unittest.TestCase):
+@@ -61,5 +63,37 @@
+                 accept_manifest(manifest)
+ 
+ 
++    def test_unapproved_clearance_is_rejected_before_grading(self) -> None:
++        with patch("grader.pipeline.score", return_value=3) as grading:
++            with self.assertRaisesRegex(IntakeError, "clearance must be approved"):
++                run(NEGATIVE_MANIFEST)
++            grading.assert_not_called()
++
++    def test_clearance_requires_the_exact_approved_string(self) -> None:
++        cases = (
++            ("missing", {}),
++            ("empty", {"clearance": ""}),
++            ("capitalized", {"clearance": "Approved"}),
++            ("boolean", {"clearance": True}),
++            ("number", {"clearance": 1}),
++            ("list", {"clearance": ["approved"]}),
++        )
++        for name, clearance_fields in cases:
++            with self.subTest(case=name), tempfile.TemporaryDirectory() as directory:
++                folder = Path(directory)
++                artifact = folder / "artifact.txt"
++                artifact.write_text("content\n", encoding="utf-8")
++                manifest = folder / "manifest.json"
++                payload = {
++                    "submission_id": "sample_004",
++                    "artifact": artifact.name,
++                    "sha256": hashlib.sha256(artifact.read_bytes()).hexdigest(),
++                    **clearance_fields,
++                }
++                manifest.write_text(json.dumps(payload), encoding="utf-8")
++                with self.assertRaisesRegex(IntakeError, "clearance must be approved"):
++                    accept_manifest(manifest)
++
++
+ if __name__ == "__main__":
+     unittest.main()
+--- a/grader/intake.py
++++ b/grader/intake.py
+@@ -52,4 +52,8 @@
+     if actual_digest != expected_digest:
+         raise IntakeError("artifact digest mismatch")
+ 
++    clearance = payload.get("clearance")
++    if not isinstance(clearance, str) or clearance != "approved":
++        raise IntakeError("clearance must be approved")
++
+     return AcceptedSubmission(submission_id=submission_id, artifact=artifact)

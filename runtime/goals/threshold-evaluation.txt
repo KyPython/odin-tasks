@@ -1,0 +1,1 @@
+As an evaluation engineer, diagnose a synthetic binary-classifier report whose threshold-selection code ignores the stated false-negative and false-positive costs, repair the selection and confusion-matrix calculations, and produce a deterministic report identifying the lowest-cost threshold.

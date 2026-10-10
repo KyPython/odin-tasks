@@ -1,0 +1,11 @@
+--- a/src/quote_calculator/calculator.py
++++ b/src/quote_calculator/calculator.py
+@@ -39,7 +39,7 @@
+         if quantity >= _VOLUME_THRESHOLD
+         else Decimal("0")
+     )
+-    tax = subtotal * tax_rate
++    tax = (subtotal - discount) * tax_rate
+ 
+     return Quote(
+         subtotal=_money(subtotal),

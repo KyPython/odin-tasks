@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-08T03:55:43.975421+00:00",
+  "snapshotPath": "cloud/companion-processes.json",
+  "snapshotSha256": "20b71905f14ff3382746738a5c9350f2d3357c83f1a644c7424f50f94d22a862",
+  "sourceBindings": [
+    {
+      "scenarioId": 6551447,
+      "moduleId": 3,
+      "source": "cloud/skill-mapper.js",
+      "sourcePrefixSha256": "dceecb64560c655aaece38120c3528a3915b7da49d91a958e51dabb3aa1ecf55",
+      "rawFileSha256": "6589ac5a594136db22ae151021533b12db946ccf81c04738789ca184d93f3336",
+      "deployedCodeSha256": "ae77a30031751c49312587fb78779729fc1fdf0aa9177eb0292208e68cf080db",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    },
+    {
+      "scenarioId": 6551447,
+      "moduleId": 6,
+      "source": "cloud/skill-mapper.js",
+      "sourcePrefixSha256": "dceecb64560c655aaece38120c3528a3915b7da49d91a958e51dabb3aa1ecf55",
+      "rawFileSha256": "6589ac5a594136db22ae151021533b12db946ccf81c04738789ca184d93f3336",
+      "deployedCodeSha256": "25c9b09c439dd91fb175db817da4983f2bb6eedb09cb07cd12c5a9e9db01e418",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    },
+    {
+      "scenarioId": 6551447,
+      "moduleId": 12,
+      "source": "cloud/capability-router.js",
+      "sourcePrefixSha256": "69502afef05d360e0fb50b6e67ca605a44afedea0c82f9de32d555d1bdaf17e0",
+      "rawFileSha256": "015303b7ff370e88583fcd25d28f67404b810829927803c1c3f85b1f7fbc69d0",
+      "deployedCodeSha256": "853568ad6b97c78e6332fa669cdd21de12a06fb6940d42289c89605d7bfb56e0",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    },
+    {
+      "scenarioId": 6551517,
+      "moduleId": 2,
+      "source": "cloud/transfer-router.js",
+      "sourcePrefixSha256": "748e3d7a4f8d14c05957142753881e317e2dddf416f9d1a44e3b45d8b411d436",
+      "rawFileSha256": "e1598750cba81c7a80ed62d6cd49f42cd02c6aaee653ede1e881ae82fcb4799c",
+      "deployedCodeSha256": "6c9d9648670eaf369249bd7919969a92a480b12be4d963a516d28b616838c29c",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    },
+    {
+      "scenarioId": 6551517,
+      "moduleId": 7,
+      "source": "cloud/transfer-router.js",
+      "sourcePrefixSha256": "748e3d7a4f8d14c05957142753881e317e2dddf416f9d1a44e3b45d8b411d436",
+      "rawFileSha256": "e1598750cba81c7a80ed62d6cd49f42cd02c6aaee653ede1e881ae82fcb4799c",
+      "deployedCodeSha256": "c0d1ccd7aacfbb71ea615047c7f4eba50d65ad4bcf770cdb2063b0e06c73f1f6",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    },
+    {
+      "scenarioId": 6551517,
+      "moduleId": 10,
+      "source": "cloud/transfer-router.js",
+      "sourcePrefixSha256": "748e3d7a4f8d14c05957142753881e317e2dddf416f9d1a44e3b45d8b411d436",
+      "rawFileSha256": "e1598750cba81c7a80ed62d6cd49f42cd02c6aaee653ede1e881ae82fcb4799c",
+      "deployedCodeSha256": "ba670cd10b916774f05eea37722aeb75301c26dd0b782bd7ed78a1e9b46c7542",
+      "matches": true,
+      "comparison": "Exact shared source or source prefix with retained adapter"
+    }
+  ],
+  "mapper": {
+    "scenarioId": 6551447,
+    "status": "active",
+    "patchLastEdit": "2026-10-08T03:07:10.774Z",
+    "executionSettings": {
+      "sequential": true,
+      "verifiedBy": "Atomic settings_set patch accepted and concurrent run request refused"
+    },
+    "latestExecution": {
+      "id": "844958a2c712466b8c8b2702c0ecbb6a",
+      "status": "success",
+      "startedAt": "2026-10-08T03:07:12.489Z",
+      "duration": 3972,
+      "operations": 6,
+      "credits": 8,
+      "invokedModules": [
+        1,
+        11,
+        12,
+        2,
+        3,
+        4
+      ],
+      "selectorResult": {
+        "rows": [],
+        "count": 0,
+        "held": []
+      },
+      "sourceReviewScope": "Post-fix live decoder + selector/feeder success; zero metadata writes. Missing-field preservation and exact allowed source bindings additionally checked offline."
+    },
+    "markerProperty": "Skill Mapping Revision",
+    "markerMeaning": "SKILL_MAPPING_V1 SHA-256 of source identity plus final semantic mapping. Existing complete legacy metadata is preserved without AI reclassification; changed authored mappings hold.",
+    "preservation": "Only missing certification/capability/transfer-test/skills fields are filled. Latest native page is read before planning. Transfer Synced and every human approval/review/recording field remain untouched.",
+    "concurrencyLimit": "Make runs are serialized. Notion offers no row compare-and-swap; a fresh read narrows the remaining human-edit/write interval.",
+    "capabilityAuthority": "cloud/capability-authority.json",
+    "actualCodeOutputPath": "result.ids_json / result.version / result.ids_csv"
+  },
+  "router": {
+    "scenarioId": 6551517,
+    "status": "active",
+    "patchLastEdit": "2026-10-08T03:02:03.138Z",
+    "executionSettings": {
+      "sequential": true
+    },
+    "destinationDataSourceId": "a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52",
+    "destinationWrites": 0,
+    "destinationWritesScope": "Observed post-patch selector-only run, not a statement about every historical run",
+    "transferSyncClaim": false,
+    "latestExecution": {
+      "id": "1822039b599c44db9c95b863564dc759",
+      "status": "success",
+      "startedAt": "2026-10-08T03:02:53.819Z",
+      "duration": 1957,
+      "operations": 3,
+      "credits": 4,
+      "invokedModules": [
+        1,
+        2,
+        3
+      ],
+      "selectorResult": {
+        "rows": [],
+        "count": 0,
+        "skipped": [
+          {
+            "page_id": "3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f38621e-0a7a-81ac-95c5-dc0a9aaa211a",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f28621e-0a7a-8141-8d6e-dfb9a5b43054",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f28621e-0a7a-81bc-abb6-c65d74863966",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-810c-b2cd-f1b3baad13ef",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-811a-a81d-c7a39ac80b91",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-8132-89fd-e5cad87aba40",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-8155-9019-c1739de4151c",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-815b-b21e-df440341ca13",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-815e-bc8a-e59c7a517514",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-817b-b25e-faa3bfc84919",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-81d3-a5c8-ec0957bf0655",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-81ed-a36b-dd125c60221c",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-81f5-b437-e25bc0e45e8d",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-818f-8a72-f73e8d4e4da0",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-8141-8692-ed974ac073a0",
+            "reason": "Mapping incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          },
+          {
+            "page_id": "3f08621e-0a7a-81e3-b4ef-cfea472d9930",
+            "reason": "Reviewed unaided evidence contract incomplete"
+          }
+        ]
+      }
+    },
+    "recordedReviewGuard": "Actual Bootcamp Reviewed row, explicit internal Pass/Needs work/Fail and finite review score/notes, completed recording QA/workflow, actual Drive bundle, full source pin and mapped criterion; no synthetic grades or human flags. Prior status/score alone never proves unaided transfer.",
+    "automatedEvidenceClass": "Assisted exposure",
+    "knownGuidedSources": 8,
+    "unknownAssistance": "Conservative assisted exposure, provenance explicitly unknown",
+    "masteryEligible": false,
+    "dedupContract": "ODIN_BOOTCAMP_TRANSFER_V2 SHA-256 of page/source/guidance, actual review, capture gates, bundle, mappings and next action; read actual destination and fresh source before owned sync write.",
+    "writeScope": [
+      "Transfer Synced",
+      "Last Updated"
+    ],
+    "preservedHistoricalBoundary": {
+      "scenarioId": 6551517,
+      "status": "inactive",
+      "patchLastEdit": "2026-10-08T00:30:01.625Z",
+      "destinationWrites": 0,
+      "transferSyncClaim": false,
+      "holdReason": "HOLD: No authorized automated transfer destination/dedup/readback contract exists for the native Study Log. Preserve actual review evidence and leave Transfer Synced unchanged; source write adapter always refuses.",
+      "recordedReviewGuard": "Bootcamp lane, recorded/review lifecycle, finite internal review score and notes, completed recording QA/workflow gate, Google Drive review bundle, exact starter source pin and next-action evidence when needed. Even qualified rows hold before any write.",
+      "priorRuns": [
+        {
+          "id": "4836903426224a2d9b8dc5ec866e4a9f",
+          "startedAt": "2026-10-08T00:13:43.837Z",
+          "status": "success",
+          "startedBy": "auto",
+          "duration": 2312,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 236338,
+          "isReplayable": true
+        },
+        {
+          "id": "503c8524545f4c12a92da3c5215988fd",
+          "startedAt": "2026-10-08T00:02:47.491Z",
+          "status": "success",
+          "startedBy": "auto",
+          "duration": 1821,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 235037,
+          "isReplayable": true
+        },
+        {
+          "id": "09f975a1d0ba478ab98a75af933de5f3",
+          "startedAt": "2026-10-07T23:58:45.660Z",
+          "status": "success",
+          "startedBy": "auto",
+          "duration": 1822,
+          "operations": 3,
+          "credits": 4,
+          "dataTransfer": 207509,
+          "isReplayable": true
+        }
+      ],
+      "forcedRunAfterPatch": false
+    },
+    "advisoryBoundary": "Portable AI advisory report is proposal-only, without synthetic overall Pass/score. validate-report needs real immutable manifest/media byte bindings; local validation alone does not establish a cloud-accessible bundle. It does not satisfy this native scored-route contract or authorize QA, scalar grading, paid approval or mastery. No actual report/bundle supplied."
+  },
+  "authorities": [
+    {
+      "pageId": "3e98621e-0a7a-818f-880a-fb817185a6d1",
+      "title": "Paid Eval Work \u2014 Study Log",
+      "url": "https://app.notion.com/p/3e98621e0a7a818f880afb817185a6d1",
+      "structure": "Existing Study Log now embeds the real Software + AI Mastery \u2014 Transfer Evidence data source a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52; source content/criteria kept out of generic exposure titles.",
+      "meaning": "Transfer ledger permits general concepts and internal evidence links; prohibits client/world/task names, task content, prompts, rubrics, outputs, seed data, credentials and run IDs."
+    },
+    {
+      "pageId": "3b98621e-0a7a-81ed-9f46-fcf32f00ec7b",
+      "title": "Human Rebuild SSOT",
+      "url": "https://app.notion.com/p/3b98621e0a7a81ed9f46fcf32f00ec7b",
+      "meaning": "Transfer changes no learner score or certification gate by itself; human-written work graded with existing oracles and explained unaided is required for implementation proof."
+    },
+    {
+      "pageId": "3ed8621e-0a7a-8141-8153-ebc201bbeb2e",
+      "title": "Certification \u2192 Proof \u2192 Opportunity Map",
+      "url": "https://app.notion.com/p/3ed8621e0a7a81418153ebc201bbeb2e",
+      "meaning": "Harvest concepts, assisted/unaided boundary and next verification; actual canonical mappings required for objective scoring."
+    }
+  ],
+  "humanAttemptPropertiesReset": false,
+  "newWorldsCreatedByThisRepair": 0,
+  "scope": "Existing mapper and existing transfer owner only; safe assisted-exposure classification and real destination/readback. No source, human grades/gates, learner score, exam readiness or paid approval mutation."
+}

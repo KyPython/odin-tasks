@@ -1,0 +1,22 @@
+{
+  "responses": [
+    {
+      "request_cursor": null,
+      "response": {
+        "records": [{"id": "rec-301", "label": "fern"}],
+        "next_cursor": "gap"
+      }
+    },
+    {
+      "request_cursor": "gap",
+      "response": {"records": [], "next_cursor": "after-gap"}
+    },
+    {
+      "request_cursor": "after-gap",
+      "response": {
+        "records": [{"id": "rec-302", "label": "gold"}],
+        "next_cursor": null
+      }
+    }
+  ]
+}

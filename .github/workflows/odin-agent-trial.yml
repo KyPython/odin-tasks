@@ -37,7 +37,7 @@ jobs:
       - name: Test independent frozen oracle and negative controls
         run: python -m unittest discover -s review/inspect_ai -p 'test_*.py' -v
       - name: Install pinned Inspect AI model adapter
-        run: python -m pip install 'inspect-ai==0.3.279' 'openai==2.8.1'
+        run: python -m pip install 'inspect-ai==0.3.279' 'openai==3.4.0'
       - name: Set up local Ollama CLI (no remote model billing)
         uses: ai-action/setup-ollama@6c9453881a29f2604c0ef56e20344141cc556dfb # v2.0.79
         with:

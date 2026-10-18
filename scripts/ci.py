@@ -61,7 +61,21 @@ def check_network() -> dict:
 
 
 def run(argv: list[str], name: str, artifacts: Path) -> int:
-    result = subprocess.run(argv, cwd=ROOT, text=True, capture_output=True, timeout=240)
+    try:
+        result = subprocess.run(
+            argv, cwd=ROOT, text=True, capture_output=True, timeout=240
+        )
+    except subprocess.TimeoutExpired as exc:
+        for stream, partial in (("stdout", exc.stdout), ("stderr", exc.stderr)):
+            value = (
+                partial.decode("utf-8", errors="replace")
+                if isinstance(partial, bytes)
+                else partial or ""
+            )
+            (artifacts / f"{name}.{stream}.txt").write_text(value)
+        raise RuntimeError(
+            f"{name} timed out after {exc.timeout} seconds; see synthetic artifacts"
+        ) from exc
     (artifacts / f"{name}.stdout.txt").write_text(result.stdout)
     (artifacts / f"{name}.stderr.txt").write_text(result.stderr)
     if result.returncode:

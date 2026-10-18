@@ -20,13 +20,18 @@ jobs:
       - name: Build locked evaluation tools
         run: docker build --tag evaluation-lab-ci:local .
       - name: Run actual tools without networking
-        run: python3 scripts/run_offline.py --output-dir artifacts/evaluation
+        uses: KyPython/ai-governance/.github/actions/system-quality@5dcfb5d6d88a26c7a142b459b83df17cc6b2e590
+        with:
+          definition: .quality/system.json
+          output-directory: quality-results/evaluation
       - name: Retain synthetic verification reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: synthetic-evaluation
-          path: artifacts/evaluation
+          path: |
+            artifacts/evaluation
+            quality-results/evaluation
           if-no-files-found: error
 
   accessibility:
@@ -54,11 +59,16 @@ jobs:
             exit 1
           fi
       - name: Run real browser positive and negative controls
-        run: python3 scripts/browser_ci.py
+        uses: KyPython/ai-governance/.github/actions/system-quality@5dcfb5d6d88a26c7a142b459b83df17cc6b2e590
+        with:
+          definition: .quality/accessibility.json
+          output-directory: quality-results/accessibility
       - name: Retain synthetic browser reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: synthetic-accessibility
-          path: artifacts/browser
+          path: |
+            artifacts/browser
+            quality-results/accessibility
           if-no-files-found: error

@@ -23,6 +23,12 @@ The GitHub workflow runs two jobs:
 
 Docker must already be available. Dependency downloads happen during the build;
 the subsequent fixture run has no network access or provider credentials.
+Build the image from the current checkout immediately before each evaluation.
+The local image tag is mutable: a host command receipt alone does not prove an
+older image contains the current host source. CI builds and evaluates in the
+same job; locally, retain the matching build evidence or compare the copied
+`summary.json` source hashes with that checkout before claiming exact-source
+coverage.
 
 ```sh
 docker build --tag evaluation-lab-ci:local .
@@ -72,3 +78,23 @@ No live application, retrieval system or model quality is verified here.
 This is a portable export of a local experiment, not a second canonical copy of
 the original lab. Source-copy/adaptation provenance and preparation reviews are
 retained separately by the owner, outside this source-only repository.
+
+## Scoped eight-dimension evidence
+
+[QUALITY_REQUIREMENTS.md](QUALITY_REQUIREMENTS.md) defines the intended-use
+criteria. [`.quality/system.json`](.quality/system.json) covers the evaluation
+subsystem; [`.quality/accessibility.json`](.quality/accessibility.json) covers the
+native browser subsystem. They are two parts of this export, with separate
+runtime/evidence boundaries and complete eight-dimension assessments.
+
+The shared maintained runner executes each existing tool command with a finite
+timeout and records actual outcomes, source/requirement hashes, gaps and next
+checks. CI retains `quality-results/evaluation` and
+`quality-results/accessibility` with the corresponding synthetic tool reports.
+Inspect command receipts and the normal CI log when a command fails; completed
+tool output is not fabricated after timeout. The evaluation wrapper also keeps
+partial stdout/stderr when one of its captured tool commands times out.
+
+Passing scoped CI does not establish overall release readiness. Operations,
+actual backup recovery, live model/product quality and user outcomes remain
+explicit gaps; generated assessments retain `readiness_established: false`.

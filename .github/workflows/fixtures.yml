@@ -1,0 +1,64 @@
+name: Synthetic integration checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evaluation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Build locked evaluation tools
+        run: docker build --tag evaluation-lab-ci:local .
+      - name: Run actual tools without networking
+        run: python3 scripts/run_offline.py --output-dir artifacts/evaluation
+      - name: Retain synthetic verification reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: synthetic-evaluation
+          path: artifacts/evaluation
+          if-no-files-found: error
+
+  accessibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: 22.23.2
+      - name: Install locked browser-test packages without downloading a browser
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+        run: npm ci --prefix accessibility --ignore-scripts --no-audit --no-fund
+      - name: Assert the runner's system Chrome
+        run: |
+          if [ -x /opt/google/chrome/chrome ]; then
+            echo 'PUPPETEER_EXECUTABLE_PATH=/opt/google/chrome/chrome' >> "$GITHUB_ENV"
+          elif [ -x /usr/bin/google-chrome ]; then
+            echo 'PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome' >> "$GITHUB_ENV"
+          else
+            echo 'A sandbox-capable preinstalled system Chrome is required.' >&2
+            exit 1
+          fi
+      - name: Run real browser positive and negative controls
+        run: python3 scripts/browser_ci.py
+      - name: Retain synthetic browser reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: synthetic-accessibility
+          path: artifacts/browser
+          if-no-files-found: error

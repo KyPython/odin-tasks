@@ -148,7 +148,7 @@ def main() -> int:
     versions = {
         name: importlib.metadata.version(name) for name in ("deepeval", "pytest")
     }
-    if versions != {"deepeval": "4.3.0", "pytest": "8.4.2"}:
+    if versions != {"deepeval": "4.3.0", "pytest": "9.0.3"}:
         raise RuntimeError(
             "Installed evaluation packages differ from the locked contract"
         )

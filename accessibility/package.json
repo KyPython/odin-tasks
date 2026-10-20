@@ -1,0 +1,12 @@
+{
+  "name": "local-accessibility-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Explicit local accessibility checks with Pa11y CI and axe",
+  "engines": { "node": "^22.13.0 || >=24" },
+  "scripts": {
+    "audit": "node audit.cjs",
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": { "pa11y-ci": "5.0.0" }
+}

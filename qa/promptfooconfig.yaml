@@ -1,0 +1,16 @@
+description: Synthetic document QA adapter regression (no live service or model calls)
+prompts:
+  - '{{question}}'
+providers:
+  - id: file://provider.py
+    label: saved-synthetic-responses
+    config:
+      mode: fixture
+tests:
+  - file://test_cases.py:generate_tests
+defaultTest:
+  assert:
+    - type: python
+      value: file://assertion.py:get_assert
+evaluateOptions:
+  maxConcurrency: 1

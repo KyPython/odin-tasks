@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "responses": {
+    "retention": {
+      "requestId": "synthetic-retention",
+      "data": {
+        "query": "How long does the Aster archive retain audit records?",
+        "answer": "The Aster archive retains audit records for 21 days. [p0]",
+        "citations": [
+          {"index": 0, "text": "The Aster archive retains audit records for 21 days.", "score": 0.99, "metadata": {"source": "synthetic/aster-retention.md"}}
+        ]
+      }
+    },
+    "backup": {
+      "requestId": "synthetic-backup",
+      "data": {
+        "query": "How often does the Aster archive create a backup?",
+        "answer": "The Aster archive creates a backup every 8 hours. [p0]",
+        "citations": [
+          {"index": 0, "text": "The Aster archive creates a backup every 8 hours.", "score": 0.98, "metadata": {"source": "synthetic/aster-backup.md"}}
+        ]
+      }
+    },
+    "combined": {
+      "requestId": "synthetic-combined",
+      "data": {
+        "query": "State the Aster archive's audit retention and backup interval.",
+        "answer": "The Aster archive retains audit records for 21 days. [p0] The Aster archive creates a backup every 8 hours. [p1]",
+        "citations": [
+          {"index": 0, "text": "The Aster archive retains audit records for 21 days.", "score": 0.99, "metadata": {"source": "synthetic/aster-retention.md"}},
+          {"index": 1, "text": "The Aster archive creates a backup every 8 hours.", "score": 0.98, "metadata": {"source": "synthetic/aster-backup.md"}}
+        ]
+      }
+    },
+    "insufficient": {
+      "requestId": "synthetic-insufficient",
+      "data": {
+        "query": "Which encryption algorithm does the Aster archive use?",
+        "answer": "I don’t have enough information in the provided documents to answer that.",
+        "citations": []
+      }
+    }
+  }
+}

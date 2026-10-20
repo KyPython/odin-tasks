@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "documents": [
+    {
+      "id": "retention",
+      "source": "synthetic/aster-retention.md",
+      "text": "The Aster archive retains audit records for 21 days."
+    },
+    {
+      "id": "backup",
+      "source": "synthetic/aster-backup.md",
+      "text": "The Aster archive creates a backup every 8 hours."
+    }
+  ]
+}

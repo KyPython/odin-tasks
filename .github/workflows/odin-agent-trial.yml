@@ -1,0 +1,77 @@
+name: Odin Inspect - live synthetic agent trial
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'review/inspect_ai/agent_*'
+      - 'review/inspect_ai/test_agent_oracle.py'
+      - '.github/workflows/odin-agent-trial.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: odin-synthetic-agent-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONNOUSERSITE: '1'
+      PYTHONPATH: '.'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+      OLLAMA_BASE_URL: 'http://localhost:11434/v1'
+    steps:
+      - name: Check out exact branch without persistent credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12'
+      - name: Test independent frozen oracle and negative controls
+        run: python -m unittest discover -s review/inspect_ai -p 'test_*.py' -v
+      - name: Install pinned Inspect AI model adapter
+        run: python -m pip install 'inspect-ai==0.3.279' 'openai==3.4.0'
+      - name: Set up local Ollama CLI (no remote model billing)
+        uses: ai-action/setup-ollama@6c9453881a29f2604c0ef56e20344141cc556dfb # v2.0.79
+        with:
+          version: '0.34.4'
+      - name: Start local Ollama and pull bounded model
+        shell: bash
+        run: |
+          set -euo pipefail
+          ollama serve > "${RUNNER_TEMP}/ollama-server.log" 2>&1 &
+          for attempt in $(seq 1 40); do
+            if curl -fsS http://127.0.0.1:11434/api/tags > /dev/null; then break; fi
+            sleep 1
+          done
+          curl -fsS http://127.0.0.1:11434/api/tags >/dev/null
+          ollama pull qwen2.5:1.5b
+          ollama list | tee "${RUNNER_TEMP}/ollama-model-receipt.txt"
+          printf 'COMMIT=%s\nINSPECT=0.3.279\nOLLAMA=0.34.4\nMODEL=qwen2.5:1.5b\n' "${GITHUB_SHA}" > "${RUNNER_TEMP}/agent-run-provenance.txt"
+      - name: Real model calls and simulated tool actions in native Inspect
+        shell: bash
+        run: |
+          set -euo pipefail
+          inspect eval review/inspect_ai/agent_task.py --model ollama/qwen2.5:1.5b --max-samples 1 --log-dir "${RUNNER_TEMP}/odin-agent-logs"
+      - name: Verify cloud log is a real model evaluation
+        run: python review/inspect_ai/check_agent_log.py --log-dir "${RUNNER_TEMP}/odin-agent-logs" --output "${RUNNER_TEMP}/odin-agent-summary.json"
+      - name: Archive attributable traces and proof
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: odin-synthetic-agent-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/odin-agent-logs/
+            ${{ runner.temp }}/odin-agent-summary.json
+            ${{ runner.temp }}/ollama-model-receipt.txt
+            ${{ runner.temp }}/agent-run-provenance.txt
+            ${{ runner.temp }}/ollama-server.log
+          if-no-files-found: warn
+          retention-days: 14

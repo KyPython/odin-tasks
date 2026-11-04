@@ -13,6 +13,9 @@ jobs:
   evaluation:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: tasks/eval-lab
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -22,21 +25,24 @@ jobs:
       - name: Run actual tools without networking
         uses: KyPython/ai-governance/.github/actions/system-quality@5dcfb5d6d88a26c7a142b459b83df17cc6b2e590
         with:
-          definition: .quality/system.json
-          output-directory: quality-results/evaluation
+          definition: tasks/eval-lab/.quality/system.json
+          output-directory: tasks/eval-lab/quality-results/evaluation
       - name: Retain synthetic verification reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: synthetic-evaluation
           path: |
-            artifacts/evaluation
-            quality-results/evaluation
+            tasks/eval-lab/artifacts/evaluation
+            tasks/eval-lab/quality-results/evaluation
           if-no-files-found: error
 
   accessibility:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: tasks/eval-lab
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -61,14 +67,14 @@ jobs:
       - name: Run real browser positive and negative controls
         uses: KyPython/ai-governance/.github/actions/system-quality@5dcfb5d6d88a26c7a142b459b83df17cc6b2e590
         with:
-          definition: .quality/accessibility.json
-          output-directory: quality-results/accessibility
+          definition: tasks/eval-lab/.quality/accessibility.json
+          output-directory: tasks/eval-lab/quality-results/accessibility
       - name: Retain synthetic browser reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: synthetic-accessibility
           path: |
-            artifacts/browser
-            quality-results/accessibility
+            tasks/eval-lab/artifacts/browser
+            tasks/eval-lab/quality-results/accessibility
           if-no-files-found: error

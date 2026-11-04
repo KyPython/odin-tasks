@@ -14,6 +14,7 @@ starters plus the recording registry. Consolidated Nov 2026; see
 | `tasks/oauth-callback-state` | OAuth state-binding repair exercise | `python -m unittest discover -s tests && python run_fixtures.py` |
 | `tasks/cursor-pagination-aggregator` | Cursor-paginated client exercise | `PYTHONPATH=src python -m unittest discover -s tests` |
 | `tasks/python-exception-propagation` | Exception-propagation repair exercise | `PYTHONPATH=src pytest` |
+| `tasks/eval-lab` | Offline eval/a11y proof lab (promptfoo, DeepEval, Pa11y) | `eval-lab` workflow |
 
 The recording registry stays a standalone repo
 (`KyPython/odin-recording-preparation`): its checksummed vendored inputs

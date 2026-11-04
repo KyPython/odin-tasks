@@ -37,3 +37,18 @@ move proves nothing broke.
 2. ODIN-MONO-2.2 WHEN the consolidation merges THEN pre-existing gate
    debt surfaced by the move (container USER, vulnerable pins) SHALL be
    fixed and re-verified, not carried over red.
+
+### Requirement 3: Eval lab move (ODIN-MONO-3)
+
+**User Story:** As Ky, I want the offline eval/a11y lab in the same
+repo, so that all evaluations live in one place.
+
+#### Acceptance Criteria
+
+1. ODIN-MONO-3.1 WHEN the merge lands THEN `tasks/eval-lab/` SHALL
+   contain oss-integration-checks' `main` tip with history and no
+   nested `.github/` dir.
+2. ODIN-MONO-3.2 WHEN the merge lands THEN the lab's fixtures workflow
+   SHALL run hoisted from root CI against `tasks/eval-lab/`.
+3. ODIN-MONO-3.3 WHEN the merge lands THEN `MIGRATION.md` SHALL record
+   the source repo + commit SHA.

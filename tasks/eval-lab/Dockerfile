@@ -35,6 +35,7 @@ COPY tools/promptfoo/package.json tools/promptfoo/package-lock.json ./tools/prom
 RUN npm ci --prefix tools/promptfoo --ignore-scripts --no-audit --no-fund
 COPY qa ./qa
 COPY dispatch ./dispatch
+COPY xdomain ./xdomain
 COPY tests ./tests
 COPY scripts ./scripts
 COPY pytest.ini Dockerfile ./

@@ -1,0 +1,14 @@
+.venv/
+**/node_modules/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+artifacts/
+quality-results/
+state/
+results/
+reports/
+.DS_Store

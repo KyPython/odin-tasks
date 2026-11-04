@@ -19,6 +19,13 @@ new). It links to `tasks/` here instead; only its registry links move.
 | `tasks/oauth-callback-state` | `KyPython/oauth-callback-state` | `ef5d5b5e4b96a65ec970916aaab133c2513334d9` |
 | `tasks/cursor-pagination-aggregator` | `KyPython/cursor-pagination-aggregator` | `d2cbe0381575ddcc6d6f6415fa90b01703e8f6ac` |
 | `tasks/python-exception-propagation` | `KyPython/python-exception-propagation` | `4bfa36dfb94acf892b742e1d5af8e8877a5d6e7d` |
+| `tasks/eval-lab` | `KyPython/oss-integration-checks` | `8ad73cc895c872fac60b3301bd6fc98465f31a88` |
+
+Eval-lab move adaptations: nested `.github/` removed; `fixtures.yml`
+hoisted to root as `eval-lab.yml` with `working-directory: tasks/eval-lab`
+and prefixed definition/artifact paths; `.quality/*.json` checks gained
+`"cwd": "tasks/eval-lab"` with inputs/requirements prefixed to the new
+location (content hashes unchanged).
 
 ## Adjustments made during the move
 

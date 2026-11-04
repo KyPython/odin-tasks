@@ -1,0 +1,138 @@
+{
+ "schema_version": 1,
+ "system_id": "synthetic-integration-evaluation",
+ "intended_use": "Offline QA/dispatch/promptfoo subsystem of the source-only synthetic-integration export; native browser evidence is separate in .quality/accessibility.json.",
+ "environment": "synthetic-offline-ci",
+ "requirements": [
+  {
+   "path": "tasks/eval-lab/QUALITY_REQUIREMENTS.md",
+   "sha256": "e190c5ea8de3f619004d221e6cdd2b729297efc3fa78cea0e476415166543748"
+  }
+ ],
+ "checks": {
+  "evaluation-controls": {
+   "command": [
+    "{python}",
+    "scripts/run_offline.py",
+    "--output-dir",
+    "artifacts/evaluation"
+   ],
+   "timeout_seconds": 900,
+   "inputs": [
+    "tasks/eval-lab/Dockerfile",
+    "tasks/eval-lab/requirements.in",
+    "tasks/eval-lab/requirements.lock",
+    "tasks/eval-lab/pytest.ini",
+    "tasks/eval-lab/qa/*.py",
+    "tasks/eval-lab/qa/*.json",
+    "tasks/eval-lab/qa/*.yaml",
+    "tasks/eval-lab/dispatch/*.py",
+    "tasks/eval-lab/tests/*.py",
+    "tasks/eval-lab/scripts/*.py",
+    "tasks/eval-lab/tools/promptfoo/package.json",
+    "tasks/eval-lab/tools/promptfoo/package-lock.json",
+    "tasks/eval-lab/QUALITY_REQUIREMENTS.md",
+    "tasks/eval-lab/.quality/system.json",
+    ".github/workflows/eval-lab.yml"
+   ],
+   "scope": "Actual Docker-network-none pytest, DeepEval QA/dispatch metrics and promptfoo fixtures plus real same-address network controls; no live services.",
+   "cwd": "tasks/eval-lab"
+  }
+ },
+ "dimensions": {
+  "correctness": {
+   "acceptance_criteria": [
+    "Run actual pytest, DeepEval metrics, promptfoo fixture cases and deterministic QA/dispatch negative controls with existing expected outcomes."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "Live vendor authorization, production behavior and operational recovery are outside this offline snapshot."
+   ],
+   "next_check": "Keep running the complete suite against reviewed source and expand synthetic regressions when requirements change."
+  },
+  "security": {
+   "acceptance_criteria": [
+    "Require actual numeric-address positive/negative/positive network controls and network-none tool execution with no provider credentials."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "No live product authentication/tenant boundary, provider security or dependency vulnerability claim."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "reliability": {
+   "acceptance_criteria": [
+    "Preserve deterministic repeat-equal QA results, actual command failures and bounded execution."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "Live vendor authorization, production behavior and operational recovery are outside this offline snapshot."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "data_integrity": {
+   "acceptance_criteria": [
+    "Preserve independent synthetic oracle/dispatch meanings and verify scoped source hashes before and after actual tools run."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "No actual remote rollback, concurrent database snapshot or backup restoration was exercised."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "observability": {
+   "acceptance_criteria": [
+    "Retain actual JUnit, tool metrics, promptfoo/network reports and maintained command outcomes on success/failure."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "Live vendor authorization, production behavior and operational recovery are outside this offline snapshot."
+   ],
+   "next_check": "Inspect retained JUnit, command receipts and assessment after both successful and failed CI."
+  },
+  "delivery": {
+   "acceptance_criteria": [
+    "Run the digest/hash/integrity-locked actual evaluation tools from the exact declared source without paid providers or private data."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "Hosted checks and exact published head require separate current verification; no merge or deployment is performed."
+   ],
+   "next_check": "Verify all required hosted checks on the exact reviewed commit before any separately authorized merge."
+  },
+  "operations": {
+   "acceptance_criteria": [
+    "Document reproduction and preserve explicit unknown live ownership, alerts, incident recovery and actual restored-backup evidence."
+   ],
+   "check_ids": [],
+   "gaps": [
+    "Live owner/on-call, alerting, recovery and restored backups have not been verified."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "outcome_evidence": {
+   "acceptance_criteria": [
+    "Establish exact synthetic answer/citation/abstention and scripted dispatch controls only."
+   ],
+   "check_ids": [
+    "evaluation-controls"
+   ],
+   "gaps": [
+    "No actual model benchmark, live retrieval/product quality or private dispatch replay was evaluated."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  }
+ }
+}

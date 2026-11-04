@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "system_id": "synthetic-integration-accessibility",
+ "intended_use": "Native synthetic accessibility subsystem of the source-only synthetic-integration export; evaluation evidence is separate in .quality/system.json.",
+ "environment": "synthetic-offline-ci",
+ "requirements": [
+  {
+   "path": "tasks/eval-lab/QUALITY_REQUIREMENTS.md",
+   "sha256": "e190c5ea8de3f619004d221e6cdd2b729297efc3fa78cea0e476415166543748"
+  }
+ ],
+ "checks": {
+  "browser-controls": {
+   "command": [
+    "{python}",
+    "scripts/browser_ci.py"
+   ],
+   "timeout_seconds": 240,
+   "inputs": [
+    "tasks/eval-lab/accessibility/*.json",
+    "tasks/eval-lab/accessibility/*.cjs",
+    "tasks/eval-lab/accessibility/test/*.cjs",
+    "tasks/eval-lab/scripts/browser_ci.py",
+    "tasks/eval-lab/QUALITY_REQUIREMENTS.md",
+    "tasks/eval-lab/.quality/accessibility.json",
+    ".github/workflows/eval-lab.yml"
+   ],
+   "scope": "Actual sandboxed native browser/axe controls against self-contained synthetic loopback HTML only.",
+   "cwd": "tasks/eval-lab"
+  }
+ },
+ "dimensions": {
+  "correctness": {
+   "acceptance_criteria": [
+    "Actual Chrome/axe controls accept accessible synthetic HTML, detect unnamed controls/missing image text and reject unreachable/error/redirect pages."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "Live vendor authorization, production behavior and operational recovery are outside this offline snapshot."
+   ],
+   "next_check": "Keep running the complete suite against reviewed source and expand synthetic regressions when requirements change."
+  },
+  "security": {
+   "acceptance_criteria": [
+    "Retain the native browser sandbox and self-contained synthetic loopback fixtures; no application routes or credentials."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "Synthetic pages do not establish application authorization or native-runner network isolation."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "reliability": {
+   "acceptance_criteria": [
+    "Actual browser controls expose request failures and remain bounded by the command timeout."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "Real application requests, production load and browser-process crash recovery are not evaluated."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "data_integrity": {
+   "acceptance_criteria": [
+    "Bind browser source and fixture inputs to this command receipt without modifying application data."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "No actual remote rollback, concurrent database snapshot or backup restoration was exercised."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "observability": {
+   "acceptance_criteria": [
+    "Retain actual browser output/version reports and the maintained command receipt/assessment on failure and success."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "Live vendor authorization, production behavior and operational recovery are outside this offline snapshot."
+   ],
+   "next_check": "Inspect retained JUnit, command receipts and assessment after both successful and failed CI."
+  },
+  "delivery": {
+   "acceptance_criteria": [
+    "Run the integrity-locked browser tools on the declared native CI runtime without a browser-download or sandbox-disable fallback."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "Hosted checks and exact published head require separate current verification; no merge or deployment is performed."
+   ],
+   "next_check": "Verify all required hosted checks on the exact reviewed commit before any separately authorized merge."
+  },
+  "operations": {
+   "acceptance_criteria": [
+    "Document reproduction and preserve explicit unknown live ownership, alerts, incident recovery and actual restored-backup evidence."
+   ],
+   "check_ids": [],
+   "gaps": [
+    "Live owner/on-call, alerting, recovery and restored backups have not been verified."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  },
+  "outcome_evidence": {
+   "acceptance_criteria": [
+    "Establish only the exercised synthetic browser accessibility controls, not actual application accessibility."
+   ],
+   "check_ids": [
+    "browser-controls"
+   ],
+   "gaps": [
+    "No live application/public route or customer accessibility outcome was tested."
+   ],
+   "next_check": "Obtain separately authorized evidence for the stated live/operational gap before a production readiness claim."
+  }
+ }
+}

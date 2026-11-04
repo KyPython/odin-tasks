@@ -3,7 +3,7 @@
   "private": true,
   "packageManager": "pnpm@9.15.4",
   "scripts": {
-    "test": "turbo run test",
+    "test": "turbo run test && node --test tests/*.test.js",
     "build": "turbo run build",
     "build:service": "node scripts/clean.mjs && turbo run build --filter=@harbor/dispatch-service",
     "check:container": "node scripts/check-container-target.mjs",

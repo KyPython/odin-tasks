@@ -1,0 +1,8 @@
+[project]
+name = "harbor-signal-evaluation"
+version = "0.1.0"
+description = "Synthetic threshold evaluation exercise"
+requires-python = ">=3.11"
+
+[tool.unittest]
+start-directory = "tests"

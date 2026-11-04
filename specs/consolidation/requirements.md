@@ -4,9 +4,10 @@ Spec ID: ODIN-MONO · Issue: #1 · Status: proposed; Ky approves by merging this
 
 ## Introduction
 
-Nine standalone repos (8 task starters + the recording registry) move
-into this mono-repo with history preserved, one root CI verifying every
-task, and the recording build kept working from vendored inputs.
+Eight standalone task-starter repos move into this mono-repo with history
+preserved and one root CI verifying every task. The recording registry
+stays standalone (its checksummed vendored inputs fight the mono-repo
+gate) and links to `tasks/` here instead.
 
 ## Requirements
 
@@ -18,8 +19,7 @@ work stops scattering across a dozen repos.
 #### Acceptance Criteria
 
 1. ODIN-MONO-1.1 WHEN the consolidation merges THEN `tasks/<name>/`
-   SHALL contain each source repo's `main` tip with history, and
-   `recording/` SHALL contain the registry with history.
+   SHALL contain each of the 8 source repos' `main` tip with history.
 2. ODIN-MONO-1.2 WHEN the consolidation merges THEN a `MIGRATION.md`
    SHALL record each source repo + commit SHA.
 3. ODIN-MONO-1.3 WHEN the consolidation merges THEN no nested `.github/`
@@ -34,9 +34,6 @@ move proves nothing broke.
 
 1. ODIN-MONO-2.1 WHEN root CI runs THEN each task's documented verify
    command SHALL pass (matrix job per task).
-2. ODIN-MONO-2.2 WHEN root CI runs THEN the recording smoke (unittest
-   discover + `check_recording_pack.py`) SHALL pass.
-3. ODIN-MONO-2.3 WHEN the consolidation merges THEN the recording
-   registry SHALL reference the local `tasks/` dirs while keeping
-   original pinned commits as provenance, and the preparation build
-   SHALL still read only vendored `inputs/`.
+2. ODIN-MONO-2.2 WHEN the consolidation merges THEN pre-existing gate
+   debt surfaced by the move (container USER, vulnerable pins) SHALL be
+   fixed and re-verified, not carried over red.

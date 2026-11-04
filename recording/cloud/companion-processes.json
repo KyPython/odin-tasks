@@ -1,0 +1,814 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-08T03:55:43.975421+00:00",
+  "captureMethod": "Fresh native scenario_get and complete module_get for each existing owner after checked atomic fixes; connection identities and restore metadata excluded.",
+  "redaction": "Connection IDs, labels, credentials and restore metadata omitted.",
+  "taskFactorySchema": {
+    "dataSourceId": "74aac26d-fcbb-45df-b996-561f76b9cec6",
+    "capturedAfterSchemaAddition": true,
+    "properties": {
+      "AI Input Disclosure": {
+        "type": "select",
+        "description": "",
+        "options": [
+          "None",
+          "AI-generated before recording"
+        ]
+      },
+      "Approval ID": {
+        "type": "text",
+        "description": ""
+      },
+      "Approved Goal": {
+        "type": "text",
+        "description": ""
+      },
+      "Approved Pay": {
+        "type": "number",
+        "description": ""
+      },
+      "Apps": {
+        "type": "text",
+        "description": ""
+      },
+      "Bootcamp Capability IDs": {
+        "type": "text",
+        "description": "Exact Human Rebuild capability IDs this world is designed to falsify; generated only from the canonical capability router."
+      },
+      "Bootcamp Status": {
+        "type": "select",
+        "description": "Practice-world lifecycle independent of Studio/Odin submission state.",
+        "options": [
+          "Idea",
+          "World queued",
+          "World building",
+          "Ready to practice",
+          "Recorded",
+          "Review pending",
+          "Reviewed",
+          "Retired",
+          "Blocked"
+        ]
+      },
+      "Build Issue": {
+        "type": "url",
+        "description": ""
+      },
+      "Build PR": {
+        "type": "url",
+        "description": ""
+      },
+      "Certification Alignment": {
+        "type": "text",
+        "description": "Current certification objectives/credentials this world reinforces. Use only supported mappings."
+      },
+      "Certification Evidence Level": {
+        "type": "select",
+        "description": "Granularity at which this world may be credited for certification learning.",
+        "options": [
+          "Objective-level",
+          "Credential/domain-level",
+          "No supported mapping"
+        ]
+      },
+      "Certification Objective Coverage": {
+        "type": "text",
+        "description": "Exact certification objective/domain coverage supported by the current certification authority. Do not invent objective IDs."
+      },
+      "Checklist URL": {
+        "type": "url",
+        "description": "Canonical mandatory Odin Workflow Checklist used by this task."
+      },
+      "Cloud Preparation Commit": {
+        "type": "text",
+        "description": ""
+      },
+      "Cloud Preparation URL": {
+        "type": "url",
+        "description": ""
+      },
+      "Duplicate Fingerprint": {
+        "type": "text",
+        "description": ""
+      },
+      "Environment Review Gate": {
+        "type": "checkbox",
+        "description": "Checked only after the built starter environment has been inspected against the approved Goal and starter spec."
+      },
+      "Fit Gate": {
+        "type": "select",
+        "description": "",
+        "options": [
+          "PASS",
+          "HOLD",
+          "REJECT"
+        ]
+      },
+      "Human Transfer Test": {
+        "type": "text",
+        "description": "What KyJahn must independently diagnose, implement, verify, or explain for this world to count as transfer practice."
+      },
+      "Insightful Hours": {
+        "type": "number",
+        "description": ""
+      },
+      "Kiro Issue": {
+        "type": "url",
+        "description": ""
+      },
+      "Lane": {
+        "type": "select",
+        "description": "Execution lane. Bootcamp tasks are practice only once rehearsed and must not later be submitted as a new Odin task.",
+        "options": [
+          "Odin monetization",
+          "Bootcamp",
+          "Dual-candidate",
+          "Retired"
+        ]
+      },
+      "Last Updated": {
+        "type": "date",
+        "description": ""
+      },
+      "Local Starter Gate": {
+        "type": "checkbox",
+        "description": "Checked only after the exact reviewed starter environment is present and readable on the recording Mac."
+      },
+      "Next Skill Action": {
+        "type": "text",
+        "description": "Smallest next practice action derived from reviewer evidence."
+      },
+      "No-Solution-Leak Gate": {
+        "type": "checkbox",
+        "description": "Checked only after review confirms the starter environment does not contain the final repair/refactor, final required tests/fixture, completed deliverable, answer key, or recorder-visible AI/project admin leakage."
+      },
+      "Odin Goal": {
+        "type": "text",
+        "description": ""
+      },
+      "Operator Pack Block ID": {
+        "type": "text",
+        "description": ""
+      },
+      "Operator Pack Evidence": {
+        "type": "text",
+        "description": "Build PR/ref and concise evidence that the environment was reviewed and the operator pack was generated."
+      },
+      "Operator Pack Revision": {
+        "type": "text",
+        "description": ""
+      },
+      "Operator Pack Status": {
+        "type": "select",
+        "description": "Pre-recording operator pack generated only after the built starter environment has been inspected. READY means exact navigation, setup commands, verification commands, narration cues and branch points are documented without pre-solving the substantive task.",
+        "options": [
+          "PENDING",
+          "READY",
+          "BLOCKED"
+        ]
+      },
+      "Pre-Record Gate": {
+        "type": "checkbox",
+        "description": "Must be checked only after every Before Recording checklist item has been verified for this exact task and recording setup."
+      },
+      "Professional Judgment": {
+        "type": "text",
+        "description": ""
+      },
+      "Recording QA Gate": {
+        "type": "checkbox",
+        "description": "Must be checked only after During Recording validation and archive/video integrity checks pass for the exact attempt."
+      },
+      "Review Bundle URL": {
+        "type": "url",
+        "description": "Google Drive folder or file bundle containing practice recording artifacts for AI review."
+      },
+      "Reviewer Notes": {
+        "type": "text",
+        "description": "AI/human practice feedback against the derived Odin-style rubric."
+      },
+      "Reviewer Score": {
+        "type": "number",
+        "description": "Internal practice review score, 0-100. Never represent as Mercor/Odin reviewer score."
+      },
+      "Reviewer Status": {
+        "type": "select",
+        "description": "Bootcamp reviewer state; not an Odin/Mercor approval state.",
+        "options": [
+          "Not recorded",
+          "Ready for review",
+          "Reviewing",
+          "Pass",
+          "Needs work",
+          "Fail"
+        ]
+      },
+      "Runbook": {
+        "type": "url",
+        "description": ""
+      },
+      "Skill Gap Focus": {
+        "type": "text",
+        "description": "Current Market-Derived Skill Gap Queue items targeted by this world."
+      },
+      "Skill Mapping Revision": {
+        "type": "text",
+        "description": ""
+      },
+      "Skills Practiced": {
+        "type": "text",
+        "description": "Concrete human skills exercised by this world."
+      },
+      "Source Evidence": {
+        "type": "text",
+        "description": ""
+      },
+      "Spec PR": {
+        "type": "url",
+        "description": ""
+      },
+      "Spec Path": {
+        "type": "text",
+        "description": ""
+      },
+      "Stage": {
+        "type": "select",
+        "description": "",
+        "options": [
+          "Candidate",
+          "Ready to propose",
+          "Awaiting Odin approval",
+          "Odin approved",
+          "Kiro spec requested",
+          "Spec PR open",
+          "Spec merged",
+          "Environment building",
+          "Ready to record",
+          "Recorded",
+          "Submitted",
+          "Ready for Delivery",
+          "Needs edits",
+          "Rejected"
+        ]
+      },
+      "Starter Commit": {
+        "type": "text",
+        "description": ""
+      },
+      "Starter Repository": {
+        "type": "url",
+        "description": ""
+      },
+      "Submission Gate": {
+        "type": "checkbox",
+        "description": "Must be checked only after all required uploads/metadata/checklist fields are complete and Studio shows the submission transition/result."
+      },
+      "Target Recording Minutes": {
+        "type": "number",
+        "description": ""
+      },
+      "Target Tier": {
+        "type": "select",
+        "description": "",
+        "options": [
+          "15-24",
+          "25-34",
+          "35-45:59"
+        ]
+      },
+      "Task": {
+        "type": "title",
+        "description": ""
+      },
+      "Transfer Synced": {
+        "type": "checkbox",
+        "description": "Automation marks this only after reviewed attempt evidence has been routed into the certification/skill system."
+      },
+      "Variation Axis": {
+        "type": "text",
+        "description": ""
+      },
+      "Workflow Checklist Gate": {
+        "type": "select",
+        "description": "Mandatory Odin workflow gate. PRE-RECORD PASS is required before TaskRecorder may start; POST-RECORD PASS is required before upload; SUBMISSION PASS is required before the task can be treated as submitted.",
+        "options": [
+          "PENDING",
+          "PRE-RECORD PASS",
+          "RECORDED - QA PENDING",
+          "POST-RECORD PASS",
+          "SUBMISSION PASS",
+          "BLOCKED"
+        ]
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "id": 6551447,
+        "name": "Project Odin \u2014 World \u2192 Certification + Skill Mapper",
+        "description": "Maps Task Factory worlds to the live certification queue and the live canonical Human Rebuild capability matrix; writes only non-solution transfer metadata.",
+        "teamId": 876977,
+        "folderId": 283804,
+        "status": "active",
+        "isLockedForEditing": false,
+        "isWaitingOnIncompleteExecutions": false,
+        "incompleteExecutions": 0,
+        "lastEdit": "2026-10-08T03:07:10.774Z",
+        "nextScheduledExecution": "2026-10-08T04:04:48.253Z"
+      },
+      "trigger": {
+        "moduleId": 1,
+        "module": "notion:makeApiCall",
+        "kind": "scheduled",
+        "scheduling": {
+          "type": "indefinitely",
+          "interval": 900
+        }
+      },
+      "modules": [
+        {
+          "id": 1,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read live certification authority",
+          "root": "main",
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/data_sources/d0ea98d6-79eb-4f67-b39b-8ce57d282a2e/query",
+              "body": "{\"page_size\":100}",
+              "method": "POST",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 11,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read Human Rebuild capability router",
+          "follows": 1,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/data_sources/78284b86-3652-4bb9-87b0-29bc03f6655b/query",
+              "body": "{\"page_size\":2}",
+              "method": "POST",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 12,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Decode canonical capability router",
+          "follows": 11,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "body",
+                  "value": "{{11.body}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Actual pinned GitHub cloud matrix; divergent local 4.2 is not silently published.\nconst CAPABILITY_AUTHORITY = {\"repository\":\"https://github.com/KyLamportLogic/human-rebuild-bootcamp\",\"commit\":\"c9e0db70705c548c6b9ef30a98154aa180c741ad\",\"path\":\"ideal-ssot/capability-matrix.json\",\"blobSha\":\"74dfde6bdcab1d9b2475b7f8e9371b32204ef5f1\",\"sha256\":\"3fdfcfb3ae296da288a50771c355ec5ab9af95d0dabcd63015c7ce687a87acc5\",\"version\":\"4.1.0\",\"capabilityIds\":[\"architecture-tradeoff-defense\",\"manual-technical-screen-retrieval\",\"asymptotic-complexity-mastery\",\"alternative-design-comparison\",\"invariant-driven-testing\",\"space-time-tradeoff-choice\",\"abstraction-boundary-design\",\"ai-side-effect-governance\",\"fail-close-kill-switch\",\"coding-agent-governance\",\"audit-hash-traceability\",\"systems-thinking-os\",\"oci-container-runtime\",\"host-agnostic-product-code\",\"single-entrypoint-local-dev\",\"shared-platform-boundaries\",\"intent-fidelity-bindings\",\"directory-purpose-minimalism\",\"visitor-copy-integrity\",\"law-propagation-sync\",\"human-agency-boundary\",\"formative-struggle-protocol\",\"professional-docs-pack\",\"provider-sdk-official-clients\",\"dependency-decision-discipline\",\"fleet-safe-rate-limits\",\"agentic-security-defense-basics\",\"learnable-workflow-observability\",\"error-budget-slo-gate\",\"secrets-jit-no-commit\",\"test-pyramid-tdd\",\"ci-cd-fail-closed-pipeline\",\"github-issues-prs-loop\",\"security-baseline-score\",\"container-hardening-score\",\"dependency-floor-score\",\"runtime-path-fidelity-score\",\"auth-coverage-score\"]};\nfunction capabilityIds(raw) {\n  const ids = typeof raw === 'string' ? JSON.parse(raw) : raw;\n  if (!Array.isArray(ids) || ids.length !== CAPABILITY_AUTHORITY.capabilityIds.length ||\n      new Set(ids).size !== ids.length || ids.some(id => !CAPABILITY_AUTHORITY.capabilityIds.includes(id))) {\n    throw new Error('Capability IDs do not match the verified cloud matrix; refresh the authority before writing');\n  }\n  return ids;\n}\nfunction decodeCapabilityRouter(input) {\n  const q = typeof input.body === 'string' ? JSON.parse(input.body) : input.body;\n  if (!q || !Array.isArray(q.results) || q.results.length !== 1 || q.has_more !== false || q.next_cursor) throw new Error('Capability router requires one complete Current row');\n  const page=q.results[0], p=page.properties||{}, text=parts=>(parts||[]).map(x=>x.plain_text??x.text?.content??'').join('');\n  if (page.archived || page.is_archived || page.in_trash || text(p.Name?.title)!=='Current' ||\n      text(p['Matrix Version']?.rich_text).trim()!==CAPABILITY_AUTHORITY.version ||\n      text(p['Matrix Blob SHA']?.rich_text).trim()!==CAPABILITY_AUTHORITY.blobSha || p['Source Repo']?.url!==CAPABILITY_AUTHORITY.repository) throw new Error('Capability router differs from verified cloud source; preserve and reconcile');\n  const ids=capabilityIds(text(p['Capability IDs JSON']?.rich_text).split(',').map(x=>x.trim()).filter(Boolean));\n  return {version:CAPABILITY_AUTHORITY.version,sha:CAPABILITY_AUTHORITY.blobSha,sourceCommit:CAPABILITY_AUTHORITY.commit,ids,ids_json:JSON.stringify(ids),ids_csv:ids.join(', ')};\n}\nif (typeof module !== 'undefined' && module.exports) module.exports={capabilityIds,decodeCapabilityRouter,CAPABILITY_AUTHORITY};\n\nreturn decodeCapabilityRouter(input);"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read Task Factory",
+          "follows": 12,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/data_sources/74aac26d-fcbb-45df-b996-561f76b9cec6/query",
+              "body": "{\"page_size\":100}",
+              "method": "POST",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Select unmapped worlds",
+          "follows": 2,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "body",
+                  "value": "{{2.body}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Existing metadata owner only; never reset attempt or recording evidence.\nconst crypto = require('node:crypto');\nconst CAPABILITY_AUTHORITY = {\"repository\":\"https://github.com/KyLamportLogic/human-rebuild-bootcamp\",\"commit\":\"c9e0db70705c548c6b9ef30a98154aa180c741ad\",\"path\":\"ideal-ssot/capability-matrix.json\",\"blobSha\":\"74dfde6bdcab1d9b2475b7f8e9371b32204ef5f1\",\"sha256\":\"3fdfcfb3ae296da288a50771c355ec5ab9af95d0dabcd63015c7ce687a87acc5\",\"version\":\"4.1.0\",\"capabilityIds\":[\"architecture-tradeoff-defense\",\"manual-technical-screen-retrieval\",\"asymptotic-complexity-mastery\",\"alternative-design-comparison\",\"invariant-driven-testing\",\"space-time-tradeoff-choice\",\"abstraction-boundary-design\",\"ai-side-effect-governance\",\"fail-close-kill-switch\",\"coding-agent-governance\",\"audit-hash-traceability\",\"systems-thinking-os\",\"oci-container-runtime\",\"host-agnostic-product-code\",\"single-entrypoint-local-dev\",\"shared-platform-boundaries\",\"intent-fidelity-bindings\",\"directory-purpose-minimalism\",\"visitor-copy-integrity\",\"law-propagation-sync\",\"human-agency-boundary\",\"formative-struggle-protocol\",\"professional-docs-pack\",\"provider-sdk-official-clients\",\"dependency-decision-discipline\",\"fleet-safe-rate-limits\",\"agentic-security-defense-basics\",\"learnable-workflow-observability\",\"error-budget-slo-gate\",\"secrets-jit-no-commit\",\"test-pyramid-tdd\",\"ci-cd-fail-closed-pipeline\",\"github-issues-prs-loop\",\"security-baseline-score\",\"container-hardening-score\",\"dependency-floor-score\",\"runtime-path-fidelity-score\",\"auth-coverage-score\"]};\nfunction capabilityIds(raw) {\n  const ids = typeof raw === 'string' ? JSON.parse(raw) : raw;\n  if (!Array.isArray(ids) || ids.length !== CAPABILITY_AUTHORITY.capabilityIds.length ||\n      new Set(ids).size !== ids.length || ids.some(id => !CAPABILITY_AUTHORITY.capabilityIds.includes(id))) {\n    throw new Error('Capability IDs do not match the verified cloud matrix; refresh the authority before writing');\n  }\n  return ids;\n}\n\nconst LEVELS = new Set(['Objective-level', 'Credential/domain-level', 'No supported mapping']);\nconst MARKER = 'Skill Mapping Revision';\nconst MAP_FIELDS = ['Certification Alignment', 'Certification Objective Coverage', 'Certification Evidence Level', 'Bootcamp Capability IDs', 'Human Transfer Test', 'Skills Practiced'];\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing native Notion object');\n  return result;\n}\nfunction richText(parts) { return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join(''); }\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  return prop?.select ? prop.select.name || '' : richText(prop?.rich_text || prop?.title);\n}\nfunction hash(values) { return crypto.createHash('sha256').update(JSON.stringify(values)).digest('hex'); }\nfunction sourceDigest(page) { return hash([page.id, ...['Task', 'Odin Goal', 'Approved Goal', 'Source Evidence', 'Professional Judgment', 'Skill Gap Focus'].map(n => value(page, n))]); }\nfunction mappingDigest(page) { return hash(MAP_FIELDS.map(n => value(page, n))); }\nfunction revision(page) { return 'SKILL_MAPPING_V1:' + sourceDigest(page) + ':' + mappingDigest(page); }\nfunction complete(page) {\n  const level = value(page, 'Certification Evidence Level');\n  const cert = value(page, 'Certification Alignment').trim();\n  return LEVELS.has(level) && !!value(page, 'Human Transfer Test').trim() &&\n    (level === 'No supported mapping' ? !cert : !!cert) &&\n    (level !== 'Objective-level' || !!value(page, 'Certification Objective Coverage').trim());\n}\nfunction selectMappings(input) {\n  const q = object(input);\n  if (!Array.isArray(q.results) || q.has_more || q.next_cursor) throw new Error('Incomplete Task Factory mapping inventory; paginate before mapping');\n  const rows = [], held = [];\n  for (const page of q.results) {\n    if (page.archived || page.in_trash || page.is_archived || value(page, 'Stage') === 'Rejected') continue;\n    if (!/^[a-f0-9-]{36}$/.test(page.id || '') || !value(page, 'Task').trim()) continue;\n    const marker = value(page, MARKER);\n    if (marker && marker !== revision(page)) { held.push({ page_id: page.id, reason: 'Source or mapping changed; preserve manual edits and reconcile' }); continue; }\n    // Empty capabilities and an explicit unsupported certification mapping are valid outcomes.\n    if (complete(page)) continue;\n    const row = {\n      page_id: page.id, source_digest: sourceDigest(page), task: value(page, 'Task'), stage: value(page, 'Stage'), lane: value(page, 'Lane'),\n      goal: value(page, 'Odin Goal'), approved_goal: value(page, 'Approved Goal'), source_evidence: value(page, 'Source Evidence'),\n      professional_judgment: value(page, 'Professional Judgment'), existing_skills: value(page, 'Skills Practiced'),\n      skill_gap_focus: value(page, 'Skill Gap Focus'), existing_certification_alignment: value(page, 'Certification Alignment'),\n      existing_objective_coverage: value(page, 'Certification Objective Coverage'), existing_capabilities: value(page, 'Bootcamp Capability IDs'),\n      existing_level: value(page, 'Certification Evidence Level'), existing_transfer_test: value(page, 'Human Transfer Test')\n    };\n    row.row_json = JSON.stringify(row); rows.push(row);\n  }\n  return { rows, count: rows.length, held };\n}\nfunction parseReview(raw) {\n  if (typeof raw === 'string') raw = raw.trim().replace(/^\\x60\\x60\\x60(?:json)?\\s*/i, '').replace(/\\s*\\x60\\x60\\x60$/, '');\n  return object(raw);\n}\nfunction rich(content) {\n  if (content.length > 1800) throw new Error('Mapping field exceeds its preservation bound');\n  return { rich_text: content ? [{ type: 'text', text: { content } }] : [] };\n}\nfunction planMissingMapping(input) {\n  const ALLOWED=new Set(capabilityIds(input.capability_ids_json));\n  const row = object(input.row), page = object(input.latest_page);\n  if (page.id !== row.page_id || !/^[a-f0-9-]{36}$/.test(page.id || '')) throw new Error('Fresh mapping page identity mismatch');\n  if (page.archived || page.in_trash || page.is_archived || value(page, 'Stage') === 'Rejected' || sourceDigest(page) !== row.source_digest) throw new Error('Source changed during classification; preserve current page');\n  const marker = value(page, MARKER);\n  if (marker && marker !== revision(page)) throw new Error('Manual mapping changed; preserve and reconcile');\n  const url = '/v1/pages/' + page.id;\n  if (complete(page)) return { method: 'GET', url, body: '', page_id: page.id, action: 'skip' };\n  const out = parseReview(input.raw);\n  let proposedLevel = LEVELS.has(out.certification_evidence_level) ? out.certification_evidence_level : 'No supported mapping';\n  const proposedObjective = String(out.certification_objective_coverage || '').trim();\n  if (proposedLevel === 'Objective-level' && !/\\b(?:cpre\\.ch\\d+|pcap\\.[a-z0-9._-]+|objective[_ -]?id\\s*[:=]\\s*[a-z0-9._-]+)/i.test(proposedObjective)) proposedLevel = 'Credential/domain-level';\n  const level = value(page, 'Certification Evidence Level') || proposedLevel;\n  if (!LEVELS.has(level)) throw new Error('Preserve unsupported existing evidence level');\n  const proposals = {\n    'Certification Alignment': level === 'No supported mapping' ? '' : String(out.certification_alignment || '').trim(),\n    'Certification Objective Coverage': level === 'No supported mapping' ? '' : proposedObjective,\n    'Certification Evidence Level': level,\n    'Bootcamp Capability IDs': [...new Set((Array.isArray(out.bootcamp_capability_ids) ? out.bootcamp_capability_ids : []).map(String).filter(id => ALLOWED.has(id)))].join(', '),\n    'Human Transfer Test': String(out.human_transfer_test || '').trim(),\n    'Skills Practiced': String(out.skills_practiced || '').trim()\n  };\n  const properties = {}, result = JSON.parse(JSON.stringify(page));\n  for (const name of MAP_FIELDS) {\n    if (value(page, name).trim()) continue; // Preserve native rich text and all existing judgments.\n    const content = proposals[name];\n    if (!content) continue; // Explicit empty classifications remain empty, the revision is durable.\n    const prop = name === 'Certification Evidence Level' ? { select: { name: content } } : rich(content);\n    properties[name] = prop; result.properties[name] = prop;\n  }\n  if (!complete(result)) throw new Error('Incomplete or contradictory mapping; preserve current metadata');\n  if (value(result, 'Certification Evidence Level') === 'Objective-level' && !/\\b(?:cpre\\.ch\\d+|pcap\\.[a-z0-9._-]+|objective[_ -]?id\\s*[:=]\\s*[a-z0-9._-]+)/i.test(value(result, 'Certification Objective Coverage'))) throw new Error('Existing objective claim needs supported explicit coverage; preserve and reconcile');\n  properties[MARKER] = rich(revision(result));\n  properties['Last Updated'] = { date: { start: new Date().toISOString().slice(0, 10) } };\n  return { method: 'PATCH', url, page_id: page.id, body: JSON.stringify({ properties }), revision: revision(result), action: 'fill-missing', filled_fields: Object.keys(properties).filter(n => ![MARKER, 'Last Updated'].includes(n)) };\n}\nif (typeof module !== 'undefined' && module.exports) module.exports = { selectMappings, planMissingMapping, revision, complete };\n\nreturn selectMappings(input.body);"
+            }
+          }
+        },
+        {
+          "id": 4,
+          "module": "builtin:BasicFeeder",
+          "version": 1,
+          "label": "One world",
+          "follows": 3,
+          "config": {
+            "mapper": {
+              "array": "{{3.result.rows}}"
+            }
+          }
+        },
+        {
+          "id": 5,
+          "module": "openai-gpt-3:createModelResponse",
+          "version": 1,
+          "label": "Map certs + capabilities without solving",
+          "follows": 4,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "input": "You are a metadata classifier for KyJahn's Project Odin Task Factory.\n\nYour job is ONLY to map one existing world/task to current certification domains and existing Human Rebuild capability IDs. Do NOT solve the task, propose the fix, give implementation steps, reveal expected code, or rehearse the substantive diagnosis. This classifier may run on unrehearsed Odin monetization tasks, so stay at the taxonomy/evidence-contract level.\n\nCURRENT CERTIFICATION AUTHORITY\n{{1.body}}\n\nTASK METADATA\nTask: {{4.task}}\nStage: {{4.stage}}\nLane: {{4.lane}}\nGoal: {{4.goal}}\nApproved Goal: {{4.approved_goal}}\nSource evidence: {{4.source_evidence}}\nProfessional judgment: {{4.professional_judgment}}\nExisting skills: {{4.existing_skills}}\nSkill-gap focus: {{4.skill_gap_focus}}\n\nRULES\n1. Use only credentials actually present in CURRENT CERTIFICATION AUTHORITY.\n2. Map only genuine overlap. Multiple credentials are allowed when the same task truly exercises them.\n3. Give the Active-now credential priority only if the task genuinely exercises it; never force an SAA link.\n4. certification_objective_coverage must use wording supported by the authority. Do not invent objective IDs or subdomains.\n5. certification_evidence_level:\n   - Objective-level only when the authority contains an exact objective identifier/explicit objective that this task actually tests.\n   - Credential/domain-level when only credential/domain overlap is supportable.\n   - No supported mapping when there is no defensible certification link.\n6. bootcamp_capability_ids may contain ONLY IDs from the canonical Human Rebuild matrix loaded from the canonical Human Rebuild capability router (matrix version {{12.result.version}}):\n{{12.result.ids_csv}}\nIf none fit, return [].\n7. human_transfer_test must describe the evidence KyJahn must produce unaided without hinting at the answer. Use generic verbs such as diagnose from evidence, choose/defend a design or requirement interpretation, implement/configure the repair, run deterministic verification, and teach back the decisive mechanism.\n8. A mapped world is practice exposure only. Do not claim mastery, readiness, or certification credit.\n\nReturn JSON only:\n{\n \"certification_alignment\":\"credential + domain summaries, or blank\",\n \"certification_objective_coverage\":\"supported domain/gap/objective wording, or blank\",\n \"certification_evidence_level\":\"Objective-level | Credential/domain-level | No supported mapping\",\n \"bootcamp_capability_ids\":[\"allowed-id\"],\n \"human_transfer_test\":\"non-solution evidence contract\",\n \"skills_practiced\":\"concrete skill labels if the current row is blank, otherwise preserve meaning\"\n}\n\nEXISTING MAPPING VALUES TO PRESERVE\n{{4.row_json}}\n\nFill only missing metadata. Preserve existing certification/capability/transfer judgment and skills; an empty capability list or explicit No supported mapping is a valid outcome. Never infer mastery, paid admission, recording completion or actual transfer synchronization. Do not alter any human approval or recording gate.",
+              "model": "gpt-5.6-luna",
+              "store": false,
+              "reasoning": {
+                "effort": "medium",
+                "summary": "concise"
+              },
+              "inputContentType": "text",
+              "max_output_tokens": 2500,
+              "createConversation": false
+            }
+          }
+        },
+        {
+          "id": 8,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read current mapping before write",
+          "follows": 5,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/pages/{{4.page_id}}",
+              "method": "GET",
+              "headers": [],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 6,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Validate mapping + build writeback",
+          "follows": 8,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "raw",
+                  "value": "{{5.result}}"
+                },
+                {
+                  "name": "row",
+                  "value": "{{4.row_json}}"
+                },
+                {
+                  "name": "latest_page",
+                  "value": "{{8.body}}"
+                },
+                {
+                  "name": "capability_ids_json",
+                  "value": "{{12.result.ids_json}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Existing metadata owner only; never reset attempt or recording evidence.\nconst crypto = require('node:crypto');\nconst CAPABILITY_AUTHORITY = {\"repository\":\"https://github.com/KyLamportLogic/human-rebuild-bootcamp\",\"commit\":\"c9e0db70705c548c6b9ef30a98154aa180c741ad\",\"path\":\"ideal-ssot/capability-matrix.json\",\"blobSha\":\"74dfde6bdcab1d9b2475b7f8e9371b32204ef5f1\",\"sha256\":\"3fdfcfb3ae296da288a50771c355ec5ab9af95d0dabcd63015c7ce687a87acc5\",\"version\":\"4.1.0\",\"capabilityIds\":[\"architecture-tradeoff-defense\",\"manual-technical-screen-retrieval\",\"asymptotic-complexity-mastery\",\"alternative-design-comparison\",\"invariant-driven-testing\",\"space-time-tradeoff-choice\",\"abstraction-boundary-design\",\"ai-side-effect-governance\",\"fail-close-kill-switch\",\"coding-agent-governance\",\"audit-hash-traceability\",\"systems-thinking-os\",\"oci-container-runtime\",\"host-agnostic-product-code\",\"single-entrypoint-local-dev\",\"shared-platform-boundaries\",\"intent-fidelity-bindings\",\"directory-purpose-minimalism\",\"visitor-copy-integrity\",\"law-propagation-sync\",\"human-agency-boundary\",\"formative-struggle-protocol\",\"professional-docs-pack\",\"provider-sdk-official-clients\",\"dependency-decision-discipline\",\"fleet-safe-rate-limits\",\"agentic-security-defense-basics\",\"learnable-workflow-observability\",\"error-budget-slo-gate\",\"secrets-jit-no-commit\",\"test-pyramid-tdd\",\"ci-cd-fail-closed-pipeline\",\"github-issues-prs-loop\",\"security-baseline-score\",\"container-hardening-score\",\"dependency-floor-score\",\"runtime-path-fidelity-score\",\"auth-coverage-score\"]};\nfunction capabilityIds(raw) {\n  const ids = typeof raw === 'string' ? JSON.parse(raw) : raw;\n  if (!Array.isArray(ids) || ids.length !== CAPABILITY_AUTHORITY.capabilityIds.length ||\n      new Set(ids).size !== ids.length || ids.some(id => !CAPABILITY_AUTHORITY.capabilityIds.includes(id))) {\n    throw new Error('Capability IDs do not match the verified cloud matrix; refresh the authority before writing');\n  }\n  return ids;\n}\n\nconst LEVELS = new Set(['Objective-level', 'Credential/domain-level', 'No supported mapping']);\nconst MARKER = 'Skill Mapping Revision';\nconst MAP_FIELDS = ['Certification Alignment', 'Certification Objective Coverage', 'Certification Evidence Level', 'Bootcamp Capability IDs', 'Human Transfer Test', 'Skills Practiced'];\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing native Notion object');\n  return result;\n}\nfunction richText(parts) { return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join(''); }\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  return prop?.select ? prop.select.name || '' : richText(prop?.rich_text || prop?.title);\n}\nfunction hash(values) { return crypto.createHash('sha256').update(JSON.stringify(values)).digest('hex'); }\nfunction sourceDigest(page) { return hash([page.id, ...['Task', 'Odin Goal', 'Approved Goal', 'Source Evidence', 'Professional Judgment', 'Skill Gap Focus'].map(n => value(page, n))]); }\nfunction mappingDigest(page) { return hash(MAP_FIELDS.map(n => value(page, n))); }\nfunction revision(page) { return 'SKILL_MAPPING_V1:' + sourceDigest(page) + ':' + mappingDigest(page); }\nfunction complete(page) {\n  const level = value(page, 'Certification Evidence Level');\n  const cert = value(page, 'Certification Alignment').trim();\n  return LEVELS.has(level) && !!value(page, 'Human Transfer Test').trim() &&\n    (level === 'No supported mapping' ? !cert : !!cert) &&\n    (level !== 'Objective-level' || !!value(page, 'Certification Objective Coverage').trim());\n}\nfunction selectMappings(input) {\n  const q = object(input);\n  if (!Array.isArray(q.results) || q.has_more || q.next_cursor) throw new Error('Incomplete Task Factory mapping inventory; paginate before mapping');\n  const rows = [], held = [];\n  for (const page of q.results) {\n    if (page.archived || page.in_trash || page.is_archived || value(page, 'Stage') === 'Rejected') continue;\n    if (!/^[a-f0-9-]{36}$/.test(page.id || '') || !value(page, 'Task').trim()) continue;\n    const marker = value(page, MARKER);\n    if (marker && marker !== revision(page)) { held.push({ page_id: page.id, reason: 'Source or mapping changed; preserve manual edits and reconcile' }); continue; }\n    // Empty capabilities and an explicit unsupported certification mapping are valid outcomes.\n    if (complete(page)) continue;\n    const row = {\n      page_id: page.id, source_digest: sourceDigest(page), task: value(page, 'Task'), stage: value(page, 'Stage'), lane: value(page, 'Lane'),\n      goal: value(page, 'Odin Goal'), approved_goal: value(page, 'Approved Goal'), source_evidence: value(page, 'Source Evidence'),\n      professional_judgment: value(page, 'Professional Judgment'), existing_skills: value(page, 'Skills Practiced'),\n      skill_gap_focus: value(page, 'Skill Gap Focus'), existing_certification_alignment: value(page, 'Certification Alignment'),\n      existing_objective_coverage: value(page, 'Certification Objective Coverage'), existing_capabilities: value(page, 'Bootcamp Capability IDs'),\n      existing_level: value(page, 'Certification Evidence Level'), existing_transfer_test: value(page, 'Human Transfer Test')\n    };\n    row.row_json = JSON.stringify(row); rows.push(row);\n  }\n  return { rows, count: rows.length, held };\n}\nfunction parseReview(raw) {\n  if (typeof raw === 'string') raw = raw.trim().replace(/^\\x60\\x60\\x60(?:json)?\\s*/i, '').replace(/\\s*\\x60\\x60\\x60$/, '');\n  return object(raw);\n}\nfunction rich(content) {\n  if (content.length > 1800) throw new Error('Mapping field exceeds its preservation bound');\n  return { rich_text: content ? [{ type: 'text', text: { content } }] : [] };\n}\nfunction planMissingMapping(input) {\n  const ALLOWED=new Set(capabilityIds(input.capability_ids_json));\n  const row = object(input.row), page = object(input.latest_page);\n  if (page.id !== row.page_id || !/^[a-f0-9-]{36}$/.test(page.id || '')) throw new Error('Fresh mapping page identity mismatch');\n  if (page.archived || page.in_trash || page.is_archived || value(page, 'Stage') === 'Rejected' || sourceDigest(page) !== row.source_digest) throw new Error('Source changed during classification; preserve current page');\n  const marker = value(page, MARKER);\n  if (marker && marker !== revision(page)) throw new Error('Manual mapping changed; preserve and reconcile');\n  const url = '/v1/pages/' + page.id;\n  if (complete(page)) return { method: 'GET', url, body: '', page_id: page.id, action: 'skip' };\n  const out = parseReview(input.raw);\n  let proposedLevel = LEVELS.has(out.certification_evidence_level) ? out.certification_evidence_level : 'No supported mapping';\n  const proposedObjective = String(out.certification_objective_coverage || '').trim();\n  if (proposedLevel === 'Objective-level' && !/\\b(?:cpre\\.ch\\d+|pcap\\.[a-z0-9._-]+|objective[_ -]?id\\s*[:=]\\s*[a-z0-9._-]+)/i.test(proposedObjective)) proposedLevel = 'Credential/domain-level';\n  const level = value(page, 'Certification Evidence Level') || proposedLevel;\n  if (!LEVELS.has(level)) throw new Error('Preserve unsupported existing evidence level');\n  const proposals = {\n    'Certification Alignment': level === 'No supported mapping' ? '' : String(out.certification_alignment || '').trim(),\n    'Certification Objective Coverage': level === 'No supported mapping' ? '' : proposedObjective,\n    'Certification Evidence Level': level,\n    'Bootcamp Capability IDs': [...new Set((Array.isArray(out.bootcamp_capability_ids) ? out.bootcamp_capability_ids : []).map(String).filter(id => ALLOWED.has(id)))].join(', '),\n    'Human Transfer Test': String(out.human_transfer_test || '').trim(),\n    'Skills Practiced': String(out.skills_practiced || '').trim()\n  };\n  const properties = {}, result = JSON.parse(JSON.stringify(page));\n  for (const name of MAP_FIELDS) {\n    if (value(page, name).trim()) continue; // Preserve native rich text and all existing judgments.\n    const content = proposals[name];\n    if (!content) continue; // Explicit empty classifications remain empty, the revision is durable.\n    const prop = name === 'Certification Evidence Level' ? { select: { name: content } } : rich(content);\n    properties[name] = prop; result.properties[name] = prop;\n  }\n  if (!complete(result)) throw new Error('Incomplete or contradictory mapping; preserve current metadata');\n  if (value(result, 'Certification Evidence Level') === 'Objective-level' && !/\\b(?:cpre\\.ch\\d+|pcap\\.[a-z0-9._-]+|objective[_ -]?id\\s*[:=]\\s*[a-z0-9._-]+)/i.test(value(result, 'Certification Objective Coverage'))) throw new Error('Existing objective claim needs supported explicit coverage; preserve and reconcile');\n  properties[MARKER] = rich(revision(result));\n  properties['Last Updated'] = { date: { start: new Date().toISOString().slice(0, 10) } };\n  return { method: 'PATCH', url, page_id: page.id, body: JSON.stringify({ properties }), revision: revision(result), action: 'fill-missing', filled_fields: Object.keys(properties).filter(n => ![MARKER, 'Last Updated'].includes(n)) };\n}\nif (typeof module !== 'undefined' && module.exports) module.exports = { selectMappings, planMissingMapping, revision, complete };\n\nreturn planMissingMapping(input);"
+            }
+          }
+        },
+        {
+          "id": 7,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Write mapping to Task Factory",
+          "follows": 6,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "{{6.result.url}}",
+              "body": "{{6.result.body}}",
+              "method": "{{6.result.method}}",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        }
+      ],
+      "connections": [
+        {
+          "app": "notion2",
+          "status": "ok",
+          "usedByModules": [
+            1,
+            11,
+            2,
+            8,
+            7
+          ]
+        },
+        {
+          "app": "openai-gpt-3",
+          "status": "ok",
+          "usedByModules": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "id": 6551517,
+        "name": "Project Odin Bootcamp \u2014 Reviewed Attempt \u2192 Transfer Router",
+        "description": "Routes reviewed, AI-free Odin Bootcamp attempts into the existing Study Log transfer ledger with idempotent readback; never auto-promotes exam readiness.",
+        "teamId": 876977,
+        "folderId": 283804,
+        "status": "active",
+        "isLockedForEditing": false,
+        "isWaitingOnIncompleteExecutions": false,
+        "incompleteExecutions": 0,
+        "lastEdit": "2026-10-08T03:02:03.138Z",
+        "nextScheduledExecution": "2026-10-08T04:09:31.514Z"
+      },
+      "trigger": {
+        "moduleId": 1,
+        "module": "notion:makeApiCall",
+        "kind": "scheduled",
+        "scheduling": {
+          "type": "indefinitely",
+          "interval": 900
+        }
+      },
+      "modules": [
+        {
+          "id": 1,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read reviewed Task Factory attempts",
+          "root": "main",
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/data_sources/74aac26d-fcbb-45df-b996-561f76b9cec6/query",
+              "body": "{\"page_size\":100}",
+              "method": "POST",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Select evidence-complete reviewed attempts",
+          "follows": 1,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "body",
+                  "value": "{{1.body}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Scores and self-reported unaided declarations never establish mastery.\nconst crypto = require('node:crypto');\nconst DESTINATION = 'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52';\nconst GUIDED_REFERENCES = {\"3f08621e-0a7a-8132-89fd-e5cad87aba40\":\"e5652bcb044cd24d2a7d1c2f8bb93b885cea2069\",\"3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b\":\"ca532d92ec3db02224061b3ceef105b2bc113b27\",\"3f08621e-0a7a-81ed-a36b-dd125c60221c\":\"c5986e93719cfd4b08a57104576c04a78d1f16ee\",\"3f08621e-0a7a-818f-8a72-f73e8d4e4da0\":\"2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38\",\"3f28621e-0a7a-8141-8d6e-dfb9a5b43054\":\"9c829c6ec7f85cf382f97e286bf8acce20a96fe7\",\"3f28621e-0a7a-81bc-abb6-c65d74863966\":\"aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5\",\"3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d\":\"ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2\",\"3f38621e-0a7a-81ac-95c5-dc0a9aaa211a\":\"c65f9343be723ea36289db541b8f373883cbfe8a\"};\nconst REVIEW_FIELDS = ['Lane','Bootcamp Status','Reviewer Status','Reviewer Score','Reviewer Notes','Next Skill Action','Workflow Checklist Gate','Recording QA Gate','Review Bundle URL','Starter Repository','Starter Commit','Certification Evidence Level','Certification Alignment','Certification Objective Coverage','Bootcamp Capability IDs','Human Transfer Test','Skills Practiced'];\nfunction semantic(page,name) {\n const p=page.properties?.[name];\n if(p?.select)return p.select.name||'';\n if(typeof p?.checkbox==='boolean')return p.checkbox;\n if(typeof p?.number==='number')return p.number;\n if(typeof p?.url==='string')return p.url;\n return (p?.rich_text||p?.title||[]).map(x=>x.plain_text??x.text?.content??'').join('');\n}\nfunction guidance(page) {return GUIDED_REFERENCES[page.id]===semantic(page,'Starter Commit').trim()?'guided':'unknown';}\nfunction reviewKey(page) {return 'ODIN_BOOTCAMP_TRANSFER_V2:'+crypto.createHash('sha256').update(JSON.stringify([page.id,guidance(page),...REVIEW_FIELDS.map(n=>semantic(page,n))])).digest('hex');}\nfunction exposureExplanation(page,status) {\n const reason=guidance(page)==='guided'?'Known AI-prepared guided reference; assisted practice.':'Assistance unknown; conservative exposure classification pending validated independent provenance.';\n return 'Internal reviewed '+status.toLowerCase()+'. '+reason+' No mastery, exam readiness or paid approval established.';\n}\nfunction requireExposure(row) {\n if(row.evidence_class!=='Assisted exposure'||row.mastery_eligible!==false||!/^ODIN_BOOTCAMP_TRANSFER_V2:[a-f0-9]{64}$/.test(row.dedup_key||''))throw new Error('Reviewer pass or self-report cannot establish unaided transfer or mastery');\n}\n\nfunction selectTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing Task Factory response');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst q = object(input.body ?? input);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete recorded-review inventory; paginate before transfer');\n}\n\nconst rows = [];\nconst skipped = [];\n\nfor (const page of q.results) {\n  if (page.archived || page.in_trash || page.is_archived) continue;\n  const lane = value(page, 'Lane');\n  const bootcampStatus = value(page, 'Bootcamp Status');\n  const reviewerStatus = value(page, 'Reviewer Status');\n  const reviewerScore = value(page, 'Reviewer Score');\n  const notes = value(page, 'Reviewer Notes').trim();\n  const nextSkill = value(page, 'Next Skill Action').trim();\n  const workflow = value(page, 'Workflow Checklist Gate');\n  const reviewBundle = value(page, 'Review Bundle URL');\n  const starterRepo = value(page, 'Starter Repository');\n  const starterCommit = value(page, 'Starter Commit').trim();\n  const transferSynced = value(page, 'Transfer Synced') === true;\n  const recordingQa = value(page, 'Recording QA Gate') === true;\n  const evidenceLevel = value(page, 'Certification Evidence Level');\n  const certAlignment = value(page, 'Certification Alignment').trim();\n  const objectiveCoverage = value(page, 'Certification Objective Coverage').trim();\n  const capabilities = value(page, 'Bootcamp Capability IDs').trim();\n  const transferTest = value(page, 'Human Transfer Test').trim();\n  const skills = value(page, 'Skills Practiced').trim();\n\n  if (transferSynced) continue;\n\n  const mappingOkay =\n    ['Objective-level','Credential/domain-level','No supported mapping'].includes(evidenceLevel) &&\n    transferTest &&\n    (evidenceLevel === 'No supported mapping' ? !certAlignment : !!certAlignment) &&\n    (evidenceLevel !== 'Objective-level' || !!objectiveCoverage);\n\n  const evidenceOkay =\n    lane === 'Bootcamp' &&\n    bootcampStatus === 'Reviewed' &&\n    ['Pass','Needs work','Fail'].includes(reviewerStatus) &&\n    Number.isFinite(reviewerScore) && reviewerScore >= 0 && reviewerScore <= 100 &&\n    notes &&\n    recordingQa &&\n    ['POST-RECORD PASS','SUBMISSION PASS'].includes(workflow) &&\n    /^https:\\/\\/(?:drive|docs)\\.google\\.com\\//.test(reviewBundle || '') &&\n    /^https:\\/\\/github\\.com\\/KyPython\\/[A-Za-z0-9_.-]+$/.test(starterRepo || '') &&\n    /^[a-f0-9]{40}$/.test(starterCommit) &&\n    (reviewerStatus === 'Pass' || !!nextSkill);\n\n  if (!mappingOkay || !evidenceOkay) {\n    skipped.push({page_id: page.id, reason: !mappingOkay ? 'Mapping incomplete' : 'Reviewed unaided evidence contract incomplete'});\n    continue;\n  }\n\n  const dedupKey = reviewKey(page);\n\n  rows.push({\n    page_id: page.id,\n    source_ref: page.id,\n    dedup_key: dedupKey,\n    date: new Date().toISOString().slice(0,10),\n    artifact_url: reviewBundle,\n    concepts: skills || 'Reviewed engineering practice',\n    certification_alignment: certAlignment,\n    objective_coverage: objectiveCoverage,\n    evidence_level: evidenceLevel,\n    bootcamp_capabilities: capabilities,\n    human_transfer_test: transferTest,\n    reviewer_status: reviewerStatus,\n    reviewer_score: reviewerScore,\n    evidence_class: 'Assisted exposure',\n    mastery_eligible: false,\n    gap: exposureExplanation(page,reviewerStatus),\n    next_verification: nextSkill || transferTest,\n    row_json: JSON.stringify({\n      page_id: page.id,\n      source_ref: page.id,\n      dedup_key: dedupKey,\n      date: new Date().toISOString().slice(0,10),\n      artifact_url: reviewBundle,\n      concepts: skills || 'Reviewed engineering practice',\n      certification_alignment: certAlignment,\n      objective_coverage: objectiveCoverage,\n      evidence_level: evidenceLevel,\n      bootcamp_capabilities: capabilities,\n      human_transfer_test: transferTest,\n      reviewer_status: reviewerStatus,\n      reviewer_score: reviewerScore,\n      evidence_class: 'Assisted exposure',\n      mastery_eligible: false,\n      gap: exposureExplanation(page,reviewerStatus),\n      next_verification: nextSkill || transferTest\n    })\n  });\n}\nreturn {rows, count: rows.length, skipped};\n}\nfunction planTransfer(input) {\n'use strict';\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction rt(content) {\n  const s = String(content || '');\n  if (s.length > 1800) throw new Error('Transfer field exceeds bound');\n  return { rich_text: s ? [{type:'text', text:{content:s}}] : [] };\n}\nfunction title(content) {\n  return { title: [{type:'text', text:{content:String(content)}}] };\n}\n\nconst row = object(input.row);\nrequireExposure(row);\nconst q = object(input.query);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete transfer-evidence dedup query');\n}\nif (q.results.length > 1) {\n  throw new Error('Duplicate transfer-evidence rows found for dedup key; reconcile before continuing');\n}\nif (q.results.length === 1) {\n  const existing = q.results[0];\n  return {\n    action:'recover',\n    method:'GET',\n    url:'/v1/pages/' + existing.id,\n    body:'',\n    expected: row,\n    page_id: row.page_id,\n    dedup_key: row.dedup_key\n  };\n}\n\nconst body = {\n  parent:{data_source_id:'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52'},\n  properties:{\n    'Evidence': title('Reviewed practice exposure ' + row.date),\n    'Date': {date:{start:row.date}},\n    'Source Type': {select:{name:'Odin Bootcamp'}},\n    'Source Ref': rt(row.source_ref),\n    'Artifact Pointer': {url:row.artifact_url},\n    'Concepts Exercised': rt(row.concepts),\n    'Certification Alignment': rt(row.certification_alignment),\n    'Certification Objective Coverage': rt(row.objective_coverage),\n    'Evidence Level': {select:{name:row.evidence_level}},\n    'Bootcamp Capability IDs': rt(row.bootcamp_capabilities),\n    'Human Transfer Test': rt(row.human_transfer_test),\n    'Reviewer Status': {select:{name:row.reviewer_status}},\n    'Reviewer Score': {number:row.reviewer_score},\n    'Evidence Class': {select:{name:row.evidence_class}},\n    'Mastery Eligible': {checkbox:!!row.mastery_eligible},\n    'Gap / Corrected Model': rt(row.gap),\n    'Next Verification': rt(row.next_verification),\n    'Dedup Key': rt(row.dedup_key)\n  }\n};\n\nreturn {\n  action:'create',\n  method:'POST',\n  url:'/v1/pages',\n  body:JSON.stringify(body),\n  expected:row,\n  page_id:row.page_id,\n  dedup_key:row.dedup_key\n};\n}\nfunction verifyTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst expected = object(input.expected);\nrequireExposure(expected);\nconst evidence = object(input.evidence);\nconst latest = object(input.latest);\n\nif (latest.id !== expected.page_id) throw new Error('Task Factory row changed identity');\nif (value(latest,'Transfer Synced') === true) {\n  return {method:'GET',url:'/v1/pages/' + latest.id,body:'',page_id:latest.id,action:'already-synced'};\n}\n\nconst currentDedup = reviewKey(latest);\nif (latest.archived || latest.in_trash || semantic(latest,'Lane')!=='Bootcamp' || semantic(latest,'Bootcamp Status')!=='Reviewed' || semantic(latest,'Recording QA Gate')!==true || !['POST-RECORD PASS','SUBMISSION PASS'].includes(semantic(latest,'Workflow Checklist Gate'))) throw new Error('Actual review or capture gates changed; do not sync');\nif (evidence.archived || evidence.in_trash || evidence.parent?.data_source_id !== DESTINATION) throw new Error('Transfer destination identity mismatch');\nif (currentDedup !== expected.dedup_key) {\n  throw new Error('Reviewed attempt changed after transfer selection; do not sync stale evidence');\n}\n\nconst checks = [\n  ['Dedup Key', expected.dedup_key],\n  ['Artifact Pointer', expected.artifact_url],\n  ['Concepts Exercised', expected.concepts],\n  ['Gap / Corrected Model', expected.gap],\n  ['Next Verification', expected.next_verification],\n  ['Source Ref', expected.source_ref],\n  ['Source Type', 'Odin Bootcamp'],\n  ['Evidence Class', 'Assisted exposure'],\n  ['Reviewer Status', expected.reviewer_status],\n  ['Certification Alignment', expected.certification_alignment],\n  ['Certification Objective Coverage', expected.objective_coverage],\n  ['Evidence Level', expected.evidence_level],\n  ['Bootcamp Capability IDs', expected.bootcamp_capabilities],\n  ['Human Transfer Test', expected.human_transfer_test]\n];\nfor (const [name, wanted] of checks) {\n  if (String(value(evidence,name) ?? '') !== String(wanted ?? '')) {\n    throw new Error('Transfer evidence readback mismatch: ' + name);\n  }\n}\nif (Number(value(evidence,'Reviewer Score')) !== Number(expected.reviewer_score)) {\n  throw new Error('Transfer evidence readback mismatch: Reviewer Score');\n}\nif (evidence.properties?.['Mastery Eligible']?.checkbox !== false) {\n  throw new Error('Transfer evidence readback mismatch: Mastery Eligible');\n}\n\nreturn {\n  method:'PATCH',\n  url:'/v1/pages/' + latest.id,\n  page_id:latest.id,\n  action:'mark-synced',\n  body:JSON.stringify({properties:{\n    'Transfer Synced':{checkbox:true},\n    'Last Updated':{date:{start:new Date().toISOString().slice(0,10)}}\n  }})\n};\n}\nreturn selectTransfer(input);"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "module": "builtin:BasicFeeder",
+          "version": 1,
+          "label": "One reviewed attempt",
+          "follows": 2,
+          "config": {
+            "mapper": {
+              "array": "{{2.result.rows}}"
+            }
+          }
+        },
+        {
+          "id": 6,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Find existing transfer evidence",
+          "follows": 3,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/data_sources/a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52/query",
+              "body": "{\"page_size\":10,\"filter\":{\"property\":\"Dedup Key\",\"rich_text\":{\"equals\":\"{{3.dedup_key}}\"}}}",
+              "method": "POST",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 7,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Create or recover transfer evidence",
+          "follows": 6,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "row",
+                  "value": "{{3.row_json}}"
+                },
+                {
+                  "name": "query",
+                  "value": "{{6.body}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Scores and self-reported unaided declarations never establish mastery.\nconst crypto = require('node:crypto');\nconst DESTINATION = 'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52';\nconst GUIDED_REFERENCES = {\"3f08621e-0a7a-8132-89fd-e5cad87aba40\":\"e5652bcb044cd24d2a7d1c2f8bb93b885cea2069\",\"3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b\":\"ca532d92ec3db02224061b3ceef105b2bc113b27\",\"3f08621e-0a7a-81ed-a36b-dd125c60221c\":\"c5986e93719cfd4b08a57104576c04a78d1f16ee\",\"3f08621e-0a7a-818f-8a72-f73e8d4e4da0\":\"2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38\",\"3f28621e-0a7a-8141-8d6e-dfb9a5b43054\":\"9c829c6ec7f85cf382f97e286bf8acce20a96fe7\",\"3f28621e-0a7a-81bc-abb6-c65d74863966\":\"aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5\",\"3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d\":\"ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2\",\"3f38621e-0a7a-81ac-95c5-dc0a9aaa211a\":\"c65f9343be723ea36289db541b8f373883cbfe8a\"};\nconst REVIEW_FIELDS = ['Lane','Bootcamp Status','Reviewer Status','Reviewer Score','Reviewer Notes','Next Skill Action','Workflow Checklist Gate','Recording QA Gate','Review Bundle URL','Starter Repository','Starter Commit','Certification Evidence Level','Certification Alignment','Certification Objective Coverage','Bootcamp Capability IDs','Human Transfer Test','Skills Practiced'];\nfunction semantic(page,name) {\n const p=page.properties?.[name];\n if(p?.select)return p.select.name||'';\n if(typeof p?.checkbox==='boolean')return p.checkbox;\n if(typeof p?.number==='number')return p.number;\n if(typeof p?.url==='string')return p.url;\n return (p?.rich_text||p?.title||[]).map(x=>x.plain_text??x.text?.content??'').join('');\n}\nfunction guidance(page) {return GUIDED_REFERENCES[page.id]===semantic(page,'Starter Commit').trim()?'guided':'unknown';}\nfunction reviewKey(page) {return 'ODIN_BOOTCAMP_TRANSFER_V2:'+crypto.createHash('sha256').update(JSON.stringify([page.id,guidance(page),...REVIEW_FIELDS.map(n=>semantic(page,n))])).digest('hex');}\nfunction exposureExplanation(page,status) {\n const reason=guidance(page)==='guided'?'Known AI-prepared guided reference; assisted practice.':'Assistance unknown; conservative exposure classification pending validated independent provenance.';\n return 'Internal reviewed '+status.toLowerCase()+'. '+reason+' No mastery, exam readiness or paid approval established.';\n}\nfunction requireExposure(row) {\n if(row.evidence_class!=='Assisted exposure'||row.mastery_eligible!==false||!/^ODIN_BOOTCAMP_TRANSFER_V2:[a-f0-9]{64}$/.test(row.dedup_key||''))throw new Error('Reviewer pass or self-report cannot establish unaided transfer or mastery');\n}\n\nfunction selectTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing Task Factory response');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst q = object(input.body ?? input);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete recorded-review inventory; paginate before transfer');\n}\n\nconst rows = [];\nconst skipped = [];\n\nfor (const page of q.results) {\n  if (page.archived || page.in_trash || page.is_archived) continue;\n  const lane = value(page, 'Lane');\n  const bootcampStatus = value(page, 'Bootcamp Status');\n  const reviewerStatus = value(page, 'Reviewer Status');\n  const reviewerScore = value(page, 'Reviewer Score');\n  const notes = value(page, 'Reviewer Notes').trim();\n  const nextSkill = value(page, 'Next Skill Action').trim();\n  const workflow = value(page, 'Workflow Checklist Gate');\n  const reviewBundle = value(page, 'Review Bundle URL');\n  const starterRepo = value(page, 'Starter Repository');\n  const starterCommit = value(page, 'Starter Commit').trim();\n  const transferSynced = value(page, 'Transfer Synced') === true;\n  const recordingQa = value(page, 'Recording QA Gate') === true;\n  const evidenceLevel = value(page, 'Certification Evidence Level');\n  const certAlignment = value(page, 'Certification Alignment').trim();\n  const objectiveCoverage = value(page, 'Certification Objective Coverage').trim();\n  const capabilities = value(page, 'Bootcamp Capability IDs').trim();\n  const transferTest = value(page, 'Human Transfer Test').trim();\n  const skills = value(page, 'Skills Practiced').trim();\n\n  if (transferSynced) continue;\n\n  const mappingOkay =\n    ['Objective-level','Credential/domain-level','No supported mapping'].includes(evidenceLevel) &&\n    transferTest &&\n    (evidenceLevel === 'No supported mapping' ? !certAlignment : !!certAlignment) &&\n    (evidenceLevel !== 'Objective-level' || !!objectiveCoverage);\n\n  const evidenceOkay =\n    lane === 'Bootcamp' &&\n    bootcampStatus === 'Reviewed' &&\n    ['Pass','Needs work','Fail'].includes(reviewerStatus) &&\n    Number.isFinite(reviewerScore) && reviewerScore >= 0 && reviewerScore <= 100 &&\n    notes &&\n    recordingQa &&\n    ['POST-RECORD PASS','SUBMISSION PASS'].includes(workflow) &&\n    /^https:\\/\\/(?:drive|docs)\\.google\\.com\\//.test(reviewBundle || '') &&\n    /^https:\\/\\/github\\.com\\/KyPython\\/[A-Za-z0-9_.-]+$/.test(starterRepo || '') &&\n    /^[a-f0-9]{40}$/.test(starterCommit) &&\n    (reviewerStatus === 'Pass' || !!nextSkill);\n\n  if (!mappingOkay || !evidenceOkay) {\n    skipped.push({page_id: page.id, reason: !mappingOkay ? 'Mapping incomplete' : 'Reviewed unaided evidence contract incomplete'});\n    continue;\n  }\n\n  const dedupKey = reviewKey(page);\n\n  rows.push({\n    page_id: page.id,\n    source_ref: page.id,\n    dedup_key: dedupKey,\n    date: new Date().toISOString().slice(0,10),\n    artifact_url: reviewBundle,\n    concepts: skills || 'Reviewed engineering practice',\n    certification_alignment: certAlignment,\n    objective_coverage: objectiveCoverage,\n    evidence_level: evidenceLevel,\n    bootcamp_capabilities: capabilities,\n    human_transfer_test: transferTest,\n    reviewer_status: reviewerStatus,\n    reviewer_score: reviewerScore,\n    evidence_class: 'Assisted exposure',\n    mastery_eligible: false,\n    gap: exposureExplanation(page,reviewerStatus),\n    next_verification: nextSkill || transferTest,\n    row_json: JSON.stringify({\n      page_id: page.id,\n      source_ref: page.id,\n      dedup_key: dedupKey,\n      date: new Date().toISOString().slice(0,10),\n      artifact_url: reviewBundle,\n      concepts: skills || 'Reviewed engineering practice',\n      certification_alignment: certAlignment,\n      objective_coverage: objectiveCoverage,\n      evidence_level: evidenceLevel,\n      bootcamp_capabilities: capabilities,\n      human_transfer_test: transferTest,\n      reviewer_status: reviewerStatus,\n      reviewer_score: reviewerScore,\n      evidence_class: 'Assisted exposure',\n      mastery_eligible: false,\n      gap: exposureExplanation(page,reviewerStatus),\n      next_verification: nextSkill || transferTest\n    })\n  });\n}\nreturn {rows, count: rows.length, skipped};\n}\nfunction planTransfer(input) {\n'use strict';\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction rt(content) {\n  const s = String(content || '');\n  if (s.length > 1800) throw new Error('Transfer field exceeds bound');\n  return { rich_text: s ? [{type:'text', text:{content:s}}] : [] };\n}\nfunction title(content) {\n  return { title: [{type:'text', text:{content:String(content)}}] };\n}\n\nconst row = object(input.row);\nrequireExposure(row);\nconst q = object(input.query);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete transfer-evidence dedup query');\n}\nif (q.results.length > 1) {\n  throw new Error('Duplicate transfer-evidence rows found for dedup key; reconcile before continuing');\n}\nif (q.results.length === 1) {\n  const existing = q.results[0];\n  return {\n    action:'recover',\n    method:'GET',\n    url:'/v1/pages/' + existing.id,\n    body:'',\n    expected: row,\n    page_id: row.page_id,\n    dedup_key: row.dedup_key\n  };\n}\n\nconst body = {\n  parent:{data_source_id:'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52'},\n  properties:{\n    'Evidence': title('Reviewed practice exposure ' + row.date),\n    'Date': {date:{start:row.date}},\n    'Source Type': {select:{name:'Odin Bootcamp'}},\n    'Source Ref': rt(row.source_ref),\n    'Artifact Pointer': {url:row.artifact_url},\n    'Concepts Exercised': rt(row.concepts),\n    'Certification Alignment': rt(row.certification_alignment),\n    'Certification Objective Coverage': rt(row.objective_coverage),\n    'Evidence Level': {select:{name:row.evidence_level}},\n    'Bootcamp Capability IDs': rt(row.bootcamp_capabilities),\n    'Human Transfer Test': rt(row.human_transfer_test),\n    'Reviewer Status': {select:{name:row.reviewer_status}},\n    'Reviewer Score': {number:row.reviewer_score},\n    'Evidence Class': {select:{name:row.evidence_class}},\n    'Mastery Eligible': {checkbox:!!row.mastery_eligible},\n    'Gap / Corrected Model': rt(row.gap),\n    'Next Verification': rt(row.next_verification),\n    'Dedup Key': rt(row.dedup_key)\n  }\n};\n\nreturn {\n  action:'create',\n  method:'POST',\n  url:'/v1/pages',\n  body:JSON.stringify(body),\n  expected:row,\n  page_id:row.page_id,\n  dedup_key:row.dedup_key\n};\n}\nfunction verifyTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst expected = object(input.expected);\nrequireExposure(expected);\nconst evidence = object(input.evidence);\nconst latest = object(input.latest);\n\nif (latest.id !== expected.page_id) throw new Error('Task Factory row changed identity');\nif (value(latest,'Transfer Synced') === true) {\n  return {method:'GET',url:'/v1/pages/' + latest.id,body:'',page_id:latest.id,action:'already-synced'};\n}\n\nconst currentDedup = reviewKey(latest);\nif (latest.archived || latest.in_trash || semantic(latest,'Lane')!=='Bootcamp' || semantic(latest,'Bootcamp Status')!=='Reviewed' || semantic(latest,'Recording QA Gate')!==true || !['POST-RECORD PASS','SUBMISSION PASS'].includes(semantic(latest,'Workflow Checklist Gate'))) throw new Error('Actual review or capture gates changed; do not sync');\nif (evidence.archived || evidence.in_trash || evidence.parent?.data_source_id !== DESTINATION) throw new Error('Transfer destination identity mismatch');\nif (currentDedup !== expected.dedup_key) {\n  throw new Error('Reviewed attempt changed after transfer selection; do not sync stale evidence');\n}\n\nconst checks = [\n  ['Dedup Key', expected.dedup_key],\n  ['Artifact Pointer', expected.artifact_url],\n  ['Concepts Exercised', expected.concepts],\n  ['Gap / Corrected Model', expected.gap],\n  ['Next Verification', expected.next_verification],\n  ['Source Ref', expected.source_ref],\n  ['Source Type', 'Odin Bootcamp'],\n  ['Evidence Class', 'Assisted exposure'],\n  ['Reviewer Status', expected.reviewer_status],\n  ['Certification Alignment', expected.certification_alignment],\n  ['Certification Objective Coverage', expected.objective_coverage],\n  ['Evidence Level', expected.evidence_level],\n  ['Bootcamp Capability IDs', expected.bootcamp_capabilities],\n  ['Human Transfer Test', expected.human_transfer_test]\n];\nfor (const [name, wanted] of checks) {\n  if (String(value(evidence,name) ?? '') !== String(wanted ?? '')) {\n    throw new Error('Transfer evidence readback mismatch: ' + name);\n  }\n}\nif (Number(value(evidence,'Reviewer Score')) !== Number(expected.reviewer_score)) {\n  throw new Error('Transfer evidence readback mismatch: Reviewer Score');\n}\nif (evidence.properties?.['Mastery Eligible']?.checkbox !== false) {\n  throw new Error('Transfer evidence readback mismatch: Mastery Eligible');\n}\n\nreturn {\n  method:'PATCH',\n  url:'/v1/pages/' + latest.id,\n  page_id:latest.id,\n  action:'mark-synced',\n  body:JSON.stringify({properties:{\n    'Transfer Synced':{checkbox:true},\n    'Last Updated':{date:{start:new Date().toISOString().slice(0,10)}}\n  }})\n};\n}\nreturn planTransfer(input);"
+            }
+          }
+        },
+        {
+          "id": 8,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Create or read transfer evidence",
+          "follows": 7,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "{{7.result.url}}",
+              "body": "{{7.result.body}}",
+              "method": "{{7.result.method}}",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 9,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Read Task Factory row before sync",
+          "follows": 8,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "/v1/pages/{{3.page_id}}",
+              "method": "GET",
+              "headers": [],
+              "version": "2025-09-03"
+            }
+          }
+        },
+        {
+          "id": 10,
+          "module": "code:ExecuteCode",
+          "version": 1,
+          "label": "Validate transfer evidence readback",
+          "follows": 9,
+          "config": {
+            "mapper": {
+              "input": [
+                {
+                  "name": "expected",
+                  "value": "{{3.row_json}}"
+                },
+                {
+                  "name": "evidence",
+                  "value": "{{8.body}}"
+                },
+                {
+                  "name": "latest",
+                  "value": "{{9.body}}"
+                }
+              ],
+              "language": "javascript",
+              "inputFormat": "editor",
+              "codeEditorJavascript": "'use strict';\n// Scores and self-reported unaided declarations never establish mastery.\nconst crypto = require('node:crypto');\nconst DESTINATION = 'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52';\nconst GUIDED_REFERENCES = {\"3f08621e-0a7a-8132-89fd-e5cad87aba40\":\"e5652bcb044cd24d2a7d1c2f8bb93b885cea2069\",\"3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b\":\"ca532d92ec3db02224061b3ceef105b2bc113b27\",\"3f08621e-0a7a-81ed-a36b-dd125c60221c\":\"c5986e93719cfd4b08a57104576c04a78d1f16ee\",\"3f08621e-0a7a-818f-8a72-f73e8d4e4da0\":\"2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38\",\"3f28621e-0a7a-8141-8d6e-dfb9a5b43054\":\"9c829c6ec7f85cf382f97e286bf8acce20a96fe7\",\"3f28621e-0a7a-81bc-abb6-c65d74863966\":\"aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5\",\"3f38621e-0a7a-8149-8dd1-c3e0ef4bff3d\":\"ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2\",\"3f38621e-0a7a-81ac-95c5-dc0a9aaa211a\":\"c65f9343be723ea36289db541b8f373883cbfe8a\"};\nconst REVIEW_FIELDS = ['Lane','Bootcamp Status','Reviewer Status','Reviewer Score','Reviewer Notes','Next Skill Action','Workflow Checklist Gate','Recording QA Gate','Review Bundle URL','Starter Repository','Starter Commit','Certification Evidence Level','Certification Alignment','Certification Objective Coverage','Bootcamp Capability IDs','Human Transfer Test','Skills Practiced'];\nfunction semantic(page,name) {\n const p=page.properties?.[name];\n if(p?.select)return p.select.name||'';\n if(typeof p?.checkbox==='boolean')return p.checkbox;\n if(typeof p?.number==='number')return p.number;\n if(typeof p?.url==='string')return p.url;\n return (p?.rich_text||p?.title||[]).map(x=>x.plain_text??x.text?.content??'').join('');\n}\nfunction guidance(page) {return GUIDED_REFERENCES[page.id]===semantic(page,'Starter Commit').trim()?'guided':'unknown';}\nfunction reviewKey(page) {return 'ODIN_BOOTCAMP_TRANSFER_V2:'+crypto.createHash('sha256').update(JSON.stringify([page.id,guidance(page),...REVIEW_FIELDS.map(n=>semantic(page,n))])).digest('hex');}\nfunction exposureExplanation(page,status) {\n const reason=guidance(page)==='guided'?'Known AI-prepared guided reference; assisted practice.':'Assistance unknown; conservative exposure classification pending validated independent provenance.';\n return 'Internal reviewed '+status.toLowerCase()+'. '+reason+' No mastery, exam readiness or paid approval established.';\n}\nfunction requireExposure(row) {\n if(row.evidence_class!=='Assisted exposure'||row.mastery_eligible!==false||!/^ODIN_BOOTCAMP_TRANSFER_V2:[a-f0-9]{64}$/.test(row.dedup_key||''))throw new Error('Reviewer pass or self-report cannot establish unaided transfer or mastery');\n}\n\nfunction selectTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing Task Factory response');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst q = object(input.body ?? input);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete recorded-review inventory; paginate before transfer');\n}\n\nconst rows = [];\nconst skipped = [];\n\nfor (const page of q.results) {\n  if (page.archived || page.in_trash || page.is_archived) continue;\n  const lane = value(page, 'Lane');\n  const bootcampStatus = value(page, 'Bootcamp Status');\n  const reviewerStatus = value(page, 'Reviewer Status');\n  const reviewerScore = value(page, 'Reviewer Score');\n  const notes = value(page, 'Reviewer Notes').trim();\n  const nextSkill = value(page, 'Next Skill Action').trim();\n  const workflow = value(page, 'Workflow Checklist Gate');\n  const reviewBundle = value(page, 'Review Bundle URL');\n  const starterRepo = value(page, 'Starter Repository');\n  const starterCommit = value(page, 'Starter Commit').trim();\n  const transferSynced = value(page, 'Transfer Synced') === true;\n  const recordingQa = value(page, 'Recording QA Gate') === true;\n  const evidenceLevel = value(page, 'Certification Evidence Level');\n  const certAlignment = value(page, 'Certification Alignment').trim();\n  const objectiveCoverage = value(page, 'Certification Objective Coverage').trim();\n  const capabilities = value(page, 'Bootcamp Capability IDs').trim();\n  const transferTest = value(page, 'Human Transfer Test').trim();\n  const skills = value(page, 'Skills Practiced').trim();\n\n  if (transferSynced) continue;\n\n  const mappingOkay =\n    ['Objective-level','Credential/domain-level','No supported mapping'].includes(evidenceLevel) &&\n    transferTest &&\n    (evidenceLevel === 'No supported mapping' ? !certAlignment : !!certAlignment) &&\n    (evidenceLevel !== 'Objective-level' || !!objectiveCoverage);\n\n  const evidenceOkay =\n    lane === 'Bootcamp' &&\n    bootcampStatus === 'Reviewed' &&\n    ['Pass','Needs work','Fail'].includes(reviewerStatus) &&\n    Number.isFinite(reviewerScore) && reviewerScore >= 0 && reviewerScore <= 100 &&\n    notes &&\n    recordingQa &&\n    ['POST-RECORD PASS','SUBMISSION PASS'].includes(workflow) &&\n    /^https:\\/\\/(?:drive|docs)\\.google\\.com\\//.test(reviewBundle || '') &&\n    /^https:\\/\\/github\\.com\\/KyPython\\/[A-Za-z0-9_.-]+$/.test(starterRepo || '') &&\n    /^[a-f0-9]{40}$/.test(starterCommit) &&\n    (reviewerStatus === 'Pass' || !!nextSkill);\n\n  if (!mappingOkay || !evidenceOkay) {\n    skipped.push({page_id: page.id, reason: !mappingOkay ? 'Mapping incomplete' : 'Reviewed unaided evidence contract incomplete'});\n    continue;\n  }\n\n  const dedupKey = reviewKey(page);\n\n  rows.push({\n    page_id: page.id,\n    source_ref: page.id,\n    dedup_key: dedupKey,\n    date: new Date().toISOString().slice(0,10),\n    artifact_url: reviewBundle,\n    concepts: skills || 'Reviewed engineering practice',\n    certification_alignment: certAlignment,\n    objective_coverage: objectiveCoverage,\n    evidence_level: evidenceLevel,\n    bootcamp_capabilities: capabilities,\n    human_transfer_test: transferTest,\n    reviewer_status: reviewerStatus,\n    reviewer_score: reviewerScore,\n    evidence_class: 'Assisted exposure',\n    mastery_eligible: false,\n    gap: exposureExplanation(page,reviewerStatus),\n    next_verification: nextSkill || transferTest,\n    row_json: JSON.stringify({\n      page_id: page.id,\n      source_ref: page.id,\n      dedup_key: dedupKey,\n      date: new Date().toISOString().slice(0,10),\n      artifact_url: reviewBundle,\n      concepts: skills || 'Reviewed engineering practice',\n      certification_alignment: certAlignment,\n      objective_coverage: objectiveCoverage,\n      evidence_level: evidenceLevel,\n      bootcamp_capabilities: capabilities,\n      human_transfer_test: transferTest,\n      reviewer_status: reviewerStatus,\n      reviewer_score: reviewerScore,\n      evidence_class: 'Assisted exposure',\n      mastery_eligible: false,\n      gap: exposureExplanation(page,reviewerStatus),\n      next_verification: nextSkill || transferTest\n    })\n  });\n}\nreturn {rows, count: rows.length, skipped};\n}\nfunction planTransfer(input) {\n'use strict';\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction rt(content) {\n  const s = String(content || '');\n  if (s.length > 1800) throw new Error('Transfer field exceeds bound');\n  return { rich_text: s ? [{type:'text', text:{content:s}}] : [] };\n}\nfunction title(content) {\n  return { title: [{type:'text', text:{content:String(content)}}] };\n}\n\nconst row = object(input.row);\nrequireExposure(row);\nconst q = object(input.query);\nif (!Array.isArray(q.results) || q.has_more || q.next_cursor) {\n  throw new Error('Incomplete transfer-evidence dedup query');\n}\nif (q.results.length > 1) {\n  throw new Error('Duplicate transfer-evidence rows found for dedup key; reconcile before continuing');\n}\nif (q.results.length === 1) {\n  const existing = q.results[0];\n  return {\n    action:'recover',\n    method:'GET',\n    url:'/v1/pages/' + existing.id,\n    body:'',\n    expected: row,\n    page_id: row.page_id,\n    dedup_key: row.dedup_key\n  };\n}\n\nconst body = {\n  parent:{data_source_id:'a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52'},\n  properties:{\n    'Evidence': title('Reviewed practice exposure ' + row.date),\n    'Date': {date:{start:row.date}},\n    'Source Type': {select:{name:'Odin Bootcamp'}},\n    'Source Ref': rt(row.source_ref),\n    'Artifact Pointer': {url:row.artifact_url},\n    'Concepts Exercised': rt(row.concepts),\n    'Certification Alignment': rt(row.certification_alignment),\n    'Certification Objective Coverage': rt(row.objective_coverage),\n    'Evidence Level': {select:{name:row.evidence_level}},\n    'Bootcamp Capability IDs': rt(row.bootcamp_capabilities),\n    'Human Transfer Test': rt(row.human_transfer_test),\n    'Reviewer Status': {select:{name:row.reviewer_status}},\n    'Reviewer Score': {number:row.reviewer_score},\n    'Evidence Class': {select:{name:row.evidence_class}},\n    'Mastery Eligible': {checkbox:!!row.mastery_eligible},\n    'Gap / Corrected Model': rt(row.gap),\n    'Next Verification': rt(row.next_verification),\n    'Dedup Key': rt(row.dedup_key)\n  }\n};\n\nreturn {\n  action:'create',\n  method:'POST',\n  url:'/v1/pages',\n  body:JSON.stringify(body),\n  expected:row,\n  page_id:row.page_id,\n  dedup_key:row.dedup_key\n};\n}\nfunction verifyTransfer(input) {\n'use strict';\nconst crypto = require('node:crypto');\n\nfunction object(value) {\n  const result = typeof value === 'string' ? JSON.parse(value) : value;\n  if (!result || typeof result !== 'object') throw new Error('Missing object');\n  return result;\n}\nfunction text(parts) {\n  return (parts || []).map(p => p.plain_text ?? p.text?.content ?? '').join('');\n}\nfunction value(page, name) {\n  const prop = page.properties?.[name];\n  if (prop?.select) return prop.select.name || '';\n  if (prop?.checkbox === true) return true;\n  if (typeof prop?.number === 'number') return prop.number;\n  if (typeof prop?.url === 'string') return prop.url;\n  return text(prop?.rich_text || prop?.title);\n}\nfunction digest(parts) {\n  return crypto.createHash('sha256').update(parts.join('|')).digest('hex');\n}\n\nconst expected = object(input.expected);\nrequireExposure(expected);\nconst evidence = object(input.evidence);\nconst latest = object(input.latest);\n\nif (latest.id !== expected.page_id) throw new Error('Task Factory row changed identity');\nif (value(latest,'Transfer Synced') === true) {\n  return {method:'GET',url:'/v1/pages/' + latest.id,body:'',page_id:latest.id,action:'already-synced'};\n}\n\nconst currentDedup = reviewKey(latest);\nif (latest.archived || latest.in_trash || semantic(latest,'Lane')!=='Bootcamp' || semantic(latest,'Bootcamp Status')!=='Reviewed' || semantic(latest,'Recording QA Gate')!==true || !['POST-RECORD PASS','SUBMISSION PASS'].includes(semantic(latest,'Workflow Checklist Gate'))) throw new Error('Actual review or capture gates changed; do not sync');\nif (evidence.archived || evidence.in_trash || evidence.parent?.data_source_id !== DESTINATION) throw new Error('Transfer destination identity mismatch');\nif (currentDedup !== expected.dedup_key) {\n  throw new Error('Reviewed attempt changed after transfer selection; do not sync stale evidence');\n}\n\nconst checks = [\n  ['Dedup Key', expected.dedup_key],\n  ['Artifact Pointer', expected.artifact_url],\n  ['Concepts Exercised', expected.concepts],\n  ['Gap / Corrected Model', expected.gap],\n  ['Next Verification', expected.next_verification],\n  ['Source Ref', expected.source_ref],\n  ['Source Type', 'Odin Bootcamp'],\n  ['Evidence Class', 'Assisted exposure'],\n  ['Reviewer Status', expected.reviewer_status],\n  ['Certification Alignment', expected.certification_alignment],\n  ['Certification Objective Coverage', expected.objective_coverage],\n  ['Evidence Level', expected.evidence_level],\n  ['Bootcamp Capability IDs', expected.bootcamp_capabilities],\n  ['Human Transfer Test', expected.human_transfer_test]\n];\nfor (const [name, wanted] of checks) {\n  if (String(value(evidence,name) ?? '') !== String(wanted ?? '')) {\n    throw new Error('Transfer evidence readback mismatch: ' + name);\n  }\n}\nif (Number(value(evidence,'Reviewer Score')) !== Number(expected.reviewer_score)) {\n  throw new Error('Transfer evidence readback mismatch: Reviewer Score');\n}\nif (evidence.properties?.['Mastery Eligible']?.checkbox !== false) {\n  throw new Error('Transfer evidence readback mismatch: Mastery Eligible');\n}\n\nreturn {\n  method:'PATCH',\n  url:'/v1/pages/' + latest.id,\n  page_id:latest.id,\n  action:'mark-synced',\n  body:JSON.stringify({properties:{\n    'Transfer Synced':{checkbox:true},\n    'Last Updated':{date:{start:new Date().toISOString().slice(0,10)}}\n  }})\n};\n}\nreturn verifyTransfer(input);"
+            }
+          }
+        },
+        {
+          "id": 11,
+          "module": "notion:makeApiCall",
+          "version": 1,
+          "label": "Mark Task Factory transfer synced",
+          "follows": 10,
+          "config": {
+            "parameters": {},
+            "mapper": {
+              "qs": [],
+              "url": "{{10.result.url}}",
+              "body": "{{10.result.body}}",
+              "method": "{{10.result.method}}",
+              "headers": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "version": "2025-09-03"
+            }
+          }
+        }
+      ],
+      "connections": [
+        {
+          "app": "notion2",
+          "status": "ok",
+          "usedByModules": [
+            1,
+            6,
+            8,
+            9,
+            11
+          ]
+        }
+      ]
+    }
+  ],
+  "transferDestination": {
+    "dataSourceId": "a6d74f65-0b06-4d1a-ab64-b4fb5f1a5a52",
+    "title": "Software + AI Mastery \u2014 Transfer Evidence",
+    "embeddedInStudyLog": "3e98621e-0a7a-818f-880a-fb817185a6d1",
+    "schemaVerified": true,
+    "dedupProperty": "Dedup Key",
+    "classificationOptions": [
+      "Unaided human attempt",
+      "Assisted exposure"
+    ],
+    "automatedClass": "Assisted exposure",
+    "automatedMasteryEligible": false
+  },
+  "capabilityAuthority": "cloud/capability-authority.json"
+}

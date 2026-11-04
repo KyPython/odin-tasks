@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "verifiedAt": "2026-10-08T02:02:05.954742+00:00",
+  "neutral": "evaluation-handoff",
+  "taskId": "ODIN-219830EEEC244B30A7DE8FFF65B6AB7E",
+  "notionPageId": "3f08621e-0a7a-81b4-9fd3-f290ce5e6d8b",
+  "sourceRepo": "https://github.com/KyPython/ci-evaluation-contract",
+  "sourceCommit": "ca532d92ec3db02224061b3ceef105b2bc113b27",
+  "goalSha256": "eae155012790178f9ef10a5f5decd7e9a73c2135d0309ae3491ce542ef80543c",
+  "approvedGoal": "As a software engineer, audit a synthetic grading repository where written evaluation requirements are not fully enforced before grading, identify the missing transfer/CI check, implement one bounded fail-closed validation plus a negative fixture, and verify that the pipeline rejects the defective case while preserving the valid case.",
+  "sourceInventoryBefore": {
+    "README.md": {
+      "sha256": "2a5188f421ce031172f9782b307f070602eb82785d52ac99bed01f78e9ddde2f",
+      "mode": 420,
+      "size": 565
+    },
+    "docs/evaluation-contract.md": {
+      "sha256": "4d577ce58db3baaf9e45c7ced7d283ea524cc38e6b3fa737e73782fea1c7a90c",
+      "mode": 420,
+      "size": 635
+    },
+    "fixtures/valid/artifact.txt": {
+      "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+      "mode": 420,
+      "size": 18
+    },
+    "fixtures/valid/manifest.json": {
+      "sha256": "5abecd133ca3c8f7553d17af93bb13408b4400078b8282e354819530da2a6635",
+      "mode": 420,
+      "size": 173
+    },
+    "grader/__init__.py": {
+      "sha256": "81ad7f10c67d92f962323afbb0a9233e185942f9b5dbfbc5b18b7f40ef0dd6c7",
+      "mode": 420,
+      "size": 55
+    },
+    "grader/intake.py": {
+      "sha256": "f70e486c3b51d9f75481aaacf220415261d3a52652c07e2cdb258d98a6bce348",
+      "mode": 420,
+      "size": 1885
+    },
+    "grader/pipeline.py": {
+      "sha256": "07246871b6192b4b1fe5fe6eef55ce0c4db5506a275eba1853c29f87d1683594",
+      "mode": 420,
+      "size": 665
+    },
+    "grader/scoring.py": {
+      "sha256": "13b5314538d1a8bc83d1330fed9c71ae2b80b6dd21a1119a169147c3dee83cb9",
+      "mode": 420,
+      "size": 272
+    },
+    "scripts/verify.sh": {
+      "sha256": "e397ce2d922b3f92f163317fe7e6f918b7a5d5236de72a66fa5e1db8b89e7639",
+      "mode": 420,
+      "size": 256
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "bbe55490fc57b69c5eeeda112c9ac45e2caebf6a7954562da21a261045bb6757",
+      "mode": 420,
+      "size": 2237
+    }
+  },
+  "sourceInventoryAfter": {
+    "README.md": {
+      "sha256": "2a5188f421ce031172f9782b307f070602eb82785d52ac99bed01f78e9ddde2f",
+      "mode": 420,
+      "size": 565
+    },
+    "docs/evaluation-contract.md": {
+      "sha256": "4d577ce58db3baaf9e45c7ced7d283ea524cc38e6b3fa737e73782fea1c7a90c",
+      "mode": 420,
+      "size": 635
+    },
+    "fixtures/valid/artifact.txt": {
+      "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+      "mode": 420,
+      "size": 18
+    },
+    "fixtures/valid/manifest.json": {
+      "sha256": "5abecd133ca3c8f7553d17af93bb13408b4400078b8282e354819530da2a6635",
+      "mode": 420,
+      "size": 173
+    },
+    "grader/__init__.py": {
+      "sha256": "81ad7f10c67d92f962323afbb0a9233e185942f9b5dbfbc5b18b7f40ef0dd6c7",
+      "mode": 420,
+      "size": 55
+    },
+    "grader/intake.py": {
+      "sha256": "f70e486c3b51d9f75481aaacf220415261d3a52652c07e2cdb258d98a6bce348",
+      "mode": 420,
+      "size": 1885
+    },
+    "grader/pipeline.py": {
+      "sha256": "07246871b6192b4b1fe5fe6eef55ce0c4db5506a275eba1853c29f87d1683594",
+      "mode": 420,
+      "size": 665
+    },
+    "grader/scoring.py": {
+      "sha256": "13b5314538d1a8bc83d1330fed9c71ae2b80b6dd21a1119a169147c3dee83cb9",
+      "mode": 420,
+      "size": 272
+    },
+    "scripts/verify.sh": {
+      "sha256": "e397ce2d922b3f92f163317fe7e6f918b7a5d5236de72a66fa5e1db8b89e7639",
+      "mode": 420,
+      "size": 256
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "bbe55490fc57b69c5eeeda112c9ac45e2caebf6a7954562da21a261045bb6757",
+      "mode": 420,
+      "size": 2237
+    }
+  },
+  "referenceSourceInventory": {
+    "README.md": {
+      "sha256": "2a5188f421ce031172f9782b307f070602eb82785d52ac99bed01f78e9ddde2f",
+      "mode": 420,
+      "size": 565
+    },
+    "docs/evaluation-contract.md": {
+      "sha256": "4d577ce58db3baaf9e45c7ced7d283ea524cc38e6b3fa737e73782fea1c7a90c",
+      "mode": 420,
+      "size": 635
+    },
+    "fixtures/negative/artifact.txt": {
+      "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+      "mode": 420,
+      "size": 18
+    },
+    "fixtures/negative/manifest.json": {
+      "sha256": "920ecb3f02cce9a3c55237a13e74ac8715cf993279a88bb07fd03cc73e8ec4c5",
+      "mode": 420,
+      "size": 181
+    },
+    "fixtures/valid/artifact.txt": {
+      "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+      "mode": 420,
+      "size": 18
+    },
+    "fixtures/valid/manifest.json": {
+      "sha256": "5abecd133ca3c8f7553d17af93bb13408b4400078b8282e354819530da2a6635",
+      "mode": 420,
+      "size": 173
+    },
+    "grader/__init__.py": {
+      "sha256": "81ad7f10c67d92f962323afbb0a9233e185942f9b5dbfbc5b18b7f40ef0dd6c7",
+      "mode": 420,
+      "size": 55
+    },
+    "grader/intake.py": {
+      "sha256": "8d329744fbe0b6f9d5baab49470c41f8f033ad3fcd704be46d83c7b04b2694d2",
+      "mode": 420,
+      "size": 2049
+    },
+    "grader/pipeline.py": {
+      "sha256": "07246871b6192b4b1fe5fe6eef55ce0c4db5506a275eba1853c29f87d1683594",
+      "mode": 420,
+      "size": 665
+    },
+    "grader/scoring.py": {
+      "sha256": "13b5314538d1a8bc83d1330fed9c71ae2b80b6dd21a1119a169147c3dee83cb9",
+      "mode": 420,
+      "size": 272
+    },
+    "scripts/verify.sh": {
+      "sha256": "e397ce2d922b3f92f163317fe7e6f918b7a5d5236de72a66fa5e1db8b89e7639",
+      "mode": 420,
+      "size": 256
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "2a8000f637ac32da63567fbc699d2191c207c470104a406775feba5720b82fc2",
+      "mode": 420,
+      "size": 3835
+    }
+  },
+  "patchSha256": {
+    "tests.patch": "93fd63cc15c62f008e298ebf83658c8c012cbc415e2fd660847bf5bffcb48437",
+    "repair.patch": "c0c07f5ff2ea6b33007b20b5e770c523e3edcaf9c8646324823dc1531a159f31",
+    "solution.patch": "b0377857a98cd9611ec3f0bb1138ace1b12e2b50a5e488340a2c10ba4513afb0"
+  },
+  "solutionPatchSha256": "b0377857a98cd9611ec3f0bb1138ace1b12e2b50a5e488340a2c10ba4513afb0",
+  "plannedChangedFiles": {
+    "fixtures/negative/artifact.txt": {
+      "sha256": "87a3c52b88cf5eeec4bff79b5f65de20adbdb2d79a7f78d93f996a319c42ff5f",
+      "mode": 420,
+      "size": 18
+    },
+    "fixtures/negative/manifest.json": {
+      "sha256": "920ecb3f02cce9a3c55237a13e74ac8715cf993279a88bb07fd03cc73e8ec4c5",
+      "mode": 420,
+      "size": 181
+    },
+    "grader/intake.py": {
+      "sha256": "8d329744fbe0b6f9d5baab49470c41f8f033ad3fcd704be46d83c7b04b2694d2",
+      "mode": 420,
+      "size": 2049
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "2a8000f637ac32da63567fbc699d2191c207c470104a406775feba5720b82fc2",
+      "mode": 420,
+      "size": 3835
+    }
+  },
+  "runtimeMetadataSha256": {
+    "TaskWorkRegistry.py": "66c73e5af3204bf0f58392dcb959c3ec9af3f928b3ddb11a305be6aa452a1da4",
+    "task-registry.json": "f550b5bb06db61bc96b1f285b897b0d9b295cf62b006573aebc64beb5bd2b4e6",
+    "runtime-manifest.json": "1ae11510ed69fd0888e7a892e058ce5565544477b50002a1a91b5317e6821e9c",
+    "goals/evaluation-handoff.txt": "eae155012790178f9ef10a5f5decd7e9a73c2135d0309ae3491ce542ef80543c",
+    "cloud-proof.json": "6215efa6080f33a7ef299e3f65c10ff14cceb73b3bbef72c74b9703f15f1f201"
+  },
+  "toolVersions": {
+    "python": "Python 3.12.7",
+    "git": "git version 2.54.0 (Apple Git-157)"
+  },
+  "cloudSeed": {
+    "sourceCommit": "2ca52ca769cffff9b7c42a2800a71388e8a2aebc",
+    "runId": "37714100112"
+  },
+  "checks": [
+    {
+      "label": "public-python-version",
+      "command": [
+        "/usr/local/bin/python3",
+        "--version"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:04.937493+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "Python 3.12.7\n",
+      "stderr": ""
+    },
+    {
+      "label": "starter-ordinary-verification",
+      "command": [
+        "sh",
+        "scripts/verify.sh"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:04.953435+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_001: 3\n",
+      "stderr": "test_artifact_cannot_escape_manifest_directory (test_pipeline.PipelineTests.test_artifact_cannot_escape_manifest_directory) ... ok\ntest_digest_mismatch_is_rejected (test_pipeline.PipelineTests.test_digest_mismatch_is_rejected) ... ok\ntest_valid_submission_is_scored_deterministically (test_pipeline.PipelineTests.test_valid_submission_is_scored_deterministically) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "label": "starter-valid-cli",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/valid/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.117224+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_001: 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "combined-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/solution.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.185583+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "tests-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/tests.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.208912+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "apply-tests-patch",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/tests.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.231394+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "strengthened-tests-fail-before-repair",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.254694+00:00",
+      "environmentOverrides": {},
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "test_artifact_cannot_escape_manifest_directory (test_pipeline.PipelineTests.test_artifact_cannot_escape_manifest_directory) ... ok\ntest_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) ... \n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='missing') ... FAIL\n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='empty') ... FAIL\n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='capitalized') ... FAIL\n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='boolean') ... FAIL\n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='number') ... FAIL\n  test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='list') ... FAIL\ntest_digest_mismatch_is_rejected (test_pipeline.PipelineTests.test_digest_mismatch_is_rejected) ... ok\ntest_unapproved_clearance_is_rejected_before_grading (test_pipeline.PipelineTests.test_unapproved_clearance_is_rejected_before_grading) ... FAIL\ntest_valid_submission_is_scored_deterministically (test_pipeline.PipelineTests.test_valid_submission_is_scored_deterministically) ... ok\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='missing')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='empty')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='capitalized')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='boolean')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='number')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) (case='list')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 94, in test_clearance_requires_the_exact_approved_string\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n======================================================================\nFAIL: test_unapproved_clearance_is_rejected_before_grading (test_pipeline.PipelineTests.test_unapproved_clearance_is_rejected_before_grading)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff/tests/test_pipeline.py\", line 68, in test_unapproved_clearance_is_rejected_before_grading\n    with self.assertRaisesRegex(IntakeError, \"clearance must be approved\"):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: IntakeError not raised\n\n----------------------------------------------------------------------\nRan 5 tests in 0.010s\n\nFAILED (failures=7)\n"
+    },
+    {
+      "label": "negative-fixture-incorrectly-accepted-before-repair",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/negative/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.384381+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_negative_001: 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "repair-patch-check",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "--check",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/repair.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.435799+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "apply-repair-patch",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/repair.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.455113+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "repaired-ordinary-verification",
+      "command": [
+        "sh",
+        "scripts/verify.sh"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.474226+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_001: 3\n",
+      "stderr": "test_artifact_cannot_escape_manifest_directory (test_pipeline.PipelineTests.test_artifact_cannot_escape_manifest_directory) ... ok\ntest_clearance_requires_the_exact_approved_string (test_pipeline.PipelineTests.test_clearance_requires_the_exact_approved_string) ... ok\ntest_digest_mismatch_is_rejected (test_pipeline.PipelineTests.test_digest_mismatch_is_rejected) ... ok\ntest_unapproved_clearance_is_rejected_before_grading (test_pipeline.PipelineTests.test_unapproved_clearance_is_rejected_before_grading) ... ok\ntest_valid_submission_is_scored_deterministically (test_pipeline.PipelineTests.test_valid_submission_is_scored_deterministically) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.013s\n\nOK\n"
+    },
+    {
+      "label": "repaired-valid-cli-1",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/valid/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.739655+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_001: 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "repaired-negative-cli-1",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/negative/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.783863+00:00",
+      "environmentOverrides": {},
+      "exitCode": 2,
+      "stdout": "",
+      "stderr": "usage: pipeline.py [-h] manifest\npipeline.py: error: clearance must be approved\n"
+    },
+    {
+      "label": "repaired-valid-cli-2",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/valid/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.828699+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "sample_001: 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "repaired-negative-cli-2",
+      "command": [
+        "/usr/local/bin/python3",
+        "-m",
+        "grader.pipeline",
+        "fixtures/negative/manifest.json"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/evaluation-handoff",
+      "startedAt": "2026-10-08T02:02:05.871233+00:00",
+      "environmentOverrides": {},
+      "exitCode": 2,
+      "stdout": "",
+      "stderr": "usage: pipeline.py [-h] manifest\npipeline.py: error: clearance must be approved\n"
+    },
+    {
+      "label": "apply-combined-patch-independently",
+      "command": [
+        "/usr/bin/git",
+        "apply",
+        "/Users/ky/coding-projects/odin-recording-preparation/walkthroughs/evaluation-handoff/solution.patch"
+      ],
+      "cwd": "/var/folders/b1/l4pffgfj40l7t4s9lz9q36880000gn/T/taskwork-evaluation-handoff-reference-8oqz5l6v/combined",
+      "startedAt": "2026-10-08T02:02:05.919612+00:00",
+      "environmentOverrides": {},
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "sourceInputsUnchanged": true,
+  "runtimeMetadataUnchanged": true,
+  "sourceRepositoriesWritten": false,
+  "recordingWorkspaceModified": false,
+  "recorderExecuted": false,
+  "setupVerified": false,
+  "recordingReady": false,
+  "disposableReferencePatchApplied": true,
+  "aiAuthoredBeforeRecording": true,
+  "externalSolutionWalkthroughAcceptanceVerified": false,
+  "limitations": [
+    "These are disposable off-screen worked-reference results, not an actual Recorder attempt.",
+    "The manual does not explicitly establish eligibility of a fully AI-authored solution walkthrough."
+  ]
+}

@@ -1,0 +1,1333 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-08T05:48:42.685644+00:00",
+  "scope": "Existing authenticated Codex recovery candidates only, private cache; no new dispatch, task code execution, source promotion, spec merge, repository/Notion/human gate mutation.",
+  "taskFactoryRows": 18,
+  "registeredWorldsUnchanged": 8,
+  "unbuiltIdeas": 10,
+  "recoveryInventorySha256": "11c2e5f840b4fe9f8770269e9449785c47cc732007b868af616696bf4c4a3b6e",
+  "currentWorkflowAuthorization": "World-preparation mutation exception granted by user through root; internal IaC inclusion authorized; no invented external Odin approval.",
+  "cloudListCoverage": "4 pages/80 tasks inspected; cursor remains, full Codex account inventory not claimed. All ten requested recovery candidates found.",
+  "canonicalMeaning": "Selections below designate one proposed recovery source per existing idea, not new/admitted build ownership. Old issues remain closed until approved reconciliation by their owner.",
+  "publishedSourceEvidence": "10 claimed starter shortSHAs returned GitHub422 No commit found; complete ai-governance branch inventory contains none of those starter branches; current KyPython28repos show no held-idea starter repository. No matching complete public file-byte starter manifest or real build PR found.",
+  "mainSpecEvidence": "Root independently verified PR37/42 closed-unmerged and main tree lacks these ten spec directories.",
+  "actualDiffCount": 16,
+  "actualDiffFiles": 109,
+  "selectedStarterFiles": 88,
+  "baselineExecuted": false,
+  "recorderExecuted": false,
+  "sourcePromoted": false,
+  "records": [
+    {
+      "slug": "signup",
+      "task": "JavaScript Signup Form Validation Regex Repair",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a810cb2cdf1b3baad13ef",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As a front-end developer, fix a synthetic static signup form whose JavaScript validation rejects valid email addresses and accepts malformed phone numbers, correct the validation rules and their anchoring, and verify with a Node test table of valid and invalid inputs plus a manual check of the form in the browser.",
+      "candidateGoalSha256": "435cbbe7b1508d9fbedaafb82621969bb856b324a32b11104e4f2f262ab3b329",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/15"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/182",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d5f886fc8322ae0ceab6e191f68b",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d5f886fc8322ae0ceab6e191f68b",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d5f886fc8322ae0ceab6e191f68b.patch",
+      "diffSha256": "89720c3ef31690572cb134fe568704153a2b9019c7981cf0ad364626c2da0e2d",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d5f886fc8322ae0ceab6e191f68b",
+      "starterSubdirectory": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter",
+      "starterFileCount": 10,
+      "totalRecoveredFileCount": 10,
+      "starterFiles": [
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/README.md",
+          "sourceMode": "100644",
+          "bytes": 705,
+          "sha256": "79d73490dc1a745f8dc0a14e22ee03159f8a026922c351fe3c5877a89684bbc9",
+          "gitBlobSha": "6c6e16c8518e20485c282c5fb0e7f936f9ce5516"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/docs/validation-contract.md",
+          "sourceMode": "100644",
+          "bytes": 772,
+          "sha256": "2e0975a4606f351b76449fc876fd6f670c4e6fd54e4527fbbcf3c6cea4a3346f",
+          "gitBlobSha": "44a3efb749935c6dcaa157c4cf0cdac21b755be0"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/fixtures/validation-cases.json",
+          "sourceMode": "100644",
+          "bytes": 460,
+          "sha256": "1a598bfd19beb4932dd4dfb8d2f4f4de335b15347869cdca4c3098744f281347",
+          "gitBlobSha": "b5d8abc4ba7dcdcb68c70b686078303c13668bd0"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/index.html",
+          "sourceMode": "100644",
+          "bytes": 1212,
+          "sha256": "21f8a3a6f2dcff5379c607a50525a1089200199719322b440d81605ad68fb38f",
+          "gitBlobSha": "45ccfa1673a7c2886e3e5039e35a14739d87949e"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/package.json",
+          "sourceMode": "100644",
+          "bytes": 215,
+          "sha256": "eb8feca9b1f988eb28043ea5109b9ae0b5c0b7d97118a3b2ca2e883139ace95f",
+          "gitBlobSha": "7c5ef328855fab174f5b3599d2f461635ed6bcb4"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/server.js",
+          "sourceMode": "100644",
+          "bytes": 1115,
+          "sha256": "15c580f7fa4028a778596164fc57b93d6b22503564b1542bd74d949d912987ad",
+          "gitBlobSha": "309913340cd40c72441bcd71ac23d27a18c2d692"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/src/app.js",
+          "sourceMode": "100644",
+          "bytes": 791,
+          "sha256": "8f6f1508c6b605f87bce156b784989f1e6ae997ee37e641e13de85ae00cb98e1",
+          "gitBlobSha": "b0f5fe4877f9be19f5fb1f47283b025df8844840"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/src/validation.js",
+          "sourceMode": "100644",
+          "bytes": 460,
+          "sha256": "3346398e39e3cf0d9de2ff6a2e9fadb0c13cf4c6aa7af24ccf3c7341a90e64e9",
+          "gitBlobSha": "e6ed2030f0fc7337a11f1d3ffda3fc639fc97169"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/styles.css",
+          "sourceMode": "100644",
+          "bytes": 1244,
+          "sha256": "441993e36b4c21486a69095818e2d857343e1d19048a419dd4bdcc3d97eeddff",
+          "gitBlobSha": "fadf8746d8527f6866046378edc17e0d05128e49"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/test/validation.test.js",
+          "sourceMode": "100644",
+          "bytes": 1070,
+          "sha256": "8021555332cf9a5d9e7a3dce5bc96a67cc4831f0867f79e8ea37bb39b8f95764",
+          "gitBlobSha": "5287485fdb75fd406d7467c1ea2c7faf874e3722"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "src/validation.js retains email TLD length2-4/no plus and an unanchored phone pattern; ordinary fixture tests omit the decisive cases.",
+      "mechanismEvidence": [
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/src/validation.js",
+          "line": 1,
+          "text": "const emailPattern = /^[\\w.-]+@[\\w.-]+\\.[A-Za-z]{2,4}$/;"
+        },
+        {
+          "path": "specs/odin-tasks/javascript-signup-form-validation-regex-repair/starter/src/validation.js",
+          "line": 2,
+          "text": "const phonePattern = /\\d{3}-\\d{3}-\\d{4}/;"
+        }
+      ],
+      "dependencyShape": "Node built-ins + browser/static server",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": null,
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "technicalCaveats": [
+        "Existing registration profiles lack standalone node-builtins; reviewed adapter needed.",
+        "Candidate professional-judgment text mentions trimming, while recovered validation contract checks as entered; resolve one acceptance contract during spec review.",
+        "server.js uses import.meta.dirname, so README Node20+ is broader than actual Node20.11+ requirement; supplied public Node22 can satisfy it."
+      ]
+    },
+    {
+      "slug": "exact-match-grader",
+      "task": "Exact-Match Grader Normalization False-Positive Repair",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a811aa81dc7a39ac80b91",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As an evaluation engineer, diagnose a synthetic deterministic answer grader whose normalization step awards credit to wrong answers, correct the normalization so equivalent answers still match while sign, unit, and magnitude errors are rejected, and verify with golden positive and negative fixtures and a re-run score report.",
+      "candidateGoalSha256": "ff4e9a3d199e37e7482bb309771577d160abf194ce5bd10bc9dbca41c446ee5c",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/16",
+        "https://github.com/KyPython/ai-governance/issues/20"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": {
+        "url": "https://github.com/KyPython/ai-governance/pull/37",
+        "state": "closed",
+        "merged": false,
+        "path": "specs/exact-match-grader-normalization",
+        "status": "reusable unmerged UNKNOWN/prerequisite draft; reconcile then human merge"
+      },
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/183",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d5fc882c8322be32454df931e3e3",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d5fc882c8322be32454df931e3e3",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d5fc882c8322be32454df931e3e3.patch",
+      "diffSha256": "86e64757ef6adf3756de26567866677fcda85d753fc354a2b0f6d308316763c7",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d5fc882c8322be32454df931e3e3",
+      "starterSubdirectory": "bootcamp/exact-match-grader",
+      "starterFileCount": 7,
+      "totalRecoveredFileCount": 7,
+      "starterFiles": [
+        {
+          "path": "bootcamp/exact-match-grader/README.md",
+          "sourceMode": "100644",
+          "bytes": 1294,
+          "sha256": "33e797cbaca6b84842382d5d172ac2b4fab352238df0c289c527de0d59a80f61",
+          "gitBlobSha": "f6cf3a2a5c75c63d9549ac21071781c90816c0a8"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/fixtures/answer_key.json",
+          "sourceMode": "100644",
+          "bytes": 78,
+          "sha256": "ebf08d4bdd1c2e21b86b26def1dbadd2620e5f9b42701b3a20d0daf5e54148d4",
+          "gitBlobSha": "d9e80c3319bdf6a5e94a0dd029d5d276f3ee0759"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/fixtures/evaluation_batch.json",
+          "sourceMode": "100644",
+          "bytes": 566,
+          "sha256": "7789a7222b4617df57be1c1514620a6279f51eee8068f9ec07327c7b12c1be87",
+          "gitBlobSha": "53912f7aeee7a01aae8c1810ab8661ec0a360c7f"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/grader/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 171,
+          "sha256": "6bce8e0502be1989aab8f4b4ba4de407bd89809a2d6a3de1067dd1ed9b02c913",
+          "gitBlobSha": "4929e11d0bef58b964730d060b9337191bff0d31"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/grader/cli.py",
+          "sourceMode": "100644",
+          "bytes": 1258,
+          "sha256": "a6447bf782ad7566fa862a21223f9b42094061401545ff5b981072ca7ed94d62",
+          "gitBlobSha": "30865c71413d9688c3e281c337aa9df5938077c4"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/grader/core.py",
+          "sourceMode": "100644",
+          "bytes": 1110,
+          "sha256": "15100ec0109daff66a418a9334847e6b34c17e7931e6da3ccd9169c298c3e224",
+          "gitBlobSha": "3ed2d3fc7c87db36ff49b455fff1f2f3dc94c486"
+        },
+        {
+          "path": "bootcamp/exact-match-grader/tests/test_core.py",
+          "sourceMode": "100644",
+          "bytes": 955,
+          "sha256": "d1a016fe9c628d989193703edff37fb07c46229e2efc6cce6dc8849c929020ff",
+          "gitBlobSha": "242810f5c6b07f5b8ba235012eddce9fed230e2a"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "grader/core.py strips every non-digit from numeric answers, retaining the false-positive defect; five ordinary tests omit sign/unit/magnitude rejection.",
+      "mechanismEvidence": [
+        {
+          "path": "bootcamp/exact-match-grader/grader/core.py",
+          "line": 23,
+          "text": "numeric_portion = re.sub(r\"[^0-9]\", \"\", normalized)"
+        }
+      ],
+      "dependencyShape": "Python standard library",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": null,
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true
+    },
+    {
+      "slug": "lambda-event-shape",
+      "task": "Lambda Handler API Gateway Event-Shape Regression (Local Tests)",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a81559019c1739de4151c",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As a cloud software engineer, diagnose a synthetic Python AWS Lambda handler that crashes after its API Gateway integration moves from the REST (payload v1.0) event format to the HTTP API (payload v2.0) format, add a bounded event-normalization layer that handles both shapes and missing query parameters, and verify locally with fixture events for both formats that the handler returns correct status codes and bodies.",
+      "candidateGoalSha256": "73c3fdc549bc882686b384eeb2d663039f135a84d9f8dd89d1f1f2a6d013f1e1",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/18"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": {
+        "url": "https://github.com/KyPython/ai-governance/pull/42",
+        "state": "closed",
+        "merged": false,
+        "path": "specs/lambda-apigw-event-shape-regression",
+        "status": "reusable unmerged UNKNOWN/prerequisite draft; reconcile then human merge"
+      },
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/169",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d2786b8c8322971aeb8206acf6eb",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d2786b8c8322971aeb8206acf6eb",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d2786b8c8322971aeb8206acf6eb.patch",
+      "diffSha256": "ce2045dd8c2685dc99c45320825c1613225a93ba6e705c3429c9cd5a876af4fa",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d2786b8c8322971aeb8206acf6eb",
+      "starterSubdirectory": "starters/lambda-event-shape-regression",
+      "starterFileCount": 9,
+      "totalRecoveredFileCount": 9,
+      "starterFiles": [
+        {
+          "path": "starters/lambda-event-shape-regression/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 60,
+          "sha256": "b7fd18ebb950943ad773a45c6929618e9f64b8f7c3b0e093c8a2df0d75a637e0",
+          "gitBlobSha": "cd576b0f974ea816003b31f5e3c9e2192676e8be"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/README.md",
+          "sourceMode": "100644",
+          "bytes": 1250,
+          "sha256": "763c5aff9156d96a1e83a47631050616e6008ab78edf5b1dc6f1d91848b1c01e",
+          "gitBlobSha": "772131fc7b5cb2ee784fbe997a3b0fea5ffa7f2b"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/fixtures/http-v2-search.json",
+          "sourceMode": "100644",
+          "bytes": 415,
+          "sha256": "983b05befa45e0b81bd4c85568645fd0f543afc1deeb7b2a766074c1f32849da",
+          "gitBlobSha": "6499199e4190f57b1c4a1a01edf0a2f171332f63"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/fixtures/rest-v1-search.json",
+          "sourceMode": "100644",
+          "bytes": 293,
+          "sha256": "99bcc5c80d6a0a6cdf33392085238a2e9fcfc0a1099c6631b69cfd66ca332263",
+          "gitBlobSha": "05c8a2c0558dfa49901a530929afb6defd79d0d4"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/orbit_catalog/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 50,
+          "sha256": "39654df502f37d2a8fd9269495aa53d0a588d9a31ecd7f23478e45c105d800a8",
+          "gitBlobSha": "2171d2a2597de12723cca0fee99df5d7478c7c44"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/orbit_catalog/handler.py",
+          "sourceMode": "100644",
+          "bytes": 942,
+          "sha256": "eda280d51d0a29cb73a7d74064ba6129bb7a3d2eb28400843cbbb9c1600442d0",
+          "gitBlobSha": "4c7059018ce985f776048183dfd1a098fb44586c"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 426,
+          "sha256": "5220d7df64098a124c7c0b5be0fb66c60203c793a4972745f9b25036ff781412",
+          "gitBlobSha": "c6689fea49189fece661171f9b06c85e83c90b26"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/scripts/invoke.py",
+          "sourceMode": "100644",
+          "bytes": 519,
+          "sha256": "844366f70a2fad1ebb20dbe4a2f1018153fdd558d021f09943e9603925af1452",
+          "gitBlobSha": "0d8419ddcec0c691fd59b3054c1dd695c018fbd9"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/tests/test_handler.py",
+          "sourceMode": "100644",
+          "bytes": 1026,
+          "sha256": "f0ad3aed8543b2b130182aabeb0a931736c9173881604f562d358aeaff5a1ff1",
+          "gitBlobSha": "c101b9026564864e0723aebe0f86427efc5cff63"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "orbit_catalog/handler.py directly reads event[httpMethod] and queryStringParameters[name]; supplied v2 fixture/absent-query handling remain unrepaired; three ordinary REST tests.",
+      "mechanismEvidence": [
+        {
+          "path": "starters/lambda-event-shape-regression/orbit_catalog/handler.py",
+          "line": 17,
+          "text": "if event[\"httpMethod\"] != \"GET\":"
+        },
+        {
+          "path": "starters/lambda-event-shape-regression/orbit_catalog/handler.py",
+          "line": 20,
+          "text": "query = event[\"queryStringParameters\"][\"name\"].strip().lower()"
+        }
+      ],
+      "dependencyShape": "Python + pytest",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d5ff18cc8322a8ea5f45cab42300",
+        "diffSha256": "02a0b64a75d5759ac5467a8ae3a7be36c4003be0993bc7e2c367e759766895d7",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "technicalCaveats": [
+        "pyproject test dependency pytest>=8,<9 and setuptools>=68 require exact pinned offline recipe; no installed/pinned proof yet."
+      ]
+    },
+    {
+      "slug": "token-bucket",
+      "task": "Token-Bucket Rate Limiter Burst Bug Fix",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a815bb21edf440341ca13",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As a backend engineer, diagnose a synthetic Python token-bucket rate limiter that allows bursts above its configured capacity after idle periods, correct the refill calculation so tokens are capped at capacity and fractional refill is handled, and verify with fake-clock tests that the limiter never admits more than capacity in a burst and refills at the configured rate.",
+      "candidateGoalSha256": "440469aa8bea8f8cfb90ed936744f73edfdbce94906208502b0e0db03489691c",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/19"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/186",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d5fffbf483228e2111a2956bd9d7",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d5fffbf483228e2111a2956bd9d7",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d5fffbf483228e2111a2956bd9d7.patch",
+      "diffSha256": "cc432614f0dcfa728df956ced448d00e5bf1278e3c473ef5aa9b3ae3755fa092",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d5fffbf483228e2111a2956bd9d7",
+      "starterSubdirectory": "bootcamp/token-bucket-rate-limiter",
+      "starterFileCount": 9,
+      "totalRecoveredFileCount": 9,
+      "starterFiles": [
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 42,
+          "sha256": "bca720b1151cc91d4421dc018e49a6cd3fc803ac4a52da726e38c92f464c76f4",
+          "gitBlobSha": "7d9f42341a373c72222d07d0ceda2ebf0a03fd71"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/README.md",
+          "sourceMode": "100644",
+          "bytes": 1213,
+          "sha256": "fef05f241e2205af9035bd006e444a54ffac0257bbfc6af3b4f2c600a14a4b33",
+          "gitBlobSha": "148059ca5b9685980af1ac10b6c115af8220e07d"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/examples/observe_limiter.py",
+          "sourceMode": "100644",
+          "bytes": 590,
+          "sha256": "4ca099ff7f1b23c4e37553255766121e466a52414662ac2fe77a44c93acfd91e",
+          "gitBlobSha": "5fc30fa4218977b36445c991d38738be8c2585b3"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 276,
+          "sha256": "4e5b7cc00cdc39d14def546afa3a30a65c036f683f59a9bbfd33cb5dac52fbf3",
+          "gitBlobSha": "9cbb0f71cd059953a58a48e38e4274cd7e78bd70"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/src/harbor_gate/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 122,
+          "sha256": "2c5722efda0c4dc12634c14bbc63867a202e4de78441fa12b1e48b0e2c1db934",
+          "gitBlobSha": "4ca740e9324d0e989d25f5feda60ef6cfe0a02ca"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/src/harbor_gate/limiter.py",
+          "sourceMode": "100644",
+          "bytes": 1368,
+          "sha256": "07accc1cd6ee768d9d2ee584b6a3b2ced1557feddf161cc66a85cf18a58146ab",
+          "gitBlobSha": "554b0e95f887cfea127933f6373839f1c411b786"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/tests/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 41,
+          "sha256": "9dcf19effa3513d960f1b61b353dc60974d91baf080056e863407b15e439c8c2",
+          "gitBlobSha": "1571182b5c78204303346cf069f517a5d2e106af"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/tests/fakes.py",
+          "sourceMode": "100644",
+          "bytes": 356,
+          "sha256": "215fa993d5fc36b55e469262ff0bfb2dc708bedbf998d9d4fb5acc7e2448643a",
+          "gitBlobSha": "9824b8025dab013cfe5314b68cc47e4dcf0733e8"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/tests/test_limiter.py",
+          "sourceMode": "100644",
+          "bytes": 1101,
+          "sha256": "50a63a4b7d055e6fea54303b5c293fcb422461c5aee430ffaff65edea29805e9",
+          "gitBlobSha": "20cb696032398ba952939fb33d85acde04d8bf1b"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "src/harbor_gate/limiter.py truncates elapsed time to whole seconds, adds refill without a capacity cap, and advances its timestamp; three baseline tests omit long-idle/fractional regression.",
+      "mechanismEvidence": [
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/src/harbor_gate/limiter.py",
+          "line": 48,
+          "text": "whole_seconds = int(elapsed)"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/src/harbor_gate/limiter.py",
+          "line": 49,
+          "text": "self._tokens += whole_seconds * self.refill_rate"
+        },
+        {
+          "path": "bootcamp/token-bucket-rate-limiter/src/harbor_gate/limiter.py",
+          "line": 50,
+          "text": "self._last_refill = now"
+        }
+      ],
+      "dependencyShape": "Python standard library + editable package",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": null,
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true
+    },
+    {
+      "slug": "cli-precedence",
+      "task": "Python CLI Configuration Precedence Bug Fix",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a815ebc8ae59c7a517514",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As a software engineer, fix a synthetic Python command-line tool whose settings resolution lets environment variables override explicit command-line flags and treats empty environment variables as set, implement the documented precedence of flag over environment over config file over default, and verify with a parametrized test matrix and live command runs that each source wins only when it should.",
+      "candidateGoalSha256": "174489b3bbf81318ea12eb961234d39aec20ae6382952e7baabbf9e87d06b937",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/21"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/155",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6cf4a80048322aa762d7aa8e4adcd",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6cf4a80048322aa762d7aa8e4adcd",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6cf4a80048322aa762d7aa8e4adcd.patch",
+      "diffSha256": "a6452d65e7c1b987e28ba5900a0c21c69acf00b2825e2749c3d163c6ccb3acfd",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6cf4a80048322aa762d7aa8e4adcd",
+      "starterSubdirectory": "starters/python-cli-configuration-precedence",
+      "starterFileCount": 11,
+      "totalRecoveredFileCount": 11,
+      "starterFiles": [
+        {
+          "path": "starters/python-cli-configuration-precedence/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 47,
+          "sha256": "1d4acfc3a63befb965ed950ed61c742ae7e0111be54b4bdf296672e5e19eab23",
+          "gitBlobSha": "10124b7c4511ceb8a7f08b4e062e97da65bcfb36"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/README.md",
+          "sourceMode": "100644",
+          "bytes": 1286,
+          "sha256": "58b75cea0c48117c41c8324b87c5654b168ae67b9f422a8a446c110e3e160503",
+          "gitBlobSha": "79f9d6fee072271cf5df379d5e440e0bb9075501"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/docs/behavior.md",
+          "sourceMode": "100644",
+          "bytes": 589,
+          "sha256": "c1c8a427d994b5173bad16d6c5fb4ab9f30359b6a1f3d3b4e122e3b023c3f428",
+          "gitBlobSha": "7648d6c5f4df04eb570a398e8679ef6a795650fc"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 465,
+          "sha256": "09f2b30e1df9efbe1eec7768c20bdb71cd4562d8dd28f57d719ab516d403d106",
+          "gitBlobSha": "e1b6051e02a5977a8511b07d9c2f32b500ed8d7c"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 151,
+          "sha256": "9963094df4ae900c8065e69a4762f2186ced608da83826fd0a5620820a9adf4e",
+          "gitBlobSha": "44b181960a90f4bbdbdb0d0addb3f705e998ae7e"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/__main__.py",
+          "sourceMode": "100644",
+          "bytes": 60,
+          "sha256": "4026066871fa8fa8ada177b1973e968b116e2f452fba97a0f4f623572dad1544",
+          "gitBlobSha": "730f1235fc30d78f0bd450796f485d93d3b4a9ad"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/cli.py",
+          "sourceMode": "100644",
+          "bytes": 668,
+          "sha256": "eb2951330c1f883f8508f37ac538de65ceacaba3717d6acf242e46d634f43688",
+          "gitBlobSha": "3039e9d94e030645eb3ded1984aaf759db7ff216"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/settings.py",
+          "sourceMode": "100644",
+          "bytes": 1119,
+          "sha256": "10ba1d27cbe923f4dca573c415ac34eb4e58de78c17f1e1552f64269b845efb6",
+          "gitBlobSha": "c4412003d323b633cf3ecdba463e923400b997d9"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/tests/fixtures/waypoint.toml",
+          "sourceMode": "100644",
+          "bytes": 23,
+          "sha256": "8b544cefcc1c41a59a4aead9114be2b839398aa6c2feedaca6a16479dbe92f9e",
+          "gitBlobSha": "215328fb00239cff159f30d5f829369502a903d0"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/tests/test_cli.py",
+          "sourceMode": "100644",
+          "bytes": 815,
+          "sha256": "0420a18adfc3c679cb68d71b1d1fde060b8618e79b8949baea45b20e56ed7b5e",
+          "gitBlobSha": "f88341291e5172b95b2f5ff678ffe74c8a1cfbb8"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/tests/test_settings.py",
+          "sourceMode": "100644",
+          "bytes": 931,
+          "sha256": "b6c95528556dc5a498470f1b9cc954250833a9219b2414a3a607add6fea48279",
+          "gitBlobSha": "3dc5de43133efcddca1676bde8f8e39869eac0b8"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "src/waypoint_cli/settings.py applies environment after explicit CLI and accepts empty environment as present; six ordinary tests omit conflicts and empty-env matrix.",
+      "mechanismEvidence": [
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/settings.py",
+          "line": 40,
+          "text": "if cli_region is not None:"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/settings.py",
+          "line": 42,
+          "text": "environment_region = environment.get(ENVIRONMENT_KEY)"
+        },
+        {
+          "path": "starters/python-cli-configuration-precedence/src/waypoint_cli/settings.py",
+          "line": 43,
+          "text": "if environment_region is not None:"
+        }
+      ],
+      "dependencyShape": "Python + pytest + editable console script",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d602a3dc832283c09784ccf47ac0",
+        "diffSha256": "143320293c3e0b0254af64e2e1eec5523cedce77a53111c2142791862f11032b",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "technicalCaveats": [
+        "pyproject test dependency pytest>=8,<9 and setuptools>=68 require exact pinned offline recipe; no installed/pinned proof yet."
+      ]
+    },
+    {
+      "slug": "incident-review",
+      "task": "Post-Incident Review from Synthetic Service Logs (ITIL)",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a817bb25efaa3bfc84919",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As an IT service management analyst, analyze synthetic application and load-balancer logs from a service outage to build an evidence-backed incident timeline, distinguish the trigger from the underlying root cause, and write a post-incident review with impact, timeline, contributing factors, and corrective actions, verified by re-checking every timeline entry and impact figure against the logs with a script.",
+      "candidateGoalSha256": "b4d8c6a7d4a2a4eea3ba7ecf9e48254a9e27a517bb4441fda9be13dcd5c730cb",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/22"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/172",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d27c3a808322a45b771b98bc97a7",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d27c3a808322a45b771b98bc97a7",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d27c3a808322a45b771b98bc97a7.patch",
+      "diffSha256": "0034e1c015bd9b614efa30828346d3751f3a3a11b3436a4c67dbd7831f243f56",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d27c3a808322a45b771b98bc97a7",
+      "starterSubdirectory": "bootcamp/incident-review",
+      "starterFileCount": 7,
+      "totalRecoveredFileCount": 7,
+      "starterFiles": [
+        {
+          "path": "bootcamp/incident-review/README.md",
+          "sourceMode": "100644",
+          "bytes": 2258,
+          "sha256": "ce4830f8c8d89c29083326cafa84d82747318bd1ba9c53b242434849791a89cb",
+          "gitBlobSha": "014719e7ad5daae08d5b9c19a6ade989a36f02f8"
+        },
+        {
+          "path": "bootcamp/incident-review/fixtures/application.log",
+          "sourceMode": "100644",
+          "bytes": 12342,
+          "sha256": "fec6150a0456e668348d37a6c5b0ea37f07d39010a9406f20d54cad0a1bfe82e",
+          "gitBlobSha": "999ef248b053f675d6e5f0900b9380e297c99dac"
+        },
+        {
+          "path": "bootcamp/incident-review/fixtures/lb-access.log",
+          "sourceMode": "100644",
+          "bytes": 35339,
+          "sha256": "39186677535f03dff32f828dabb5023c82add23655958cd45166d529e14f2059",
+          "gitBlobSha": "064fef3f3052f7d8f7d72d8f5f26d7007921c3c9"
+        },
+        {
+          "path": "bootcamp/incident-review/fixtures/service-events.csv",
+          "sourceMode": "100644",
+          "bytes": 596,
+          "sha256": "9cc5388ad71e481f2c865eeed4a9dfba6de2b7d9dd08fe7d463df1b9ee73bb21",
+          "gitBlobSha": "d12270193f6b3707ac93fa8a2e7d612441c6c550"
+        },
+        {
+          "path": "bootcamp/incident-review/scripts/summarize_logs.py",
+          "sourceMode": "100644",
+          "bytes": 2324,
+          "sha256": "c9c24ae7de2663161b25f2edd989634266f0ffa08130ec28fcb4dd37b196d517",
+          "gitBlobSha": "666a1c7cd0d5643ce70cdd3ccd2945041948b993"
+        },
+        {
+          "path": "bootcamp/incident-review/templates/post-incident-review.md",
+          "sourceMode": "100644",
+          "bytes": 863,
+          "sha256": "ed9694f60a4e8bc48bedc27619a882333950be9f72b6ab2a39fca2971a5d1e6c",
+          "gitBlobSha": "4cba839d4d689c4e4da56210ecc4bfb661dfc10c"
+        },
+        {
+          "path": "bootcamp/incident-review/tests/test_summarize_logs.py",
+          "sourceMode": "100644",
+          "bytes": 1454,
+          "sha256": "75e87055b46c035d18ef7da41b7637c55681a3aeb814692537ebf73207a55163",
+          "gitBlobSha": "9670b80d9f0154d7a9a1518874928d8bf1848b14"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "Fixed synthetic log fixtures plus neutral count/latency summarizer and blank report template; three baseline tests establish parsing/self-consistency only. No completed timeline, impact computation, causal report or claim verifier.",
+      "mechanismEvidence": [
+        {
+          "path": "bootcamp/incident-review/scripts/summarize_logs.py",
+          "line": 51,
+          "text": "def summarize(records: Iterable[AccessRecord]) -> dict[str, object]:"
+        }
+      ],
+      "dependencyShape": "Python standard library",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d60567308322b865b727b51ad71c",
+        "diffSha256": "5fde6b3e6e9031260292cad7c7b1ac2aa060a643d05bcf8765975c31a43a1f3f",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "technicalCaveats": [
+        "Final causal conclusions and corrective-action ownership remain human judgments; preparatory evidence analysis must not fabricate professional decisions."
+      ]
+    },
+    {
+      "slug": "readme-drift",
+      "task": "CLI README Drift Audit and Executable-Docs Check",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a81d3a5c8ec0957bf0655",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As a technical writer for a developer tool, audit the README of a synthetic Python command-line tool against its actual behavior, correct every documented flag, default, example, and exit code that no longer matches, and verify the corrected README by running each documented example and a small docs-check script that confirms the examples' outputs and exit codes match.",
+      "candidateGoalSha256": "8352be94c4c9c6fe847802edd5fa944cbc42b346b5fe9cfce785d73b213aa943",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/23",
+        "https://github.com/KyPython/ai-governance/issues/25"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/173",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d281600083228055d038ed616cca",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d281600083228055d038ed616cca",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d281600083228055d038ed616cca.patch",
+      "diffSha256": "668d30b3e363c8fd6cd48d33e1c58fbc8311ed44588345b24ee4d32602a38cc6",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d281600083228055d038ed616cca",
+      "starterSubdirectory": "specs/odin-tasks/cli-readme-drift-audit/starter",
+      "starterFileCount": 9,
+      "totalRecoveredFileCount": 9,
+      "starterFiles": [
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 45,
+          "sha256": "02ffcd9794dc2000d8a4c246f07cceb9de94f6a5b9aa6d649a2c41d5ce103b62",
+          "gitBlobSha": "a8ad4d2a356240b4df6801647d4e81c06e22c498"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/README.md",
+          "sourceMode": "100644",
+          "bytes": 1643,
+          "sha256": "2f1651688eaa3c3bcda9fe4692016047083e63ff8762bcb2ec54d0a680b1239b",
+          "gitBlobSha": "6067489a7c783edeefd42d87a200fea9d6454338"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/fixtures/invalid.json",
+          "sourceMode": "100644",
+          "bytes": 14,
+          "sha256": "bcedc7da27dca581475b9342c5e857428e8fac347fbab59c5a048fdb1b3e8f0d",
+          "gitBlobSha": "9c53a135fe77ba3ae6f19a86fe031e29785e6250"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/fixtures/observations.json",
+          "sourceMode": "100644",
+          "bytes": 193,
+          "sha256": "67fe1c69111eedf8e55dd354f8e7c91f94f91fdc830d8c167257b06ba4ca3a00",
+          "gitBlobSha": "969d2ea763f0a3cc2261ccd3b82f4bf4d0d0be66"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 344,
+          "sha256": "8feef1a0b0603fdb1d35e7b6c3f184a5fd589bd67e659b2ee433f28b3920db27",
+          "gitBlobSha": "e6667d62c633626111c65d0c5db121f3c3a4034f"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/scripts/docs_check.py",
+          "sourceMode": "100644",
+          "bytes": 1103,
+          "sha256": "f3400852f0c202ebf7f1dcf31a2f52e09f720096a011cdf75f6ebff93a522590",
+          "gitBlobSha": "683b11b669026eb9aea1a9aac23cdaf3b8acabea"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 38,
+          "sha256": "4b542601cb5c5b6227fc82fd50bfd53b7e34a0a8d396c546e2bcd279deb5bd62",
+          "gitBlobSha": "7503cc53b42cc8dc7442f91af3c6c39d07dd9568"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "sourceMode": "100644",
+          "bytes": 3167,
+          "sha256": "8c144de6541a4662f45ec9fbb9904c24572a49115f885c479f87f314ec2c355c",
+          "gitBlobSha": "de5fe62c83fc69e922a654ecfb9564969caff1c1"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/tests/test_cli.py",
+          "sourceMode": "100644",
+          "bytes": 1569,
+          "sha256": "4e531e32a1ad4021d9440bced858e6d8ac7632b2f53b2309ffb34a157679b06d",
+          "gitBlobSha": "17078055d53c43cda4016f3cf5f904b45764bcb2"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "README flags/defaults/example/exit codes differ from src/trailmark/cli.py; docs_check.py lists shell blocks but does not verify execution. Three ordinary CLI tests; documentation unrepaired.",
+      "mechanismEvidence": [
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 19,
+          "text": "\"--format\","
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 21,
+          "text": "default=\"text\","
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 25,
+          "text": "\"--minimum-score\","
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 78,
+          "text": "parser.error(\"--minimum-score must be zero or greater\")"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 85,
+          "text": "return 4"
+        },
+        {
+          "path": "specs/odin-tasks/cli-readme-drift-audit/starter/src/trailmark/cli.py",
+          "line": 88,
+          "text": "return 3"
+        }
+      ],
+      "dependencyShape": "Python standard library + editable console script",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d6069f888322ba67f7527fe42d38",
+        "diffSha256": "3be2fd2c2ed5f683628e094ffd37bc906496056bb45cfcd784cc9dce7c9da0df",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true
+    },
+    {
+      "slug": "ssrf-validator",
+      "task": "SSRF URL Allowlist Validator Bypass Fix",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a81f5b437e25bc0e45e8d",
+      "currentStage": "Candidate",
+      "currentFitGate": "HOLD",
+      "currentLane": null,
+      "candidateGoal": "As an application security-minded software engineer, review a synthetic Python URL validator that uses string-prefix matching to restrict outbound fetches, demonstrate the bypasses it allows, replace it with parsed-URL host and IP-range checks, and verify with a table-driven test suite that every listed bypass is rejected while legitimate allowlisted URLs still pass.",
+      "candidateGoalSha256": "26347a425b5e599984f2b7418266c9c8f25f117f80660a99e574e57f83376189",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/24",
+        "https://github.com/KyPython/ai-governance/issues/28"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/159",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6cf5247a883229257638c900f0d8c",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6cf5247a883229257638c900f0d8c",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6cf5247a883229257638c900f0d8c.patch",
+      "diffSha256": "df0f9fbb91b7426040956b99212b85c0b4784d0ba56d003b6de63f086871af47",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6cf5247a883229257638c900f0d8c",
+      "starterSubdirectory": "specs/odin-tasks/ssrf-url-allowlist-validator/starter",
+      "starterFileCount": 8,
+      "totalRecoveredFileCount": 8,
+      "starterFiles": [
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 47,
+          "sha256": "2a3c9aea88b4fca6caf1aa452ebbc04daeb288ff4ab6a8d212f56e12f95cc607",
+          "gitBlobSha": "f00e7ceeb56fb3026231be4f046e706e9cef7484"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/README.md",
+          "sourceMode": "100644",
+          "bytes": 1125,
+          "sha256": "abadb61396ef00ed3f9769a01ac5681df874947b51b96e5fe7beacd2086c27fc",
+          "gitBlobSha": "7e38b9d26c62b93fccb15023bc3883c2970c25fe"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/fixtures/allowlist.json",
+          "sourceMode": "100644",
+          "bytes": 101,
+          "sha256": "0cd5c74f306fd84b1ce9b78ee0790d72afedd242f667a2fc2d867e469d10378a",
+          "gitBlobSha": "1a7894fa435c65ffc1a563be40efc0c364f363d8"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 353,
+          "sha256": "7f665a64469059a8c3a6d2f0ae0edc6fdfb050ebfc43541daf784819146bade9",
+          "gitBlobSha": "1ddd073623f599a0ddea7ef2600164cc9c1c31b5"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/src/synthetic_fetch/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 204,
+          "sha256": "ed9917a925c3fb99b7e21df843970def6f30464fa4e1d823497a65ad1d8a9319",
+          "gitBlobSha": "6c6e75e8d8714a3bf4653b0815787152b122dac2"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/src/synthetic_fetch/validator.py",
+          "sourceMode": "100644",
+          "bytes": 884,
+          "sha256": "9894275eed352a87eb72891a12a34a599575070f804aff94e57b831e95a1d112",
+          "gitBlobSha": "6bbb903f6ae848da01d942178fe94bf43e70872f"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/tests/conftest.py",
+          "sourceMode": "100644",
+          "bytes": 288,
+          "sha256": "cf0ddb28625918326658ee3a6b45aa32a6b43c05c3e74639b70a5d23de40da9a",
+          "gitBlobSha": "1121559a5faf3c3a043f06caba3b748dd4b136ce"
+        },
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/tests/test_validator.py",
+          "sourceMode": "100644",
+          "bytes": 931,
+          "sha256": "9912a37252636a5315fb7303c2fe268fc71598c0d180726947cb4ac6318953f7",
+          "gitBlobSha": "478748d3661885d82ed028d90e11b31f73cc5fb4"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "src/synthetic_fetch/validator.py uses raw startswith allowlisting; request plan performs no network I/O. Five ordinary test cases omit the bypass matrix/parsed host/IP-range repair.",
+      "mechanismEvidence": [
+        {
+          "path": "specs/odin-tasks/ssrf-url-allowlist-validator/starter/src/synthetic_fetch/validator.py",
+          "line": 19,
+          "text": "return any(url.startswith(origin) for origin in allowed_origins)"
+        }
+      ],
+      "dependencyShape": "Python + pytest8.3.5/setuptools75.8.0",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d60d58ec8322814b2a79f036a02a",
+        "diffSha256": "c1e1a2db53702e8efb46963398e7c36d74ce57aef55e3eba641406f96155066e",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "technicalCaveats": [
+        "README pip upgrade step needs bounded offline setup guidance rather than an on-camera network upgrade."
+      ]
+    },
+    {
+      "slug": "local-iac",
+      "task": "Local IaC Least-Privilege Guardrail Validation",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a81418692ed974ac073a0",
+      "currentStage": "Rejected",
+      "currentFitGate": "REJECT",
+      "currentLane": null,
+      "candidateGoal": "As a cloud/software engineer, inspect a synthetic infrastructure-as-code project containing an intentionally over-broad permission or unsafe configuration, identify the concrete risk, apply the smallest least-privilege correction, and verify the synthesized infrastructure and automated policy tests before and after the change.",
+      "candidateGoalSha256": "f50262f97eb8a7da6e5b7530e1ac38266afcc4f1afb90357cd4385054627af53",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/27"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/193",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6d6166f448322abbe99123432ae3c",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6d6166f448322abbe99123432ae3c",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6d6166f448322abbe99123432ae3c.patch",
+      "diffSha256": "01c2f01272f9d932682f5d6243f4c1a174a621021b8849630d6f9e41a44addcc",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6d6166f448322abbe99123432ae3c",
+      "starterSubdirectory": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter",
+      "starterFileCount": 10,
+      "totalRecoveredFileCount": 13,
+      "starterFiles": [
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/.gitignore",
+          "sourceMode": "100644",
+          "bytes": 30,
+          "sha256": "1d8d2e528f590165b4846c70eeb0388cc93119d2147937e4888da84f06c4d9f4",
+          "gitBlobSha": "9988ede29b1bdb4b66c4d9b9be38628dc9b21a62"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/README.md",
+          "sourceMode": "100644",
+          "bytes": 735,
+          "sha256": "76a15cb4fb445531ce3059e8e00643ba2711cd9c78de57aff6eea375000ba0c6",
+          "gitBlobSha": "d4e635e18374f0c274c333217217e583371c148b"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/docs/workload-contract.md",
+          "sourceMode": "100644",
+          "bytes": 735,
+          "sha256": "68345d98e111fc67ea4d538cb8ab4fffa4fb5297bf9457957075369132fd4239",
+          "gitBlobSha": "07e614811145aac65f9c86e2a81753033cf6c54a"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/infra/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 66,
+          "sha256": "5cbf1edb3d1779821474b7541d88bf09c37c0ebe6f74d9ca3dda780e20276f88",
+          "gitBlobSha": "1fe1e3d4b252819ee7aab817f1225de9090065c8"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/infra/stack.py",
+          "sourceMode": "100644",
+          "bytes": 2509,
+          "sha256": "96cd8e761122e23624118439a21663804302b6ed46874090b1f7ffccb7080ab5",
+          "gitBlobSha": "c882125f609039f38a3ae3fe144242158a4785c5"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/infra/synth.py",
+          "sourceMode": "100644",
+          "bytes": 700,
+          "sha256": "9dcd1bc66d3b857da97a050738c43bf8d1b05a924c167cbe1366e0bdc212d78a",
+          "gitBlobSha": "6b3ea6015ae8d5e6beb27f33e1143dc0ddcecad6"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/policy/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 58,
+          "sha256": "11040cd452967786d4bbc0e5ceeab705267e3d3f5dba640aea7138438908f2fa",
+          "gitBlobSha": "54939394ad9e1435a4206343177d0e2104a76994"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/policy/validate.py",
+          "sourceMode": "100644",
+          "bytes": 1435,
+          "sha256": "f81a9abd1134114cf9e5c18314fc4d118a16622acce506ca82a9585a156f4ea8",
+          "gitBlobSha": "8d4f6399491a9d8d386ac56bb945a72d0c6c16fa"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/tests/test_policy.py",
+          "sourceMode": "100644",
+          "bytes": 1048,
+          "sha256": "b67d1564969222b1e21d11eb22efe7a53880e0bd873e9c58cd4ea53261444bad",
+          "gitBlobSha": "ece421f10fc92a92220cf304ffef94b514e126f3"
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/tests/test_synthesis.py",
+          "sourceMode": "100644",
+          "bytes": 1194,
+          "sha256": "1c5666133992db6db91f5562ab63ed6aecd14e1557f4dbff1318d6b197f8391e",
+          "gitBlobSha": "fc1996313b57fefbdfb771124243b0d541bfa0ea"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "infra/stack.py retains s3:* on Resource:*; policy.validate checks only public-access/encryption. Six ordinary synthesis/policy tests omit least-privilege assertion. Contains3 additional unmerged draft-spec files outside starter.",
+      "mechanismEvidence": [
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/infra/stack.py",
+          "line": 56,
+          "text": "\"Action\": \"s3:*\","
+        },
+        {
+          "path": "specs/odin-tasks/local-iac-least-privilege-guardrail-validation/starter/infra/stack.py",
+          "line": 57,
+          "text": "\"Resource\": \"*\","
+        }
+      ],
+      "dependencyShape": "Python standard library",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": null,
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true,
+      "authorizationBoundary": "User authorized internal Bootcamp inclusion; existing Odin Rejected/REJECT remains unchanged. Stdlib local synthesis is not AWS deployment."
+    },
+    {
+      "slug": "async-idempotency",
+      "task": "Async Side-Effect Idempotency Hardening",
+      "notionPage": "https://app.notion.com/p/3f08621e0a7a81e3b4efcfea472d9930",
+      "currentStage": "Awaiting Odin approval",
+      "currentFitGate": "PASS",
+      "currentLane": null,
+      "candidateGoal": "As a software engineer, diagnose a synthetic asynchronous job-processing service that duplicates a side effect when a job is delivered more than once, implement a bounded idempotency correction, and verify with regression tests and a duplicate replay that only one externally observable effect occurs.",
+      "candidateGoalSha256": "6a8f82d3bae3f6e075f718701ac556f307a8b008ae33532307cf28a9f7d8268b",
+      "externalApprovalFieldsRemainEmpty": true,
+      "orphanKiroIssueUrls": [
+        "https://github.com/KyPython/ai-governance/issues/31",
+        "https://github.com/KyPython/ai-governance/issues/33"
+      ],
+      "orphanStatus": "closed blank-payload orphans; no valid approved/canonical handoff",
+      "existingDraftSpecPR": null,
+      "legacyRecoveryIssue": "https://github.com/KyPython/ai-governance/issues/133",
+      "legacyIssueStatus": "closed wrong-lane duplicate; history only, not current construction admission",
+      "cloudRecoveryTaskId": "task_e_6ac6cf2519fc8322bffc02abee6bc4e6",
+      "cloudRecoveryTaskURL": "https://chatgpt.com/codex/tasks/task_e_6ac6cf2519fc8322bffc02abee6bc4e6",
+      "cloudStatusAtRead": "ready",
+      "diffFile": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/task_e_6ac6cf2519fc8322bffc02abee6bc4e6.patch",
+      "diffSha256": "6e81335d891d0d18ed9290822d76af54e50cf8536a31bcc68fab12130a9004d4",
+      "extractedRoot": "/Users/ky/Library/Caches/TaskWorkWorldRecovery/extracted/task_e_6ac6cf2519fc8322bffc02abee6bc4e6",
+      "starterSubdirectory": "starters/async-side-effect-idempotency-hardening",
+      "starterFileCount": 8,
+      "totalRecoveredFileCount": 8,
+      "starterFiles": [
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/README.md",
+          "sourceMode": "100644",
+          "bytes": 961,
+          "sha256": "49f902b4bc4a854565963cbff2eed278617dc393f8f90ff25703669555e85a7c",
+          "gitBlobSha": "11a060625c0da5afe7a43eed41af42ad46086be4"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/fixtures/replayed_deliveries.jsonl",
+          "sourceMode": "100644",
+          "bytes": 154,
+          "sha256": "0aaa37a4919226100dfc2147863f776738eb88e07f2b3193495183136b01c899",
+          "gitBlobSha": "1129bd96184355abf395ab89a89ac27e62aaa868"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/__init__.py",
+          "sourceMode": "100644",
+          "bytes": 125,
+          "sha256": "4c384bd2ca4a4db8ce93d3bebef8d223b4401151b9ca49a395a8bed07c01fdbd",
+          "gitBlobSha": "3661e5b229c6621b741b7dd95c92691c948b6466"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/cli.py",
+          "sourceMode": "100644",
+          "bytes": 1484,
+          "sha256": "4254a5c28affdbd043ea6fff34f29d1ae5e80deb0dc8ab1692d1f62a099366bf",
+          "gitBlobSha": "b2a52c4f243e27d52caed67a23b84b750e606ac1"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/outbox.py",
+          "sourceMode": "100644",
+          "bytes": 738,
+          "sha256": "964452da0e49c9662a1f699dacf4f4efefe368175e03c8865d44f81d1438308b",
+          "gitBlobSha": "7dbe5f843a16c872be0d3a09293b37a5dbc27639"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/worker.py",
+          "sourceMode": "100644",
+          "bytes": 882,
+          "sha256": "fa6db964415d573b14d9a307fff3594a73438416c8bff1ff743214a45e34003f",
+          "gitBlobSha": "60d0f84666b8feb1a31561cc31bb6cb1ef9a6c93"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/pyproject.toml",
+          "sourceMode": "100644",
+          "bytes": 272,
+          "sha256": "cc51490e65eee767ad04fa36c7ebabb8df18afc92bccd46eac2c0b0757df1143",
+          "gitBlobSha": "8d37afb32c831130bbe92e179c384c26d55b3c6d"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/tests/test_worker.py",
+          "sourceMode": "100644",
+          "bytes": 1299,
+          "sha256": "cebcef94f7f3c69275b1455b01b316ac9202f1f3d8ffaa25064ea2cd218cd7cd",
+          "gitBlobSha": "67c7a5bb322d38630ee23febca05e2dcd0855146"
+        }
+      ],
+      "sourceReview": "static source review only; baseline/install/runtime not executed here",
+      "classification": "unworked synthetic starter candidate",
+      "workedSolutionPresent": false,
+      "staticReviewFinding": "parcel_pulse/worker.py always sends before updating completed_jobs and never checks the set; two ordinary tests omit duplicate delivery. Replay/outbox is deterministic but no repair/deduplication or decisive guarantee.",
+      "mechanismEvidence": [
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/worker.py",
+          "line": 28,
+          "text": "await self._notifications.send(delivery)"
+        },
+        {
+          "path": "starters/async-side-effect-idempotency-hardening/parcel_pulse/worker.py",
+          "line": 29,
+          "text": "self.completed_jobs.add(delivery.job_id)"
+        }
+      ],
+      "dependencyShape": "Python standard library + editable package",
+      "promotionStatus": "HOLD until actual Kiro requirements/design/task review and human specification merge; source publication/registration/cloud kit not yet completed",
+      "latestDocsOnlyTask": {
+        "taskId": "task_e_6ac6d61542c48322849253eb887061aa",
+        "diffSha256": "9ca81c3b6c8fd00cd91d1c03a5b33468ced51ec886df82cb503abe54871dbe9a",
+        "fileCount": 3,
+        "classification": "requirements/design/tasks only; not a runnable starter"
+      },
+      "technicalStagesRemaining": [
+        "Reconcile/recover one valid spec against exact existing candidate Goal and selected source",
+        "Kiro requirements/design/tasks review; actual human spec merge",
+        "Source promotion with full immutable GitHub commit/complete file inventory",
+        "Verified pinned setup recipe and baseline, disposable worked reference and exact recording route",
+        "Existing registration/build/publisher/cloud sync with actual proof"
+      ],
+      "humanStatesPreserved": true
+    }
+  ],
+  "additionalDocsOnly": [
+    {
+      "taskId": "task_e_6ac6d5ff18cc8322a8ea5f45cab42300",
+      "diffSha256": "02a0b64a75d5759ac5467a8ae3a7be36c4003be0993bc7e2c367e759766895d7",
+      "files": [
+        "specs/odin-tasks/lambda-api-gateway-event-shape-regression/design.md",
+        "specs/odin-tasks/lambda-api-gateway-event-shape-regression/requirements.md",
+        "specs/odin-tasks/lambda-api-gateway-event-shape-regression/tasks.md"
+      ]
+    },
+    {
+      "taskId": "task_e_6ac6d602a3dc832283c09784ccf47ac0",
+      "diffSha256": "143320293c3e0b0254af64e2e1eec5523cedce77a53111c2142791862f11032b",
+      "files": [
+        "specs/odin-tasks/python-cli-configuration-precedence/design.md",
+        "specs/odin-tasks/python-cli-configuration-precedence/requirements.md",
+        "specs/odin-tasks/python-cli-configuration-precedence/tasks.md"
+      ]
+    },
+    {
+      "taskId": "task_e_6ac6d60567308322b865b727b51ad71c",
+      "diffSha256": "5fde6b3e6e9031260292cad7c7b1ac2aa060a643d05bcf8765975c31a43a1f3f",
+      "files": [
+        "specs/odin-tasks/post-incident-review-from-synthetic-service-logs/design.md",
+        "specs/odin-tasks/post-incident-review-from-synthetic-service-logs/requirements.md",
+        "specs/odin-tasks/post-incident-review-from-synthetic-service-logs/tasks.md"
+      ]
+    },
+    {
+      "taskId": "task_e_6ac6d6069f888322ba67f7527fe42d38",
+      "diffSha256": "3be2fd2c2ed5f683628e094ffd37bc906496056bb45cfcd784cc9dce7c9da0df",
+      "files": [
+        "specs/odin-tasks/cli-readme-drift-audit-and-executable-docs-check/design.md",
+        "specs/odin-tasks/cli-readme-drift-audit-and-executable-docs-check/requirements.md",
+        "specs/odin-tasks/cli-readme-drift-audit-and-executable-docs-check/tasks.md"
+      ]
+    },
+    {
+      "taskId": "task_e_6ac6d60d58ec8322814b2a79f036a02a",
+      "diffSha256": "c1e1a2db53702e8efb46963398e7c36d74ce57aef55e3eba641406f96155066e",
+      "files": [
+        "specs/odin-tasks/ssrf-url-allowlist-validator-bypass-fix/design.md",
+        "specs/odin-tasks/ssrf-url-allowlist-validator-bypass-fix/requirements.md",
+        "specs/odin-tasks/ssrf-url-allowlist-validator-bypass-fix/tasks.md"
+      ]
+    },
+    {
+      "taskId": "task_e_6ac6d61542c48322849253eb887061aa",
+      "diffSha256": "9ca81c3b6c8fd00cd91d1c03a5b33468ced51ec886df82cb503abe54871dbe9a",
+      "files": [
+        "specs/odin-tasks/async-side-effect-idempotency-hardening/design.md",
+        "specs/odin-tasks/async-side-effect-idempotency-hardening/requirements.md",
+        "specs/odin-tasks/async-side-effect-idempotency-hardening/tasks.md"
+      ]
+    }
+  ]
+}

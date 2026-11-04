@@ -1,0 +1,1 @@
+As a Python engineer, repair a synthetic batch command whose nested exception handling incorrectly treats a failed item as successfully processed, then verify the corrected propagation, cleanup, and reporting behavior with deterministic tests.

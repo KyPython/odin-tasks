@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-08T06:14:11Z",
+  "source": "native-notion-fetch",
+  "taskCount": 10,
+  "changes": "Targeted preparation notice and Operator Pack Evidence only; no finalized-script claim.",
+  "worlds": [
+    {
+      "task": "JavaScript Signup Form Validation Regex Repair",
+      "pageId": "3f08621e-0a7a-810c-b2cd-f1b3baad13ef",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a810cb2cdf1b3baad13ef",
+      "lastEditedAt": "2026-10-08T06:13:31.464Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d5f886fc8322ae0ceab6e191f68b](https://chatgpt.com/codex/tasks/task_e_6ac6d5f886fc8322ae0ceab6e191f68b); 10 unchanged source files, diff SHA-256 89720c3ef31690572cb134fe568704153a2b9019c7981cf0ad364626c2da0e2d. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Exact-Match Grader Normalization False-Positive Repair",
+      "pageId": "3f08621e-0a7a-811a-a81d-c7a39ac80b91",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a811aa81dc7a39ac80b91",
+      "lastEditedAt": "2026-10-08T06:13:32.474Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d5fc882c8322be32454df931e3e3](https://chatgpt.com/codex/tasks/task_e_6ac6d5fc882c8322be32454df931e3e3); 7 unchanged source files, diff SHA-256 86e64757ef6adf3756de26567866677fcda85d753fc354a2b0f6d308316763c7. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Lambda Handler API Gateway Event-Shape Regression (Local Tests)",
+      "pageId": "3f08621e-0a7a-8155-9019-c1739de4151c",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a81559019c1739de4151c",
+      "lastEditedAt": "2026-10-08T06:13:33.566Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d2786b8c8322971aeb8206acf6eb](https://chatgpt.com/codex/tasks/task_e_6ac6d2786b8c8322971aeb8206acf6eb); 9 unchanged source files, diff SHA-256 ce2045dd8c2685dc99c45320825c1613225a93ba6e705c3429c9cd5a876af4fa. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Token-Bucket Rate Limiter Burst Bug Fix",
+      "pageId": "3f08621e-0a7a-815b-b21e-df440341ca13",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a815bb21edf440341ca13",
+      "lastEditedAt": "2026-10-08T06:13:34.850Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d5fffbf483228e2111a2956bd9d7](https://chatgpt.com/codex/tasks/task_e_6ac6d5fffbf483228e2111a2956bd9d7); 9 unchanged source files, diff SHA-256 cc432614f0dcfa728df956ced448d00e5bf1278e3c473ef5aa9b3ae3755fa092. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Python CLI Configuration Precedence Bug Fix",
+      "pageId": "3f08621e-0a7a-815e-bc8a-e59c7a517514",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a815ebc8ae59c7a517514",
+      "lastEditedAt": "2026-10-08T06:13:36.074Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6cf4a80048322aa762d7aa8e4adcd](https://chatgpt.com/codex/tasks/task_e_6ac6cf4a80048322aa762d7aa8e4adcd); 11 unchanged source files, diff SHA-256 a6452d65e7c1b987e28ba5900a0c21c69acf00b2825e2749c3d163c6ccb3acfd. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Post-Incident Review from Synthetic Service Logs (ITIL)",
+      "pageId": "3f08621e-0a7a-817b-b25e-faa3bfc84919",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a817bb25efaa3bfc84919",
+      "lastEditedAt": "2026-10-08T06:13:37.201Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d27c3a808322a45b771b98bc97a7](https://chatgpt.com/codex/tasks/task_e_6ac6d27c3a808322a45b771b98bc97a7); 7 unchanged source files, diff SHA-256 0034e1c015bd9b614efa30828346d3751f3a3a11b3436a4c67dbd7831f243f56. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "CLI README Drift Audit and Executable-Docs Check",
+      "pageId": "3f08621e-0a7a-81d3-a5c8-ec0957bf0655",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a81d3a5c8ec0957bf0655",
+      "lastEditedAt": "2026-10-08T06:13:38.386Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d281600083228055d038ed616cca](https://chatgpt.com/codex/tasks/task_e_6ac6d281600083228055d038ed616cca); 9 unchanged source files, diff SHA-256 668d30b3e363c8fd6cd48d33e1c58fbc8311ed44588345b24ee4d32602a38cc6. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "SSRF URL Allowlist Validator Bypass Fix",
+      "pageId": "3f08621e-0a7a-81f5-b437-e25bc0e45e8d",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a81f5b437e25bc0e45e8d",
+      "lastEditedAt": "2026-10-08T06:13:39.403Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6cf5247a883229257638c900f0d8c](https://chatgpt.com/codex/tasks/task_e_6ac6cf5247a883229257638c900f0d8c); 8 unchanged source files, diff SHA-256 df0f9fbb91b7426040956b99212b85c0b4784d0ba56d003b6de63f086871af47. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Candidate",
+        "fit": "HOLD",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Local IaC Least-Privilege Guardrail Validation",
+      "pageId": "3f08621e-0a7a-8141-8692-ed974ac073a0",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a81418692ed974ac073a0",
+      "lastEditedAt": "2026-10-08T06:13:40.666Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6d6166f448322abbe99123432ae3c](https://chatgpt.com/codex/tasks/task_e_6ac6d6166f448322abbe99123432ae3c); 10 unchanged source files, diff SHA-256 01c2f01272f9d932682f5d6243f4c1a174a621021b8849630d6f9e41a44addcc. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Rejected",
+        "fit": "REJECT",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    },
+    {
+      "task": "Async Side-Effect Idempotency Hardening",
+      "pageId": "3f08621e-0a7a-81e3-b4ef-cfea472d9930",
+      "pageURL": "https://app.notion.com/p/3f08621e0a7a81e3b4efcfea472d9930",
+      "lastEditedAt": "2026-10-08T06:13:41.602Z",
+      "changedProperties": [
+        "Operator Pack Evidence"
+      ],
+      "allHumanAndOdinFieldsPreserved": true,
+      "status": "BLOCKED",
+      "evidence": "Internal Bootcamp world preparation authorized by the user; original Odin Stage, Fit Gate, approvals and human gates preserved. Existing Codex cloud starter recovered: [https://chatgpt.com/codex/tasks/task_e_6ac6cf2519fc8322bffc02abee6bc4e6](https://chatgpt.com/codex/tasks/task_e_6ac6cf2519fc8322bffc02abee6bc4e6); 8 unchanged source files, diff SHA-256 6e81335d891d0d18ed9290822d76af54e50cf8536a31bcc68fab12130a9004d4. Static review confirms the seeded defect remains. Actual Kiro native Spec review is in progress for the same 18-row inventory. Spec completion/human merge, pinned private source publication, baseline/worked-reference testing and finalized recording script are pending. This is recovered candidate work, not a new build, ready recording environment or paid approval.",
+      "originalPolicy": {
+        "Lane": null,
+        "Stage": "Awaiting Odin approval",
+        "fit": "PASS",
+        "approvalId": "",
+        "approvedGoal": ""
+      },
+      "scriptFinalized": false
+    }
+  ]
+}

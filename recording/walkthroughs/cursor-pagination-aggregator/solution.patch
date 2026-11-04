@@ -1,0 +1,173 @@
+--- a/tests/test_aggregator.py
++++ b/tests/test_aggregator.py
+@@ -16,7 +16,6 @@
+                 }
+             ]
+         )
+-
+         self.assertEqual(
+             collect_records(transport),
+             [{"id": "rec-001", "label": "one"}],
+@@ -25,14 +24,127 @@
+ 
+     def test_collects_ordinary_pages_in_server_order(self) -> None:
+         transport = FixtureTransport.from_path("fixtures/ordinary.json")
+-
+-        records = collect_records(transport)
+-
+         self.assertEqual(
+-            [record["id"] for record in records],
+-            ["rec-101", "rec-102", "rec-103"],
++            collect_records(transport),
++            [
++                {"id": "rec-101", "label": "amber"},
++                {"id": "rec-102", "label": "blue"},
++                {"id": "rec-103", "label": "coral"},
++            ],
+         )
+         self.assertEqual(transport.requested_cursors, [None, "page-2"])
++
++    def test_supplied_repeated_cursor_stops_without_an_extra_request(self) -> None:
++        transport = FixtureTransport.from_path("fixtures/repeated-cursor.json")
++        self.assertEqual(
++            collect_records(transport),
++            [
++                {"id": "rec-201", "label": "dune"},
++                {"id": "rec-202", "label": "ember"},
++            ],
++        )
++        self.assertEqual(transport.requested_cursors, [None, "repeat"])
++
++    def test_supplied_empty_page_continues_to_its_next_cursor(self) -> None:
++        transport = FixtureTransport.from_path("fixtures/empty-page.json")
++        self.assertEqual(
++            collect_records(transport),
++            [
++                {"id": "rec-301", "label": "fern"},
++                {"id": "rec-302", "label": "gold"},
++            ],
++        )
++        self.assertEqual(transport.requested_cursors, [None, "gap", "after-gap"])
++
++    def test_supplied_duplicates_retain_first_server_order(self) -> None:
++        transport = FixtureTransport.from_path("fixtures/duplicate-records.json")
++        self.assertEqual(
++            collect_records(transport),
++            [
++                {"id": "rec-401", "label": "harbor"},
++                {"id": "rec-402", "label": "indigo"},
++                {"id": "rec-403", "label": "juniper"},
++            ],
++        )
++        self.assertEqual(transport.requested_cursors, [None, "overlap"])
++
++    def test_empty_terminal_page_returns_no_records(self) -> None:
++        transport = FixtureTransport(
++            [{"request_cursor": None,
++              "response": {"records": [], "next_cursor": None}}]
++        )
++        self.assertEqual(collect_records(transport), [])
++        self.assertEqual(transport.requested_cursors, [None])
++
++    def test_empty_first_page_continues_to_records(self) -> None:
++        transport = FixtureTransport(
++            [
++                {"request_cursor": None,
++                 "response": {"records": [], "next_cursor": "first-records"}},
++                {"request_cursor": "first-records",
++                 "response": {"records": [{"id": "late", "label": "arrived"}],
++                              "next_cursor": None}},
++            ]
++        )
++        self.assertEqual(collect_records(transport), [{"id": "late", "label": "arrived"}])
++        self.assertEqual(transport.requested_cursors, [None, "first-records"])
++
++    def test_nonadjacent_cursor_cycle_stops_after_unique_requests(self) -> None:
++        transport = FixtureTransport(
++            [
++                {"request_cursor": None,
++                 "response": {"records": [{"id": "first"}], "next_cursor": "a"}},
++                {"request_cursor": "a",
++                 "response": {"records": [{"id": "second"}], "next_cursor": "b"}},
++                {"request_cursor": "b",
++                 "response": {"records": [{"id": "third"}], "next_cursor": "a"}},
++            ]
++        )
++        self.assertEqual(collect_records(transport),
++                         [{"id": "first"}, {"id": "second"}, {"id": "third"}])
++        self.assertEqual(transport.requested_cursors, [None, "a", "b"])
++
++    def test_duplicate_in_one_page_keeps_first_payload(self) -> None:
++        transport = FixtureTransport(
++            [{"request_cursor": None,
++              "response": {"records": [{"id": "x", "label": "first"},
++                                       {"id": "x", "label": "later"},
++                                       {"id": "y", "label": "second"}],
++                           "next_cursor": None}}]
++        )
++        self.assertEqual(collect_records(transport),
++                         [{"id": "x", "label": "first"},
++                          {"id": "y", "label": "second"}])
++        self.assertEqual(transport.requested_cursors, [None])
++
++    def test_duplicate_across_pages_keeps_first_payload(self) -> None:
++        transport = FixtureTransport(
++            [
++                {"request_cursor": None,
++                 "response": {"records": [{"id": "x", "label": "first"}],
++                              "next_cursor": "next"}},
++                {"request_cursor": "next",
++                 "response": {"records": [{"id": "y", "label": "second"},
++                                          {"id": "x", "label": "later"}],
++                              "next_cursor": None}},
++            ]
++        )
++        self.assertEqual(collect_records(transport),
++                         [{"id": "x", "label": "first"},
++                          {"id": "y", "label": "second"}])
++        self.assertEqual(transport.requested_cursors, [None, "next"])
++
++    def test_empty_string_cursor_is_followed(self) -> None:
++        transport = FixtureTransport(
++            [
++                {"request_cursor": None,
++                 "response": {"records": [{"id": "first"}], "next_cursor": ""}},
++                {"request_cursor": "",
++                 "response": {"records": [{"id": "second"}], "next_cursor": None}},
++            ]
++        )
++        self.assertEqual(collect_records(transport), [{"id": "first"}, {"id": "second"}])
++        self.assertEqual(transport.requested_cursors, [None, ""])
+ 
+ 
+ if __name__ == "__main__":
+--- a/src/cursor_client/aggregator.py
++++ b/src/cursor_client/aggregator.py
+@@ -9,17 +9,20 @@
+ 
+ 
+ def collect_records(transport: Transport) -> list[Record]:
+-    """Fetch pages and return their records in response order."""
++    """Visit each cursor once and retain each record's first server position."""
+     records: list[Record] = []
+     cursor: str | None = None
++    requested_cursors: set[str | None] = set()
++    record_ids: set[str] = set()
+ 
+-    while True:
++    while cursor not in requested_cursors:
++        requested_cursors.add(cursor)
+         page = transport(cursor)
+-        page_records = page["records"]
+-        records.extend(page_records)
+-
+-        if not page_records:
+-            break
++        for record in page["records"]:
++            record_id = record["id"]
++            if record_id not in record_ids:
++                record_ids.add(record_id)
++                records.append(record)
+ 
+         cursor = page.get("next_cursor")
+         if cursor is None:

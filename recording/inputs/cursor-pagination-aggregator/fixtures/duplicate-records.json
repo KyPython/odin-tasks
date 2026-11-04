@@ -1,0 +1,24 @@
+{
+  "responses": [
+    {
+      "request_cursor": null,
+      "response": {
+        "records": [
+          {"id": "rec-401", "label": "harbor"},
+          {"id": "rec-402", "label": "indigo"}
+        ],
+        "next_cursor": "overlap"
+      }
+    },
+    {
+      "request_cursor": "overlap",
+      "response": {
+        "records": [
+          {"id": "rec-402", "label": "indigo"},
+          {"id": "rec-403", "label": "juniper"}
+        ],
+        "next_cursor": null
+      }
+    }
+  ]
+}

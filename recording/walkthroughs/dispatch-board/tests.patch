@@ -1,0 +1,94 @@
+--- a/tests/test_labels.py
++++ b/tests/test_labels.py
+@@ -1,10 +1,11 @@
+-"""Starter coverage for dispatch labels."""
++"""Deterministic dispatch-location date and clock-boundary coverage."""
+ 
+ import sys
+ import unittest
+-from datetime import datetime
++from datetime import datetime, timezone
+ from pathlib import Path
+-from zoneinfo import ZoneInfo
++from zoneinfo import ZoneInfoNotFoundError
++from unittest.mock import patch
+ 
+ sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
+ 
+@@ -12,14 +13,71 @@
+ 
+ 
+ class DispatchLabelTests(unittest.TestCase):
+-    def test_label_uses_dispatch_location_date(self) -> None:
+-        location_timezone = "UTC"
+-        expected_day = datetime.now(ZoneInfo(location_timezone)).date().isoformat()
++    def assert_label_at(self, instant_text, location_timezone, expected_day):
++        instant = datetime.fromisoformat(instant_text)
++        self.assertEqual(
++            dispatch_label("ROUTE-17", location_timezone, clock=lambda: instant),
++            f"ROUTE-17 | {expected_day}",
++        )
++
++    def test_default_clock_uses_location_date(self):
++        instant = datetime.fromisoformat("2026-01-01T04:59:59+00:00")
++        with patch("dispatch_board.labels.datetime") as system_clock:
++            system_clock.now.return_value = instant
++            self.assertEqual(
++                dispatch_label("ROUTE-17", "America/New_York"),
++                "ROUTE-17 | 2025-12-31",
++            )
++            system_clock.now.assert_called_once_with(timezone.utc)
++
++    def test_normal_fixed_instant(self):
++        self.assert_label_at("2026-10-05T12:30:00+00:00", "UTC", "2026-10-05")
++
++    def test_location_midnight_before_and_after(self):
++        cases = (
++            ("2026-01-01T04:59:59+00:00", "2025-12-31"),
++            ("2026-01-01T05:00:00+00:00", "2026-01-01"),
++        )
++        for instant, expected in cases:
++            with self.subTest(instant=instant):
++                self.assert_label_at(instant, "America/New_York", expected)
++
++    def test_positive_offset_changes_calendar_date(self):
++        self.assert_label_at(
++            "2025-12-31T10:00:00+00:00", "Pacific/Kiritimati", "2026-01-01"
++        )
++
++    def test_spring_dst_transition(self):
++        for instant in ("2026-03-08T06:59:59+00:00", "2026-03-08T07:00:00+00:00"):
++            with self.subTest(instant=instant):
++                self.assert_label_at(instant, "America/New_York", "2026-03-08")
++
++    def test_fall_dst_transition(self):
++        for instant in ("2026-11-01T05:59:59+00:00", "2026-11-01T06:00:00+00:00"):
++            with self.subTest(instant=instant):
++                self.assert_label_at(instant, "America/New_York", "2026-11-01")
++
++    def test_clock_is_read_once(self):
++        readings = []
++
++        def fixed_clock():
++            readings.append("read")
++            return datetime.fromisoformat("2026-10-05T12:30:00+00:00")
+ 
+         self.assertEqual(
+-            dispatch_label("ROUTE-17", location_timezone),
+-            f"ROUTE-17 | {expected_day}",
++            dispatch_label("ROUTE-17", "UTC", clock=fixed_clock),
++            "ROUTE-17 | 2026-10-05",
+         )
++        self.assertEqual(readings, ["read"])
++
++    def test_naive_clock_is_rejected(self):
++        with self.assertRaisesRegex(ValueError, "timezone-aware"):
++            dispatch_label("ROUTE-17", "UTC", clock=lambda: datetime(2026, 1, 1))
++
++    def test_unknown_location_timezone_is_rejected(self):
++        instant = datetime.fromisoformat("2026-10-05T12:30:00+00:00")
++        with self.assertRaises(ZoneInfoNotFoundError):
++            dispatch_label("ROUTE-17", "TaskWork/Not_A_Zone", clock=lambda: instant)
+ 
+ 
+ if __name__ == "__main__":

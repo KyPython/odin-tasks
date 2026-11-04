@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "taskwork-recording-review-v1",
+  "title": "Advisory recording review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "bundleId", "task", "attemptId", "guidanceMode", "evidenceClass", "reviewer", "advisoryOnly", "externalApproval", "payment", "mastery", "unaidedTransferEstablished", "criteria", "stepCoverage", "skillFeedback", "practiceNext", "limitations"],
+  "properties": {
+    "version": {"const": 1},
+    "bundleId": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "task": {"type": "object", "required": ["neutral", "taskId", "sourceRepo", "sourceCommit", "goalSha256", "routeSha256", "workflowLane"], "properties": {"neutral": {"type": "string"}, "taskId": {"type": "string"}, "sourceRepo": {"type": "string"}, "sourceCommit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}, "goalSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "routeSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "workflowLane": {"enum": ["odin", "bootcamp"]}}, "additionalProperties": false},
+    "attemptId": {"type": "string"},
+    "guidanceMode": {"enum": ["guided", "unaided", "unknown"]},
+    "evidenceClass": {"enum": ["guided_practice", "self_reported_unaided", "unverified"]},
+    "reviewer": {"type": "object", "required": ["name", "model", "capabilities", "coverage"], "additionalProperties": false, "properties": {"name": {"type": "string"}, "model": {"type": "string"}, "capabilities": {"type": "object", "required": ["video", "audio"], "additionalProperties": false, "properties": {"video": {"type": "boolean"}, "audio": {"type": "boolean"}}}, "coverage": {"type": "object", "required": ["video", "audio"], "additionalProperties": false, "properties": {"video": {"enum": ["none", "sampled", "full"]}, "audio": {"enum": ["none", "sampled", "full"]}}}}},
+    "advisoryOnly": {"const": true}, "externalApproval": {"const": "not_assessed"}, "payment": {"const": "not_assessed"}, "mastery": {"const": "not_established"}, "unaidedTransferEstablished": {"const": false},
+    "criteria": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "stepCoverage": {"type": "array", "items": {"type": "object", "required": ["step", "status", "reason", "evidence"], "additionalProperties": false, "properties": {"step": {"type": "integer", "minimum": 1}, "status": {"$ref": "#/$defs/status"}, "reason": {"type": "string", "minLength": 1}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}}}},
+    "skillFeedback": {"type": "array", "items": {"type": "object", "required": ["skillId", "observationKind", "finding", "evidence", "remediationTask"], "additionalProperties": false, "properties": {"skillId": {"type": "string", "minLength": 1}, "observationKind": {"enum": ["guided", "unaided"]}, "finding": {"enum": ["needs-practice", "unassessed", "observed"]}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/skillEvidence"}}, "remediationTask": {"type": "string", "minLength": 1}}}},
+    "practiceNext": {"type": "object", "required": ["state", "keep", "focus", "nextAttempt"], "additionalProperties": false, "properties": {"state": {"enum": ["insufficient_evidence", "revisit_guided_practice", "ready_for_next_guided_attempt"]}, "keep": {"type": "array", "maxItems": 3, "items": {"type": "string"}}, "focus": {"type": "array", "maxItems": 2, "items": {"type": "string"}}, "nextAttempt": {"type": "string"}}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+  },
+  "$defs": {
+    "status": {"enum": ["observed_met", "observed_gap", "unverified", "not_applicable"]},
+    "evidence": {"type": "object", "required": ["artifact", "kind", "observation"], "additionalProperties": false, "properties": {"artifact": {"type": "string", "minLength": 1}, "kind": {"enum": ["file", "video", "audio", "submitted_transcript", "submitted_log"]}, "timestampStart": {"type": "number", "minimum": 0}, "timestampEnd": {"type": "number", "minimum": 0}, "observation": {"type": "string", "minLength": 1}}},
+    "skillEvidence": {"type": "object", "required": ["artifact", "timestampStart", "timestampEnd", "observation"], "additionalProperties": false, "properties": {"artifact": {"type": "string", "minLength": 1}, "timestampStart": {"type": "number", "minimum": 0}, "timestampEnd": {"type": "number", "minimum": 0}, "observation": {"type": "string", "minLength": 1}}},
+    "finding": {"type": "object", "required": ["id", "status", "reason", "evidence"], "additionalProperties": false, "properties": {"id": {"type": "string", "minLength": 1}, "status": {"$ref": "#/$defs/status"}, "reason": {"type": "string", "minLength": 1}, "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}}}
+  }
+}

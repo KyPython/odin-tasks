@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "purpose": "Advisory recording review and low-pressure practice feedback; no external approval, earnings or mastery verdict",
+  "source": {
+    "title": "Project Odin Writer Guidelines.pdf",
+    "sourceKind": "Original local manual, last updated October 3, 2026",
+    "pages": [
+      27,
+      45,
+      63,
+      87,
+      88,
+      89
+    ],
+    "sections": [
+      "TaskRecorder: Stop and Archive / Validate the Output",
+      "Recording Checklist",
+      "Core Recording Standards",
+      "Narration",
+      "FAQ: opening note and recording validation"
+    ],
+    "currentAnnouncementsAndActualApprovedTaskStillGovern": true,
+    "fullAiAuthoredWalkthroughExternalEligibility": "unresolved"
+  },
+  "statuses": {
+    "observed_met": "This bounded criterion was supported by cited actual observations. It is not an official pass.",
+    "observed_gap": "Cited actual evidence shows a specific gap; propose a manageable next practice action.",
+    "unverified": "Necessary evidence or reviewer capability is missing, sampled, ambiguous or unseen. Do not guess.",
+    "not_applicable": "The criterion does not apply to this lane/attempt; state the reason."
+  },
+  "criteria": [
+    {
+      "id": "task.binding",
+      "title": "Exact source, Goal and expected route",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "file"
+      ],
+      "instruction": "Compare manifest task identity, exact Goal bytes, source inventory and reference identity. This checks package identity only; it does not prove the opening workspace was unworked."
+    },
+    {
+      "id": "attempt.correspondence",
+      "title": "One actual attempt",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video",
+        "file"
+      ],
+      "instruction": "Check that the raw archive, separate media, logs and deliverables belong to the same attempt using actual identifiers/content. Matching filenames or a declaration alone is insufficient; missing linkage is unverified."
+    },
+    {
+      "id": "files.archive_preservation",
+      "title": "Unmodified recording archive",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "file"
+      ],
+      "instruction": "Confirm the packaged original basename and SHA256 match the recorded input hash. Header presence/counts establish neither CRC readability nor capture quality. Do not extract, rewrite or repair the original ZIP."
+    },
+    {
+      "id": "files.deliverables",
+      "title": "Complete, readable saved task outputs",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "file",
+        "video"
+      ],
+      "instruction": "Map promised original inputs, intermediate artifacts and final outputs to actual readable files; verify relevant outputs, diff and supplied test results. Deliverables.zip should contain task files, with Metadata.rtf separate. A header-only listing cannot prove readability or on-camera creation."
+    },
+    {
+      "id": "files.odin_metadata",
+      "title": "Actual Odin Metadata.rtf and approved assignment",
+      "lanes": [
+        "odin"
+      ],
+      "observedEvidence": [
+        "file"
+      ],
+      "instruction": "Read the actual separate Metadata.rtf; Request must match the approved Goal exactly, and apps, provenance and technical facts must match the actual attempt. Missing real approval/metadata stays unverified. Bootcamp practice does not require invented Studio approval or paid tracking."
+    },
+    {
+      "id": "screen.unworked_start",
+      "title": "Start from the unworked task",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "instruction": "Cite early footage of the starting files/baseline and compare visible content with the pinned starter. Mark unseen starting work or advance edits unverified; do not infer a complete unworked tree from a final diff."
+    },
+    {
+      "id": "screen.opener",
+      "title": "Clear opening and window transition",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video",
+        "audio"
+      ],
+      "instruction": "Compare actual opening with the lane-specific script. Odin: exact required opening sentence only, entire intro under 20 seconds; do not read the full Goal, minimize it and bring the actual project forward. Bootcamp: use its guided-practice opening without implying external approval. Text alone cannot verify timing or window actions.",
+      "requiredModalities": [
+        "video",
+        "audio"
+      ]
+    },
+    {
+      "id": "execution.planned_steps",
+      "title": "Actual edits and checks",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "instruction": "Map each canonical step to timestamped visible actions. Identify actual files, exact changes, commands, exit results and recovery used. Reference/cloud outputs and supplied command logs are expectations or submitted evidence, not observed human execution."
+    },
+    {
+      "id": "results.verification",
+      "title": "Meaningful observed verification",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "instruction": "Check intended fail-before/pass-after observations, preserved behavior and actual command results against the prepared route. Cite the observed reason for an expected failure, rather than treating any nonzero exit as decisive. Flag zero tests, unsaved edits, wrong directories or changed expectations."
+    },
+    {
+      "id": "narration.what_where_why",
+      "title": "What, where, why, how and observed result",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "audio",
+        "video"
+      ],
+      "instruction": "For meaningful actions, cite what was said and done: exact app/file/control, purpose, method and actual result. Distinguish prepared explanation from observable understanding; reciting a complete script does not prove unaided mastery. A supplied transcript can support text feedback, but cannot verify spoken delivery or synchrony."
+    },
+    {
+      "id": "capture.video_integrity",
+      "title": "Usable complete footage",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "wholeAttempt": true,
+      "instruction": "Inspect beginning, middle and end for the right attempt, readable picture and unexpected truncation; review the full attempt before claiming continuous integrity. Describe reviewed intervals and corruption/drop locations. Samples leave whole-attempt integrity unverified."
+    },
+    {
+      "id": "capture.audio",
+      "title": "Audible synchronized narration",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "audio"
+      ],
+      "wholeAttempt": true,
+      "instruction": "Listen to actual audio and report audible/synchronized speech and any single silent gap over 45 seconds with measured timestamps. A transcript, waveform screenshot or file presence cannot establish this. Short Bootcamp practice may still be useful feedback.",
+      "requiredModalities": [
+        "video",
+        "audio"
+      ]
+    },
+    {
+      "id": "capture.privacy_ai",
+      "title": "Screen/audio privacy and AI interaction",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video",
+        "audio"
+      ],
+      "wholeAttempt": true,
+      "instruction": "Check the full visible and audible attempt for private/non-public PII, hidden project/admin material, exposed Metadata/Insightful and AI interaction. Report categories and timestamps without repeating sensitive values. Mention missing modalities and occluded/off-screen regions. No sampled or text-only review can establish an all-clear.",
+      "requiredModalities": [
+        "video",
+        "audio"
+      ]
+    },
+    {
+      "id": "capture.odin_duration",
+      "title": "Odin recording duration",
+      "lanes": [
+        "odin"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "instruction": "Measure the actual video duration: the cited manual requires 15:00 through 45:59 inclusive. Declared duration is not a measurement. Do not pad a practice run to manufacture a qualifying submission."
+    },
+    {
+      "id": "capture.screenshots",
+      "title": "Screenshot/event capture evidence",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "file",
+        "video"
+      ],
+      "instruction": "Report actual archive PNG count and event.jsonl presence. Compute count/actual video duration only when duration is measured; the manual requires more than 0.5 PNG per second. Presence/counts do not establish readable screenshots, correspondence or an official pass."
+    },
+    {
+      "id": "interaction.clarity",
+      "title": "Readable workflow and deliberate controls",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video",
+        "audio"
+      ],
+      "instruction": "Cite readable windows, cursor pointing and natural pacing; meaningful mouse actions when practical, explained shortcuts, excessive typing/guessing or an observed cursor pause over 45 seconds. Recognize small corrected slips and verified recovery; do not demand perfection or invent expertise."
+    },
+    {
+      "id": "results.save_stop",
+      "title": "Save, verify and stop cleanly",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video"
+      ],
+      "instruction": "Cite File → Save All, actual final output inspection, TaskRecorder Stop and the wait through Stopping → Archiving → Idle. If the capture ends before later archiving status, that status needs separate actual evidence or remains unverified."
+    },
+    {
+      "id": "learning.unaided_transfer",
+      "title": "Separate unaided transfer evidence",
+      "lanes": [
+        "odin",
+        "bootcamp"
+      ],
+      "observedEvidence": [
+        "video",
+        "audio"
+      ],
+      "instruction": "Always leave transfer completion unverified/not applicable in this advisory report. Guided use of complete scripts is useful practice; it does not pass an existing Human Transfer Test. A self-reported unaided attempt needs separate validated provenance and the unchanged human criteria before any human/external owner can award credit."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+As a QA engineer, audit a synthetic Python module whose pytest suite passes even though a seeded defect breaks the documented behavior, identify the vacuous assertions that let it pass, rewrite them into meaningful checks, and verify that the strengthened suite fails on the defective build and passes on the corrected build.

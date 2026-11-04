@@ -1,0 +1,123 @@
+name: Build recording preparation
+
+on:
+  push:
+    branches: [ci/cloud-preparation, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: recording-preparation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: macos-26
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONNOUSERSITE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+      COREPACK_ENABLE_DOWNLOAD_PROMPT: '0'
+      COREPACK_ENABLE_AUTO_PIN: '0'
+    steps:
+      - name: Check out the preparation snapshot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up Python 3.12.7
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12.7'
+          architecture: arm64
+
+      - name: Set up Node 22.22.0
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22.22.0'
+          architecture: arm64
+          package-manager-cache: false
+
+      - name: Install the pinned isolated Corepack tool
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(/usr/bin/uname -m)" = arm64
+          npm install --prefix "$RUNNER_TEMP/taskwork-corepack-tool" corepack@0.34.0 --no-audit --no-fund
+
+      - name: Verify reusable registration, preservation and cloud process contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v
+          python scripts/check_recording_pack.py
+          python -I scripts/check_learning_map.py
+          python scripts/recording_pack.py validate --pages-dir packs/pages --routes-dir packs/routes
+          node scripts/check_operator_pack.js
+          node scripts/check_cloud_processes.js
+          node scripts/check_idea_miner.js
+          node scripts/check_kiro_handoff.js
+          node scripts/check_kiro_proof.js
+          node scripts/check_review_evidence.js
+          node scripts/check_private_source_bridge.js
+          node scripts/check_make_exports.js
+          node scripts/check_companion_processes.js
+
+      - name: Build caches and verify the unchanged starters
+        shell: bash
+        run: |
+          set -euo pipefail
+          export COREPACK_EXECUTABLE="$RUNNER_TEMP/taskwork-corepack-tool/node_modules/.bin/corepack"
+          python scripts/build_preparation.py --output "$RUNNER_TEMP/taskwork-cloud"
+
+      - name: Package the verified output with permissions preserved
+        shell: bash
+        run: |
+          set -euo pipefail
+          tar -czf "$RUNNER_TEMP/taskwork-cloud-macos-arm64.tar.gz" -C "$RUNNER_TEMP/taskwork-cloud" .
+          cd "$RUNNER_TEMP"
+          shasum -a 256 taskwork-cloud-macos-arm64.tar.gz > taskwork-cloud-macos-arm64.tar.gz.sha256
+
+      - name: Verify worked plans in disposable off-screen copies
+        shell: bash
+        run: |
+          set -euo pipefail
+          export COREPACK_EXECUTABLE="$RUNNER_TEMP/taskwork-corepack-tool/node_modules/.bin/corepack"
+          export NODE_EXECUTABLE="$(command -v node)"
+          python scripts/build_worked_plans.py --starter-kit "$RUNNER_TEMP/taskwork-cloud" --output "$RUNNER_TEMP/taskwork-worked-plans"
+          tar -czf "$RUNNER_TEMP/taskwork-worked-plans-macos-arm64.tar.gz" -C "$RUNNER_TEMP/taskwork-worked-plans" .
+          cd "$RUNNER_TEMP"
+          shasum -a 256 taskwork-worked-plans-macos-arm64.tar.gz > taskwork-worked-plans-macos-arm64.tar.gz.sha256
+
+      - name: Verify artifact synchronization and work preservation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/check_cloud_sync.py --output "$RUNNER_TEMP/taskwork-cloud" --archive "$RUNNER_TEMP/taskwork-cloud-macos-arm64.tar.gz" --checksum "$RUNNER_TEMP/taskwork-cloud-macos-arm64.tar.gz.sha256"
+          python scripts/sync_worked_plans.py "$RUNNER_TEMP/taskwork-worked-plans-macos-arm64.tar.gz" "$RUNNER_TEMP/taskwork-worked-plans-macos-arm64.tar.gz.sha256" --commit "$GITHUB_SHA" --run-id "$GITHUB_RUN_ID" --runtime "$RUNNER_TEMP/taskwork-cloud/TaskWorkRuntime" --output "$RUNNER_TEMP/TaskWorkPlans"
+
+      - name: Upload the cloud preparation bundle
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: taskwork-cloud-macos-arm64-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/taskwork-cloud-macos-arm64.tar.gz
+            ${{ runner.temp }}/taskwork-cloud-macos-arm64.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
+
+      - name: Upload the separately verified worked references
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: taskwork-worked-plans-macos-arm64-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/taskwork-worked-plans-macos-arm64.tar.gz
+            ${{ runner.temp }}/taskwork-worked-plans-macos-arm64.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0

@@ -1,0 +1,20 @@
+--- a/src/batch_command/command.py
++++ b/src/batch_command/command.py
+@@ -44,7 +44,7 @@
+             _child_operation(item, events)
+         except HandledItemError:
+             events.append(f"handled:{item.name}")
+-        except ChildOperationError as error:
++        except Exception as error:
+             raise ItemProcessingError(item.name) from error
+     finally:
+         events.append(f"cleanup:{item.name}")
+@@ -63,7 +63,7 @@
+         except ItemProcessingError:
+             failures.append(item.name)
+             events.append(f"failed:{item.name}")
+-        finally:
++        else:
+             processed.append(item.name)
+             events.append(f"processed:{item.name}")
+ 

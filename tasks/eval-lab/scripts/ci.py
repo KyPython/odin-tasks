@@ -165,7 +165,7 @@ def main() -> int:
     version = subprocess.check_output(
         [str(cli), "--version"], cwd=ROOT, text=True
     ).strip()
-    if version != "0.124.1":
+    if version != "0.125.1":
         raise RuntimeError("Installed promptfoo differs from the lock")
     versions["promptfoo"] = version
     versions["node"] = subprocess.check_output(["node", "--version"], text=True).strip()

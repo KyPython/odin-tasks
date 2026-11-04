@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "Explicit local accessibility checks with Pa11y CI and axe",
-  "engines": { "node": "^22.13.0 || >=24" },
+  "engines": {
+    "node": "^22.13.0 || >=24"
+  },
   "scripts": {
     "audit": "node audit.cjs",
     "test": "node --test test/*.test.cjs"
   },
-  "dependencies": { "pa11y-ci": "5.0.0" }
+  "dependencies": {
+    "pa11y-ci": "5.0.0"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  }
 }

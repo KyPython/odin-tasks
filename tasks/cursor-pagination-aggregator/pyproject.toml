@@ -1,0 +1,9 @@
+[project]
+name = "synthetic-cursor-client"
+version = "0.1.0"
+description = "Deterministic cursor-pagination repair exercise"
+requires-python = ">=3.11"
+
+[tool.pyright]
+include = ["src", "tests"]
+pythonVersion = "3.11"

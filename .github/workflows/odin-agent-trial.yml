@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-      - 'review/inspect_ai/agent_*'
-      - 'review/inspect_ai/test_agent_oracle.py'
+      - 'recording/review/inspect_ai/agent_*'
+      - 'recording/review/inspect_ai/test_agent_oracle.py'
       - '.github/workflows/odin-agent-trial.yml'
 
 permissions:
@@ -19,6 +19,9 @@ jobs:
   evaluate:
     runs-on: ubuntu-24.04
     timeout-minutes: 18
+    defaults:
+      run:
+        working-directory: recording
     env:
       PYTHONDONTWRITEBYTECODE: '1'
       PYTHONNOUSERSITE: '1'

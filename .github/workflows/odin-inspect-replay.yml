@@ -6,7 +6,7 @@ on:
     - cron: '23 14 * * 1'
   pull_request:
     paths:
-      - 'review/inspect_ai/**'
+      - 'recording/review/inspect_ai/**'
       - '.github/workflows/odin-inspect-replay.yml'
 
 permissions:
@@ -20,6 +20,9 @@ jobs:
   replay:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: recording
     env:
       PYTHONDONTWRITEBYTECODE: '1'
       PYTHONNOUSERSITE: '1'

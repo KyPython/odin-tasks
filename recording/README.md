@@ -1,22 +1,22 @@
 # Recording preparation
 
-This private administrative repository builds registered recording starters and their offline dependency caches in the existing GitHub Actions workflow. The starter bundle contains unchanged source inputs, Recorder setup helper, exact Goal documents, reviewed scripts, checksums and observed cloud verification results. Complete worked references for every registered task separately supply analyzed causes, exact code/tests and verified execution plans. Actual task edits and checks occur in the recording; references are validated beforehand in disposable copies. The first four Odin starters are the initial registry entries:
+This directory (consolidated Nov 2026 from the standalone odin-recording-preparation repo; live starters now live in `../tasks/`) builds registered recording starters and their offline dependency caches in the existing GitHub Actions workflow. The starter bundle contains unchanged source inputs, Recorder setup helper, exact Goal documents, reviewed scripts, checksums and observed cloud verification results. Complete worked references for every registered task separately supply analyzed causes, exact code/tests and verified execution plans. Actual task edits and checks occur in the recording; references are validated beforehand in disposable copies. The first four Odin starters are the initial registry entries:
 
 | Neutral workspace | Original repository | Pinned source commit |
 | --- | --- | --- |
-| `dispatch-board` | [flaky-clock-injection](https://github.com/KyPython/flaky-clock-injection) | `e5652bcb044cd24d2a7d1c2f8bb93b885cea2069` |
-| `evaluation-handoff` | [ci-evaluation-contract](https://github.com/KyPython/ci-evaluation-contract) | `ca532d92ec3db02224061b3ceef105b2bc113b27` |
-| `quote-calculator` | [vacuous-test-suite-audit](https://github.com/KyPython/vacuous-test-suite-audit) | `c5986e93719cfd4b08a57104576c04a78d1f16ee` |
-| `harbor-workspace` | [monorepo-build-graph](https://github.com/KyPython/monorepo-build-graph) | `2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38` |
+| `dispatch-board` | [flaky-clock-injection](../tasks/flaky-clock-injection) | `e5652bcb044cd24d2a7d1c2f8bb93b885cea2069` |
+| `evaluation-handoff` | [ci-evaluation-contract](../tasks/ci-evaluation-contract) | `ca532d92ec3db02224061b3ceef105b2bc113b27` |
+| `quote-calculator` | [vacuous-test-suite-audit](../tasks/vacuous-test-suite-audit) | `c5986e93719cfd4b08a57104576c04a78d1f16ee` |
+| `harbor-workspace` | [monorepo-build-graph](../tasks/monorepo-build-graph) | `2ddf3c8f2a0e054ea2e40ab077c5a48132c34a38` |
 
 The registry also includes four recovered cloud-built Bootcamp candidates. Their external Approval ID and Approved Goal remain empty; their existing candidate Goals and internal page identities are preserved.
 
 | Neutral workspace | Private source repository | Pinned source commit |
 | --- | --- | --- |
-| `cursor-pagination-aggregator` | [cursor-pagination-aggregator](https://github.com/KyPython/cursor-pagination-aggregator) | `9c829c6ec7f85cf382f97e286bf8acce20a96fe7` |
-| `threshold-evaluation` | [threshold-evaluation](https://github.com/KyPython/threshold-evaluation) | `aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5` |
-| `batch-command` | [python-exception-propagation](https://github.com/KyPython/python-exception-propagation) | `ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2` |
-| `callback-state` | [oauth-callback-state](https://github.com/KyPython/oauth-callback-state) | `c65f9343be723ea36289db541b8f373883cbfe8a` |
+| `cursor-pagination-aggregator` | [cursor-pagination-aggregator](../tasks/cursor-pagination-aggregator) | `9c829c6ec7f85cf382f97e286bf8acce20a96fe7` |
+| `threshold-evaluation` | [threshold-evaluation](../tasks/threshold-evaluation) | `aca7a6ac52a9a2dee2d7bc3a0a77dca09f2a6fe5` |
+| `batch-command` | [python-exception-propagation](../tasks/python-exception-propagation) | `ac4aaa7d95fd07d3bdc58aa88128d24e533ec4c2` |
+| `callback-state` | [oauth-callback-state](../tasks/oauth-callback-state) | `c65f9343be723ea36289db541b8f373883cbfe8a` |
 
 Their existing cloud diff files were verified against Git blob hashes before import. The first two received only a README `cd` setup-path change; the batch command received only a README `PYTHONPATH=src` setup clarification, and all OAuth file blobs remain unchanged. [The import ledger](cloud/starter-imports.json) records original and imported file hashes and every exact setup-only edit. No starter code, fixtures or tests were repaired during recovery.
 

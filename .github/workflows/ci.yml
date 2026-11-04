@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  tasks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - task: monorepo-build-graph
+            setup: node
+          - task: ci-evaluation-contract
+            setup: python
+          - task: vacuous-test-suite-audit
+            setup: python
+          - task: flaky-clock-injection
+            setup: python
+          - task: threshold-evaluation
+            setup: python
+          - task: oauth-callback-state
+            setup: python
+          - task: cursor-pagination-aggregator
+            setup: python
+          - task: python-exception-propagation
+            setup: python
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        if: matrix.setup == 'node'
+        with:
+          version: 9.15.4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        if: matrix.setup == 'node'
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        if: matrix.setup == 'python'
+        with:
+          python-version: "3.12"
+      - name: Verify task
+        working-directory: tasks/${{ matrix.task }}
+        run: |
+          set -euo pipefail
+          case "${{ matrix.task }}" in
+            monorepo-build-graph)
+              pnpm install --frozen-lockfile
+              pnpm test
+              ;;
+            ci-evaluation-contract)
+              ./scripts/verify.sh
+              ;;
+            vacuous-test-suite-audit)
+              python -m pip install -r requirements-dev.txt
+              python -m pytest -q
+              ;;
+            flaky-clock-injection)
+              python -m unittest discover -s tests
+              ;;
+            threshold-evaluation)
+              PYTHONPATH=src python -m unittest discover -s tests
+              ;;
+            oauth-callback-state)
+              python -m unittest discover -s tests
+              python run_fixtures.py > /dev/null
+              python run_fixtures.py > /tmp/oauth-run-1.json
+              python run_fixtures.py > /tmp/oauth-run-2.json
+              ;;
+            cursor-pagination-aggregator)
+              PYTHONPATH=src python -m unittest discover -s tests
+              ;;
+            python-exception-propagation)
+              python -m pip install -r requirements-dev.txt
+              PYTHONPATH=src python -m pytest
+              ;;
+          esac
+
+  recording-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: recording
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests
+      - run: python scripts/check_recording_pack.py

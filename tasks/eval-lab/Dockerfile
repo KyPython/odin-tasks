@@ -1,10 +1,7 @@
-ARG PYTHON_IMAGE=python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
-ARG NODE_IMAGE=node:22.23.2-bookworm-slim@sha256:48e4b67d85f87bd551df43704e24d252f56cc5f8e9718841aace50f19948f0f9
-ARG UV_IMAGE=ghcr.io/astral-sh/uv:0.10.6@sha256:2f2ccd27bbf953ec7a9e3153a4563705e41c852a5e1912b438fc44d88d6cb52c
-
-FROM ${NODE_IMAGE} AS node-binaries
-FROM ${UV_IMAGE} AS uv-binary
-FROM ${PYTHON_IMAGE}
+# Base images pinned by digest (inlined: the governance gate cannot see through ARG indirection).
+FROM node:22.23.2-bookworm-slim@sha256:48e4b67d85f87bd551df43704e24d252f56cc5f8e9718841aace50f19948f0f9 AS node-binaries
+FROM ghcr.io/astral-sh/uv:0.10.6@sha256:2f2ccd27bbf953ec7a9e3153a4563705e41c852a5e1912b438fc44d88d6cb52c AS uv-binary
+FROM python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
 
 COPY --from=node-binaries /usr/local/bin/node /usr/local/bin/node
 COPY --from=node-binaries /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/npm

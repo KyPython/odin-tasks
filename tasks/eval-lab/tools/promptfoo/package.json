@@ -1,6 +1,11 @@
 {
   "private": true,
   "dependencies": {
-    "promptfoo": "0.124.1"
+    "promptfoo": "^0.125.1"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1",
+    "glob": "^14.0.2",
+    "basic-ftp": "^6.2.1"
   }
 }

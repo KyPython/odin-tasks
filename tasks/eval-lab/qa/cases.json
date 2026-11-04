@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "retention",
+      "question": "How long does the Aster archive retain audit records?",
+      "evidence": ["retention"]
+    },
+    {
+      "id": "backup",
+      "question": "How often does the Aster archive create a backup?",
+      "evidence": ["backup"]
+    },
+    {
+      "id": "combined",
+      "question": "State the Aster archive's audit retention and backup interval.",
+      "evidence": ["retention", "backup"]
+    },
+    {
+      "id": "insufficient",
+      "question": "Which encryption algorithm does the Aster archive use?",
+      "evidence": []
+    }
+  ]
+}

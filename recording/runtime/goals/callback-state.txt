@@ -1,1 +1,0 @@
-As a backend engineer, repair a synthetic OAuth callback handler that accepts an unbound or mismatched state value, preserve the intended success path, and verify the corrected behavior with deterministic local fixtures for valid, missing, mismatched, expired, and replayed state.

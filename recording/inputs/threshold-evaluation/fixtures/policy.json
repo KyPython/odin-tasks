@@ -1,5 +1,0 @@
-{
-  "candidate_thresholds": [0.3, 0.5, 0.7, 0.85],
-  "false_negative_cost": 9,
-  "false_positive_cost": 2
-}

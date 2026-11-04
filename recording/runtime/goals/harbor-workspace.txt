@@ -1,1 +1,0 @@
-Diagnose and repair a synthetic pnpm/Turborepo build regression so an engineering team can restore reliable builds after a shared workspace dependency gains its own build step and one build configuration still references an obsolete package name.

@@ -1,1 +1,0 @@
-As a software engineer, audit a synthetic grading repository where written evaluation requirements are not fully enforced before grading, identify the missing transfer/CI check, implement one bounded fail-closed validation plus a negative fixture, and verify that the pipeline rejects the defective case while preserving the valid case.

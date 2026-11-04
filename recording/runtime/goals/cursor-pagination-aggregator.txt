@@ -1,1 +1,0 @@
-As a backend engineer, repair a synthetic client that incorrectly aggregates a cursor-paginated REST endpoint, preserving server order while handling repeated cursors, empty pages, and duplicate records, and verify the corrected behavior against deterministic response fixtures.

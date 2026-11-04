@@ -1,8 +1,13 @@
 # Consolidation provenance (Nov 4, 2026)
 
-Nine standalone repos were subtree-merged here with full history preserved.
-After the consolidation PR merges and this content is verified, Ky deletes
-the source repos (user decision, Nov 2026).
+Eight standalone task repos were subtree-merged here with full history
+preserved. After the consolidation PR merges and this content is verified,
+Ky deletes the 8 source repos (user decision, Nov 2026).
+
+`KyPython/odin-recording-preparation` intentionally stays standalone: its
+checksummed vendored `inputs/` must stay byte-identical, which fights the
+mono-repo gate (container + dependency checks flag the frozen copies as
+new). It links to `tasks/` here instead; only its registry links move.
 
 | Directory | Source repo | Source commit at merge |
 | --- | --- | --- |
@@ -14,25 +19,19 @@ the source repos (user decision, Nov 2026).
 | `tasks/oauth-callback-state` | `KyPython/oauth-callback-state` | `ef5d5b5e4b96a65ec970916aaab133c2513334d9` |
 | `tasks/cursor-pagination-aggregator` | `KyPython/cursor-pagination-aggregator` | `d2cbe0381575ddcc6d6f6415fa90b01703e8f6ac` |
 | `tasks/python-exception-propagation` | `KyPython/python-exception-propagation` | `4bfa36dfb94acf892b742e1d5af8e8877a5d6e7d` |
-| `recording/` | `KyPython/odin-recording-preparation` | `bbc079450b04b8618d8776b554f42df8d532819e` |
 
 ## Adjustments made during the move
 
-- Nested `.github/` dirs removed (9 dead caller workflows + CODEOWNERS +
+- Nested `.github/` dirs removed (8 dead caller workflows + CODEOWNERS +
   dependabot files); root `.github/` replaces them. Root `dependabot.yml`
   covers actions + npm (`tasks/monorepo-build-graph`) + pip (the two
   `requirements-dev.txt` tasks).
-- `recording/`'s three real workflows hoisted to root
-  (`build-preparation`, `odin-agent-trial`, `odin-inspect-replay`) with
-  `recording/` path filters and `working-directory: recording` defaults.
 - `tasks/ci-evaluation-contract/scripts/verify.sh` gained its missing exec
   bit (it was mode 644 upstream; the README command could never run).
-- `recording/README.md` registry links repointed to `../tasks/<name>`.
-  Provenance records (`runtime/task-registry.json`, `runtime-manifest.json`,
-  `packs/`, import ledgers) intentionally still name the original repos and
-  pinned commits; the recording build reads vendored `inputs/` and needs no
-  credentials, so deleting the sources does not break it.
-- New root `ci.yml` runs every task's documented verification plus a
-  recording smoke (`unittest discover` + `check_recording_pack.py`). All 8
+- Pre-existing debt fixed so the gate passes on the moved tree: non-root
+  `USER` in the harbor Dockerfile; pytest 8.3.5 → 9.0.3 (GHSA-6w46,
+  PYSEC-2026-1845); turbo 2.3.3 → 2.9.14 (GHSA-3qcw, GHSA-hcf7).
+  Re-verified locally after each bump.
+- New root `ci.yml` runs every task's documented verification. All 8
   tasks verified locally before the PR: 1+4+4+2 unittest suites OK,
-  cieval verify OK, pytest 8+2 passed, node pass 2 fail 0, recording 35 OK.
+  cieval verify OK, pytest 8+2 passed, node pass 2 fail 0.

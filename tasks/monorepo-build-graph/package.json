@@ -10,6 +10,6 @@
     "check:unrelated": "pnpm --filter @harbor/status-check test"
   },
   "devDependencies": {
-    "turbo": "2.9.14"
+    "turbo": "2.11.10"
   }
 }
